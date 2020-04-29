@@ -7,11 +7,24 @@ Free to use template for creating a responsive static personal portfolio website
 
 ## Features
 - **Easy to use**: Everything is given a descriptive name, CSS files are split into separate files for readability, and comments for added clarity.
-- **Responsive**: Support for various resolutions and screen sizes.
-- **Dark theme**: Dynamically switches between light and dark theme based on OS setting. Compatible with Windows, Android, macOS and iOS.
-- **Design**: Built with a flat, modern design with smooth animations when hovering over certain elements.
+- **Responsive**: Dynaically changes layout based on resolution and screen size.
+- **Dark theme**: Dynamically switches between light and dark theme based on OS setting.
+- **Modern design**: Built with a flat, modern design with smooth animations when hovering over certain elements.
+
+
+## Preview
+![Main page](https://github.com/arlenegrace/infinitylabs.dev/blob/master/images/site.jpg?raw=true)
+
+
+## Usage
+This repo contains all necessary files except for images which you provide. Each sub-folder is a URL directory that opens to the `index.html` file. For example, the `about` folder would translate to `https://www.infinitylabs.dev/about`.
+
+The CSS styling for the nav bar and footer are located in `static.css` which is used to style elements that are shared across all pages.
+
+To add more images to the `gallery` page, simply open up the `index.html` file and copy and paste the `image_container` div.
+
+The `404` page requires styling to be inline in the .HTML file, otherwise accessing an invalid subdirectory will not fetch the .CSS files, only the .HTML file.
 
 
 ## License
-
 This project is open source and available under the [MIT License](LICENSE).

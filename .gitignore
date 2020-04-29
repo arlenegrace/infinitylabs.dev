@@ -2,10 +2,10 @@
 
 *.py
 *.psd
-game/
-about_old/
-github/
-images/
-instagram/
-twitter/
-youtube/
+infinitylabs.dev/game/
+infinitylabs.dev/about_old/
+infinitylabs.dev/github/
+infinitylabs.dev/images/
+infinitylabs.dev/instagram/
+infinitylabs.dev/twitter/
+infinitylabs.dev/youtube/
