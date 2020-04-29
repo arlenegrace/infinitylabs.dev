@@ -1,0 +1,109 @@
+@media screen and (prefers-color-scheme: light) {
+    body {
+        background-color: white;
+    }
+
+    .landing .landing_container h1 {
+        color: #333333;
+    }
+    .landing .landing_container p {
+        color: rgb(98, 98, 98);
+    }
+    .landing .landing_icon_container  span:hover h1{
+        transition-duration: 0.5s;
+        color: #e6c7a4;
+    }
+
+    .work {
+        background-color: #fafafa;
+    }
+    .body1, .body2, .body3 {
+        background-color: #eeeeee;
+    }
+    .body1 .text_container .text, .body2 .text_container .text, .body3 .text_container .text {
+        background-color: #fafafa;
+        box-shadow: 10px 10px 32px rgba(12, 12, 12, 0.267);
+    }
+    .body1:hover .text_container .text, .body2:hover .text_container .text, .body3:hover .text_container .text {
+        box-shadow: 10px 10px 32px rgba(12, 12, 12, 0.356);
+    }
+    .body1 .body1headline, .body2 .body2headline, .body3 .body3headline {
+        color: #333333;
+    }
+    .body1 .body1paragraph, .body2 .body2paragraph, .body3 .body3paragraph {
+        color: rgb(98, 98, 98);
+    }
+    .body1:hover .body1headline {
+        color: #f0d5b6;
+    }
+    .body2:hover .body2headline {
+        color: #f0d5b6;
+    }
+    .body3:hover .body3headline {
+        color: #f0d5b6;
+    }
+
+    .landing .headline {
+        color: #333333;
+    }
+    .landing .paragraph {
+        color: rgb(98, 98, 98);
+    }
+    .footer {
+        background-color: #fafafa;
+    }
+}
+
+@media screen and (prefers-color-scheme: dark) {
+    body {
+        background-color: rgb(37, 37, 37);
+    }
+
+    .landing .landing_title h1 {
+        color: #ffeccf;
+    }
+    .landing .landing_icon_container  h1 {
+        color: #e2e2e2;
+    }
+    .landing .landing_container p {
+        color: #d6d6d6;
+    }
+    .landing .landing_icon_container  span:hover h1{
+        transition-duration: 0.5s;
+        color: #f0d5b6;
+    }
+
+    .work {
+        background-color: #292929;
+    }
+    .body1, .body2, .body3 {
+        background-color: #414141;
+    }
+    .body1 .text_container .text, .body2 .text_container .text, .body3 .text_container .text {
+        background-color: #292929;
+        box-shadow: 10px 10px 32px rgba(12, 12, 12, 0.4);
+    }
+    .body1:hover .text_container .text, .body2:hover .text_container .text, .body3:hover .text_container .text {
+        box-shadow: 10px 10px 32px rgba(12, 12, 12, 0.5);
+        margin-top: -10px;
+    }
+    .body1 .body1headline, .body2 .body2headline, .body3 .body3headline {
+        color: #f0d5b6;
+    }
+    .body1 .body1paragraph, .body2 .body2paragraph, .body3 .body3paragraph {
+        color: #d6d6d6;
+    }
+    .body1:hover .body1headline {
+        color: #f5e1cd;
+    }
+    .body2:hover .body2headline {
+        color: #f5e1cd;
+    }
+    .body3:hover .body3headline {
+        color: #f5e1cd;
+    }
+
+    .footer {
+        background-color: #292929;
+    }
+}

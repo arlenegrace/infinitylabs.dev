@@ -1,0 +1,25 @@
+@media screen and (prefers-color-scheme: light) {
+    body {
+        background-color: white;
+    }
+
+    .image_showcase .collage .collage_title {
+        color: #1f1f1f;
+    }
+    .image_showcase .collage .row .image_right, .image_showcase .row .bottom .image_left {
+        background-color: #f2f2f2;
+    }
+}
+
+@media screen and (prefers-color-scheme: dark) {
+    body {
+        background-color: rgb(37, 37, 37);
+    }
+
+    .image_showcase .collage .collage_title {
+        color: #ffeccf;
+    }
+    .image_showcase .collage .row .image_right, .image_showcase .row .bottom .image_left {
+        background-color: rgb(37, 37, 37);
+    }
+}

@@ -1,0 +1,53 @@
+@media screen and (prefers-color-scheme: light) {
+    body {
+        background-color: white;
+    }
+
+    .enthusiast {
+        background-image: url("../images/THX.jpg");
+    }
+    .enthusiast_wrapper h1 {
+        color: #f0d5b6;
+    }
+    .enthusiast_wrapper p {
+        color: rgb(230, 230, 230);
+    }
+    
+    .aboutme .container {
+        background-color: #ffffff;
+        box-shadow: 0px 0px 55px rgba(12, 12, 12, 0.2)
+    }
+    .biography h1 {
+        color: #333333;
+    }
+    .biography p {
+        color: rgb(93, 93, 93);
+    }
+}
+
+@media screen and (prefers-color-scheme: dark) {
+    body {
+        background-color: rgb(37, 37, 37);
+    }
+
+    .enthusiast {
+        background-image: url("../images/dark_hhkb.jpg");
+    }
+    .enthusiast_wrapper h1 {
+        color: #f0d5b6;
+    }
+    .enthusiast_wrapper p {
+        color: rgb(230, 230, 230);
+    }
+
+    .aboutme .container {
+        background-color: #2f2f2f;
+        box-shadow: 0px 0px 55px rgba(12, 12, 12, 0.4)
+    }
+    .biography h1 {
+        color: #f0d5b6;
+    }
+    .biography p {
+        color: rgb(197, 197, 197);
+    }
+}

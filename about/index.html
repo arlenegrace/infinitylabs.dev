@@ -1,0 +1,127 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="../static.css">
+        <link rel="stylesheet" href="themes.css">
+        <link rel="stylesheet" href="layouts.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:500&display=swap" rel="stylesheet">
+        
+        <meta name="description" content="Official website of Infinity Labs.">
+        <meta name="keywords" content="Infinity Labs, YouTube">
+        <meta name="author" content="Infinity Labs">
+        
+        <meta property="og:site_name" content="About — Infinity Labs">
+        <meta property="og:title" content="About — Infinity Labs">
+        <meta property="og:description" content="Official website of Infinity Labs.">
+        <meta property="og:image" content="https://www.infinitylabs.dev/images/logo_dark.png">
+        <meta property="og:url" content="https://www.infinitylabs.dev/about/">
+        
+        <title>About — Infinity Labs</title>
+
+        <script>
+            function open_nav(x) {
+                x.classList.toggle("change");
+                let dropdown = document.getElementById('dropdown_menu_id');
+                dropdown.style.height = dropdown.style.height == '100%' ? '0%' : '100%';
+            }
+        </script>
+    </head>
+
+    <body>
+        <nav class="dropdown_menu" id="dropdown_menu_id" style="height: 0%;">
+            <div class="dropdown_links">
+                <a href="https://www.infinitylabs.dev/"  class = "work">Work</a>
+                <a href="https://www.infinitylabs.dev/about/" class = "about">About</a>
+                <a href="https://www.infinitylabs.dev/gallery/" class = "gallery">Gallery</a>
+                <a>Social</a>
+            </div>
+        </nav>
+
+        <header class="nav_bar">
+            <div class="left_header">
+                <nav>
+                    <div>
+                        <a href="https://www.infinitylabs.dev/">Work</a>
+                    </div>
+                    <div>
+                        <a class="current" href="https://www.infinitylabs.dev/about/">About</a>
+                    </div>
+                </nav>
+            </div>
+            <div class="center_header">
+                <div>
+                    <a class="header_logo" href="https://www.infinitylabs.dev/">
+                        <figure></figure>
+                    </a>
+                </div>
+                <div>
+                    <a>INFINITY LABS</a>
+                </div>
+            </div>
+            <div class="right_header">
+                <nav>
+                    <div>
+                        <a href="https://www.infinitylabs.dev/gallery/">Gallery</a>
+                    </div>
+                    <div>
+                        <a>Social</a>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="hamburger" onclick="open_nav(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </header>
+
+        <div class = "aboutme">
+            <div class="enthusiast">
+                <div class="enthusiast_wrapper">
+                    <h1>ENTHUSIAST</h1>
+                    <p>Technology has become a part of our lives and many spend the vast majority of their day on their computer or on
+                        their phone. For something so integral, why compromise on something less?
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="container">
+                    <div class="portrait_wrapper">
+                        <img class="portrait" src="../images/IMG_7453.jpeg" alt="Infinity Labs">
+                    </div>
+                    <div class="biography">
+                        <h1>About Me</h1>
+                        <p>Fascinated by technology from a young age, Mark set out to explore the bleeding edge of consumer electronics.
+                            He later created Infinity Labs to share the experience with other enthusiasts. Currently residing on Mars,
+                            he works as a C++ software developer and content creator. Hobbies include web development, Hackintoshes and
+                            custom mechanical keyboards.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <footer class="footer">
+            <div class="social">
+                <div class="social_container">
+                    <a class="youtube" href="https://www.youtube.com/infinitylabstech"></a>
+                    <a class="instagram" href="https://www.instagram.com/infinitylabstech"></a>
+                    <a class="twitter" href="https://www.twitter.com/infinitylabtech"></a>
+                    <a class="github" href="https://www.github.com/vanalk"></a>
+                </div>
+            </div>
+            <div class="copyright">Written by me in HTML and CSS.</div>
+        </footer>
+    </body>
+</html>

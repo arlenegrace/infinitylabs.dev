@@ -1,0 +1,330 @@
+.landing_container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 150px 0;
+}
+.landing_title {
+    width: 800px;
+    padding-bottom: 100px;
+    margin: 0 auto;
+}
+.landing .landing_container h1, .landing .landing_container p {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+.landing .landing_container h1 {
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 56px;
+    text-transform: uppercase;
+}
+.landing .landing_container p {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.45;
+    letter-spacing: 0.01em;
+}
+.landing .landing_container .landing_icon_container {
+    display: flex;
+}
+.landing .landing_container .landing_icon_container span {
+    width: 300px;
+    margin: 0 auto;
+}
+.landing .landing_container .landing_icon_container span h1 {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.landing .landing_container .landing_icon_container span a {
+    width: 90px;
+    height: 90px;
+    margin: 0 auto;
+    display: block;
+}
+.landing .landing_container .landing_icon_container span img {
+    width: 90px;
+    height: 90px;
+    margin: 0 auto;
+    display: block;
+}
+
+.work {
+    padding-top: 100px;
+    padding-bottom: 70px;
+}
+.body1:hover .text_container .text, .body2:hover .text_container .text, .body3:hover .text_container .text {
+    margin-top: -10px;
+}
+.body1 {
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: center;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.body1 .text_container {
+    width: 50%;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.body1 .text_container .text {
+    padding: 40px 40px;
+    margin-left: 30px;
+    margin-right: -30px;
+    height: 440px;
+    z-index: 2;
+    box-shadow: 10px 10px 32px rgba(12, 12, 12, 0.4);
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+.body1 .image_container {
+    width: 50%;
+    height: 500px;
+    overflow: hidden;
+}
+.body1 .image_container .image {
+    background-image: url("images/scarletw.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+.body1:hover .image_container .image {
+    transform: scale(1.1);
+}
+.body1 .body1headline, .body1 .body1paragraph {
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+    z-index: 2;
+    left: 0px;
+    
+    -webkit-animation: fadein_txt1 1.5s;
+    -moz-animation: fadein_txt1 1.5s;
+    -ms-animation: fadein_txt1 1.5s;
+    -o-animation: fadein_txt1 1.5s;
+    animation: fadein_txt1 1.5s;
+}
+.body1 .body1headline {
+    font-size: 48px;
+    font-weight: 600;
+    text-align: left;
+    line-height: 1.1;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+.body1 .body1paragraph {
+    font-size: 19px;
+    font-weight: 300;
+    line-height: 1.85;
+    letter-spacing: 0.02em;
+    text-align: left;
+    margin-top: 30px;
+}
+.body1 img {
+    object-fit: cover;
+    object-position: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    max-height: 500px;
+    height: 500px;
+}
+
+.body2 {
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+.body2 .text_container {
+    width: 50%;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.body2 .text_container .text {
+    padding: 40px 40px;
+    margin-left: -30px;
+    margin-right: 30px;
+    height: 440px;
+    z-index: 2;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+.body2 .image_container {
+    width: 50%;
+    height: 500px;
+    overflow: hidden;
+}
+.body2 .image_container .image {
+    background-image: url("images/one_dark.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+.body2:hover .image_container .image {
+    transform: scale(1.1);
+    transition: all .5s;
+}
+.body2 .body2headline, .body2 .body2paragraph {
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+    z-index: 2;
+    left: 0px;
+    
+    -webkit-animation: fadein_txt1 1.5s;
+    -moz-animation: fadein_txt1 1.5s;
+    -ms-animation: fadein_txt1 1.5s;
+    -o-animation: fadein_txt1 1.5s;
+    animation: fadein_txt1 1.5s;
+}
+.body2 .body2headline {
+    font-size: 48px;
+    font-weight: 600;
+    text-align: left;
+    line-height: 1.1;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+.body2 .body2paragraph {
+    font-size: 19px;
+    font-weight: 300;
+    line-height: 1.85;
+    letter-spacing: 0.02em;
+    text-align: left;
+    margin-top: 30px;
+}
+.body2 img {
+    object-fit: cover;
+    object-position: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    max-height: 500px;
+    height: 500px;
+}
+
+.body3 {
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: center;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.body3 .text_container {
+    width: 50%;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.body3 .text_container .text {
+    padding: 40px 40px;
+    margin-left: 30px;
+    margin-right: -30px;
+    height: 440px;
+    z-index: 2;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+.body3 .image_container {
+    width: 50%;
+    height: 500px;
+    overflow: hidden;
+}
+.body3:hover .image_container .image {
+    transform: scale(1.1);
+    transition: all .5s;
+}
+.body3 .image_container .image {
+    background-image: url("images/Andromeda_main_menu.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+.body3 .body3headline, .body3 .body3paragraph {
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+    z-index: 2;
+    left: 0px;
+}
+.body3 .body3headline {
+    font-size: 48px;
+    font-weight: 600;
+    text-align: left;
+    line-height: 1.1;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+.body3 .body3paragraph {
+    font-size: 19px;
+    font-weight: 300;
+    line-height: 1.85;
+    letter-spacing: 0.02em;
+    text-align: left;
+    margin-top: 30px;
+}
+.body3 img {
+    object-fit: cover;
+    object-position: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    max-height: 500px;
+    height: 500px;
+}

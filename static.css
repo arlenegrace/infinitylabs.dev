@@ -1,0 +1,455 @@
+.dropdown_menu {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+/* Position the content inside the overlay */
+.dropdown_links {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    margin-top: 30px;
+}
+/* The navigation links inside the overlay */
+.dropdown_links a {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    text-align: center;
+    text-decoration: none;
+
+    padding: 14px 28px;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+    
+    background-color: inherit;
+    padding: 14px 28px;
+    cursor: pointer;
+    display: block;
+}
+
+.nav_bar {
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 20px;
+    padding-bottom: 30px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 80vw;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+}
+.nav_bar nav {
+    display: flex;
+}
+.left_header {
+    width: 230px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.right_header {
+    text-align: right;
+    width: 230px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.right_header nav {
+    margin-left: auto;
+    margin-right: 0;
+}
+.left_header div {
+    margin-right: 25px;
+}
+.right_header div {
+    margin-left: 25px;
+}
+.left_header a, .right_header a {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 17px;
+    letter-spacing: .1em;
+    text-decoration: none;
+    transition: .3s;
+}
+.center_header {
+    z-index: 6;
+    margin-left: auto;
+    margin-right: auto;
+    
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+
+    -webkit-box-flex: 1;
+    -ms-flex: 0 0 auto;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+
+    -webkit-box-orient: vertical;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.center_header a {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 17px;
+    letter-spacing: .1em;
+    text-decoration: none;
+    transition: .3s;
+}
+.center_header .header_logo figure {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 105px;
+    vertical-align: middle;
+}
+.nav_bar .hamburger {
+    display: none;
+
+    /*terraforge settings*/
+    position: relative;
+    display: none;
+    background: none;
+    border: none;
+    padding: 0;
+    outline: none;
+    cursor: pointer;
+}
+/*ANIMATED HAMBURGER*/
+.hamburger {
+    margin: 5px;
+    margin-right: 15px;
+    display: inline-block;
+    cursor: pointer;
+    z-index: 10;
+}
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 3px;
+    background-color: #f0d5b6;
+    margin: 8px 0;
+    transition: 0.4s;
+}
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 7px);
+    transform: rotate(-45deg) translate(-9px, 7px);
+}
+.change .bar2 {
+    opacity: 0;
+}
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -7px);
+    transform: rotate(45deg) translate(-8px, -7px);
+}
+
+
+.footer {
+    width: 100%;
+    padding: 20px 0;
+}
+.social {
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.social_container {
+    width: 250px;
+    margin-right: 0px;
+    margin-left: auto;
+    text-align: right;
+}
+.youtube, .instagram, .twitter, .discord, .github {
+    margin-left: 15px;
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+.youtube {
+    background-image: url("images/social_black/Youtube_2.svg");
+}
+.instagram {
+    background-image: url("images/social_black/Instagram_2.svg");
+}
+.twitter {
+    background-image: url("images/social_black/Twitter_2.svg");
+}
+.discord {
+    background-image: url("images/social_black/Discord_2.svg");
+}
+.github {
+    background-image: url("images/social_black/Github_2.svg");
+}
+.youtube:hover {
+    background-image: url("images/social_gray/Youtube_1.svg");
+}
+.instagram:hover {
+    background-image: url("images/social_gray/Instagram_1.svg");
+}
+.twitter:hover {
+    background-image: url("images/social_gray/Twitter_1.svg");
+}
+.discord:hover {
+    background-image: url("images/social_gray/Dribbble_1.svg");
+}
+.github:hover {
+    background-image: url("images/social_gray/Github_1.svg");
+}
+.copyright {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+    .dropdown_menu {
+        overflow-y: auto;
+    }
+    .dropdown_menu a {
+        font-size: 20px
+    }
+}
+
+@media screen and (min-width: 940px) {
+    .dropdown_menu {
+        height: 0%;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .header .header_container {
+        width: auto;
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+    .center_header .header_logo figure {
+        width: 125px;
+        height: 88px;
+    }
+    .center_header a {
+        font-size: 14px;
+    }
+
+    .footer {
+        width: auto;
+        padding: 20px 30px;
+    }
+    .social {
+        width: auto;
+        margin-bottom: 40px;
+    }
+    .copyright {
+        font-size: 14px;
+        width: auto;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .nav_bar {
+        padding-left: 3vw;
+        padding-right: 3vw;
+        width: 80vw;
+        padding-top: 30px;
+    }
+    .left_header {
+        width: 230px;
+    }
+    .right_header {
+        text-align: right;
+        width: 230px;
+    }
+    .left_header div {
+        margin-right: 25px;
+    }
+    .right_header div {
+        margin-left: 25px;
+    }
+    .left_header a, .right_header a {
+        font-size: 16px;
+    }
+    .center_header a {
+        font-size: 14px;
+    }
+    
+    .footer {
+        padding: 20px 30px;
+    }
+    .copyright {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .dropdown_menu button {
+        font-size: 20px
+    }
+
+    .nav_bar .hamburger {
+        position: absolute;
+        display: block;
+        cursor: pointer;
+        right: 0;
+    }
+    .nav_bar {
+        padding-left: 30px;
+        padding-right: 30px;
+        width: auto;
+        padding-top: 0px;
+    }
+    .left_header {
+        display: none;
+    }
+    .right_header {
+        display: none;
+    }
+    .left_header div {
+        margin-right: 15px;
+    }
+    .right_header div {
+        margin-left: 15px;
+    }
+    .center_header .header_logo figure {
+        width: 125px;
+        height: 87px;
+    }
+    .left_header a, .right_header a {
+        font-size: 14px;
+    }
+    .center_header a {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .footer {
+        width: auto;
+        padding: 20px 15px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .social {
+        width: auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .social_container {
+        width: 250px;
+        margin-right: 0px;
+        margin-left: auto;
+    }
+    .copyright {
+        font-size: 12px;
+        width: auto;
+    }
+}
+
+@media screen and (prefers-color-scheme: light) {
+    .dropdown_menu {
+        background-color: white;
+    }
+    .dropdown_links a {
+        color: rgb(109, 109, 109);
+    }
+    /* When you mouse over the navigation links, change their color */
+    .dropdown_links a:hover, .dropdown_menu a:focus {
+        color: #424242;
+        transition-duration: 0.5s;
+    }
+    .bar1, .bar2, .bar3 {
+        background-color: rgb(109, 109, 109);
+    }
+
+    .left_header a, .right_header a {
+        color: rgb(139, 139, 139);
+    }
+    .left_header .current {
+        color: #e6c7a4;
+    }
+    .left_header a:hover, .right_header a:hover {
+        color: #424242;
+        transition-duration: 0.5s;
+    }
+    .center_header {
+        background-color: white;
+    }
+    .center_header a {
+        color: #292929;
+    }
+    .center_header .header_logo figure {
+        background-image: url("images/logo_dark.png");
+    }
+
+    .copyright {
+        color: #c5c5c5;
+    }
+}
+
+@media screen and (prefers-color-scheme: dark) {
+    .dropdown_menu {
+        background-color: rgb(37, 37, 37);
+    }
+    .dropdown_links a {
+        color: rgb(179, 179, 179);
+    }
+    /* When you mouse over the navigation links, change their color */
+    .dropdown_links a:hover, .dropdown_menu a:focus {
+        color: #ffeccf;
+        transition-duration: 0.5s;
+    }
+    .bar1, .bar2, .bar3 {
+        background-color: #f0d5b6;
+    }
+
+    .left_header a, .right_header a {
+        color: rgb(179, 179, 179);
+    }
+    .left_header .current {
+        color: #f0d5b6;
+    }
+    .left_header a:hover, .right_header a:hover {
+        color: #ffeccf;
+        transition-duration: 0.5s;
+    }
+    .center_header {
+        background-color: rgb(37, 37, 37);
+    }
+    .center_header a {
+        color: #ffffff;
+    }
+    .center_header .header_logo figure {
+        background-image: url("images/logo_white.png");
+    }
+
+    .copyright {
+        color: #4d4d4d;
+    }
+}

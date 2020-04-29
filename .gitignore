@@ -1,0 +1,11 @@
+.DS_Store
+
+*.py
+*.psd
+game/
+about_old/
+github/
+images/
+instagram/
+twitter/
+youtube/

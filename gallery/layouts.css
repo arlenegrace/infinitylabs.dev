@@ -1,0 +1,41 @@
+@media screen and (max-width: 1300px) {
+    .intro .intro_background_container {
+        width: auto;
+        padding: 200px 0;
+    }
+    .intro .intro_container .intro_body .intro_text .headline {
+        font-size: 80px;
+        letter-spacing: 0.01em;
+    }
+
+    .image_showcase .collage .collage_title {
+        font-weight: 700;
+        padding-top: 50px;
+        padding-bottom: 60px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .image_showcase .collage .collage_title {
+        font-weight: 700;
+        padding-top: 40px;
+        padding-bottom: 50px;
+    }
+    .image_showcase .collage .collage_wrapper {
+        grid-template-columns: repeat( auto-fill, 1fr);
+        width: 90vw;
+        margin: 0 auto;
+    }
+    .image_showcase .image_container img {
+        width: 90vw;
+    }
+}
+
+@media screen and (max-width: 600px) { /* PHONE LAYOUT*/
+    .image_showcase .collage .collage_title {
+        font-size: 36px;
+        font-weight: 700;
+        padding-top: 40px;
+        padding-bottom: 50px;
+    }
+}

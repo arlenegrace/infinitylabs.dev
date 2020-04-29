@@ -1,0 +1,198 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="static.css">
+        <link rel="stylesheet" href="themes.css">
+        <link rel="stylesheet" href="layouts.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:500&display=swap" rel="stylesheet">
+        
+        <meta name="description" content="Official website of Infinity Labs.">
+        <meta name="keywords" content="Infinity Labs, YouTube">
+        <meta name="author" content="Infinity Labs">
+        
+        <meta property="og:site_name" content="Infinity Labs">
+        <meta property="og:title" content="Infinity Labs">
+        <meta property="og:description" content="Official website of Infinity Labs.">
+        <meta property="og:image" content="https://www.infinitylabs.dev/images/logo_dark.png">
+        <meta property="og:url" content="https://www.infinitylabs.dev/">
+        
+        <title>Infinity Labs</title>
+
+        <script>
+            function open_nav(x) {
+                x.classList.toggle("change");
+                let dropdown = document.getElementById('dropdown_menu_id');
+                dropdown.style.height = dropdown.style.height == '100%' ? '0%' : '100%';
+            }
+        </script>
+    </head>
+
+    <body>
+        <nav class="dropdown_menu" id="dropdown_menu_id" style="height: 0%;">
+            <div class="dropdown_links">
+                <a href="https://www.infinitylabs.dev/"  class = "work">Work</a>
+                <a href="https://www.infinitylabs.dev/about/" class = "about">About</a>
+                <a href="https://www.infinitylabs.dev/gallery/" class = "gallery">Gallery</a>
+                <a>Social</a>
+            </div>
+        </nav>
+
+        <header class="nav_bar">
+            <div class="left_header">
+                <nav>
+                    <div>
+                        <a class="current" href="https://www.infinitylabs.dev/">Work</a>
+                    </div>
+                    <div>
+                        <a href="https://www.infinitylabs.dev/about/">About</a>
+                    </div>
+                </nav>
+            </div>
+            <div class="center_header">
+                <div>
+                    <a class="header_logo" href="https://www.infinitylabs.dev/">
+                        <figure></figure>
+                    </a>
+                </div>
+                <div>
+                    <a>INFINITY LABS</a>
+                </div>
+            </div>
+            <div class="right_header">
+                <nav>
+                    <div>
+                        <a href="https://www.infinitylabs.dev/gallery/">Gallery</a>
+                    </div>
+                    <div>
+                        <a>Social</a>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="hamburger" onclick="open_nav(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </header>
+
+        <div class="landing">
+            <div class="landing_container">
+                <div class="landing_title">
+                    <h1>Infinity Labs</h1>
+                    <p>Content creator, software developer, and hobbyist designer.</p>
+                </div>
+
+                <div class="landing_icon_container">
+                    <span>
+                        <h1>Creator</h1>
+                        <a href="https://www.youtube.com/infinitylabstech">
+                            <img src="images/icon_yt.png">
+                        </a>
+                    </span>
+                    <span>
+                        <h1>Developer</h1>
+                        <a href="https://www.github.com/arlenegrace">
+                            <img src="images/icon-github.png">
+                        </a>
+                    </span>
+                    <span>
+                        <h1>Designer</h1>
+                        <a href="https://www.infinitylabs.dev/game/">
+                            <img src="images/icon-vsc.png">
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="work">
+            <div class="body1" id="features">
+                <div class="image_container">
+                    <div class="image">
+                        <!-- <img src="images/creator.png" alt="Infinity Labs"> -->
+                    </div>
+                </div>
+                
+                <div class="text_container">
+                    <div class="text">
+                        <header class="body1headline">
+                            Content Creator
+                        </header>
+                        <p class="body1paragraph">
+                            Created in May 2017, Infinity Labs focuses on reviewing laptops.
+                            As computers get faster with lower power consumption, laptops and tablets
+                            are becoming increasingly popular due to their portability. With premium laptops
+                            starting at $2,400 or more, it is important you pick the right laptop to suit your
+                            needs and preferences.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="body2">
+                <div class="image_container">
+                    <div class="image">
+                        <!-- <img src="images/one_dark.png" alt="Infinity Labs"> -->
+                    </div>
+                </div>
+                
+                <div class="text_container">
+                    <div class="text">
+                        <header class="body2headline">
+                                Developer
+                        </header>
+                        <p class="body2paragraph">
+                            Starting out in 2012 with Lua, with a brief introduction to JavaScript in 2017,
+                            C++ became the language of choice for its efficiency, performance, freedom and
+                            its low level nature. However, Rust is becoming increasingly popular with its
+                            equally impressive performance while being much safer and easier to use.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="body3">
+                <div class="image_container">
+                    <div class="image">
+                        <!-- <img src="images/designer.png" alt="Infinity Labs"> -->
+                    </div>
+                </div>
+                
+                <div class="text_container">
+                    <div class="text">
+                        <header class="body3headline">
+                            Designer
+                        </header>
+                        <p class="body3paragraph">
+                            A secondary outlet for creativity - web design lead to the creation of this website.
+                            Everything here was written entirely using HTML and CSS with the exception of the
+                            hamburger icon for mobile devices which means it's extremely fast and compatible
+                            across all browsers. Mockups for the Andromeda game can be found on the design page.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="social">
+                <div class="social_container">
+                    <a class="youtube" href="https://www.youtube.com/infinitylabstech"></a>
+                    <a class="instagram" href="https://www.instagram.com/infinitylabstech"></a>
+                    <a class="twitter" href="https://www.twitter.com/infinitylabtech"></a>
+                    <a class="github" href="https://www.github.com/vanalk"></a>
+                </div>
+            </div>
+            <div class="copyright">Written by me in HTML and CSS. v19</div>
+        </footer>
+    </body>
+</html>

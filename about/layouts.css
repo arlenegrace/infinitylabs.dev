@@ -1,0 +1,128 @@
+@media screen and (max-width: 1300px) {
+    .enthusiast_wrapper {
+        width: auto;
+    }
+    .enthusiast_wrapper h1 {
+        font-size: 46px;
+    }
+    .enthusiast_wrapper p {
+        max-width: auto;
+        padding-left: 80px;
+        padding-right: 80px;
+        font-size: 18px;
+    }
+    .aboutme .container {
+        width: 80%;
+        padding: 100px 30px;
+    }
+    .portrait {
+        width: 35vw;
+    }
+    .biography {
+        width: auto;
+    }
+    .biography h1 {
+        font-size: 46px;
+    }
+    .biography p {
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 950px) {
+    .enthusiast_wrapper {
+        padding-top: 125px;
+        padding-bottom: 200px;
+    }
+    .enthusiast_wrapper h1 {
+        font-size: 42px;
+    }
+    .enthusiast_wrapper p {
+        font-size: 18px;
+        margin-top: 30px;
+        padding-bottom: 40px;
+    }
+    .aboutme .container {
+        padding: 20px 20px;
+        display: inline-block;
+    }
+    .portrait_wrapper .portrait {
+        width: 100%;
+        padding-bottom: 40px;
+    }
+    .biography {
+        padding-left: 0px;
+    }
+    .biography h1 {
+        font-size: 36px;
+        text-align: left;
+    }
+    .biography p {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .aboutme {
+        padding-bottom: 70px;
+    }
+    .enthusiast_wrapper p {
+        padding-left: 4vw;
+        padding-right: 4vw;
+    }
+    .portrait {
+        padding-bottom: 50px;
+    }
+    .biography h1 {
+        font-size: 46px;
+    }
+
+    .footer {
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 600px) { /* PHONE LAYOUT*/
+    .aboutme {
+        padding-bottom: 40px;
+    }
+    .enthusiast_wrapper {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .enthusiast_wrapper h1 {
+        font-size: 36px;
+    }
+    .enthusiast_wrapper p {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-top: 20px;
+    }
+    .aboutme .container {
+        width: auto;
+        padding: 15px 15px;
+
+        margin-top: -50px;
+        margin-right: 15px;
+        margin-left: 15px;
+    
+        display: inline-block;
+    }
+    .portrait_wrapper .portrait {
+        width: 100%;
+        padding-bottom: 40px;
+    }
+    .biography {
+        padding-left: 0px;
+    }
+    .biography h1 {
+        font-size: 32px;
+    }
+    .biography p {
+        margin-top: 10px;
+    }
+
+    .footer {
+        margin-top: 30px;
+    }
+}
