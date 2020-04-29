@@ -23,7 +23,7 @@ The CSS styling for the nav bar and footer are located in `static.css` which is 
 
 To add more images to the `gallery` page, simply open up the `index.html` file and copy and paste the `image_container` div.
 
-The `404` page requires styling to be inline in the .HTML file, otherwise accessing an invalid subdirectory will not fetch the .CSS files, only the .HTML file.
+The `404` page requires styling to be inlined in the .html file, otherwise accessing an invalid subdirectory will not fetch the .css files, only the .html file.
 
 
 ## License
