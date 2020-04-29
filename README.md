@@ -7,8 +7,8 @@ Free to use template for creating a responsive static personal portfolio website
 
 ## Features
 - **Easy to use**: Everything is given a descriptive name, CSS files are split into separate files for readability, and comments for added clarity.
-- **Responsive**: Dynaically changes layout based on resolution and screen size.
-- **Dark theme**: Dynamically switches between light and dark theme based on OS setting.
+- **Responsive**: Dynamically changes layout based on resolution and screen size.
+- **Dark theme**: Automatically switches between light and dark theme based on OS setting.
 - **Modern design**: Built with a flat, modern design with smooth animations when hovering over certain elements.
 
 
