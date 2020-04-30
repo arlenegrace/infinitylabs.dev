@@ -10,7 +10,6 @@
         color: rgb(98, 98, 98);
     }
     .landing .landing_icon_container  span:hover h1{
-        transition-duration: 0.5s;
         color: #e6c7a4;
     }
 
@@ -69,7 +68,6 @@
         color: #d6d6d6;
     }
     .landing .landing_icon_container  span:hover h1{
-        transition-duration: 0.5s;
         color: #f0d5b6;
     }
 
