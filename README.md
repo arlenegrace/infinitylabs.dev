@@ -21,12 +21,15 @@ To add more images to the `gallery` page, simply open up the `index.html` file a
 
 The `404` page requires styling to be inlined in the .html file, otherwise accessing an invalid subdirectory will not fetch the .css files, only the .html file.
 
+Different browsers will set different default values to HTML elements. The `reset.css` file is used to set all elements to the same value for consistency across browsers. 
+
 ## To do
 
 - Clean up duplicate CSS in `layouts.css`.
 - Make Social/Contact page.
 - Fix one way transitions.
 - More themes (requires js).
+- Merge reset.css with static.css
 
 
 ## Preview
