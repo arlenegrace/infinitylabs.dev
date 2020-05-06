@@ -6,7 +6,7 @@ Free to use template for creating a responsive static personal portfolio website
 
 
 ## Features
-- **Easy to use**: Everything is given a descriptive name, CSS is split into separate files for modularity and maintainability, comments for added clarity and readability, and the entire landing page is written in less than 160 lines of HTML. This website was written with readability and maintainability in mind.
+- **Easy to use**: Everything is given a descriptive name, CSS is split into separate files for modularity and maintainability, comments for added clarity and readability, and the entire landing page is written in less than 160 lines of HTML.
 - **Responsive**: Automatically changes layout based on resolution and screen size, and dynamically switches between light and dark theme based on OS setting.
 - **Dark theme**: Designed with aesthetics and readability in mind - the gray on gray color scheme is easier on the eyes and better combats black smearing on OLED displays compared to a pure black background.
 - **Modern design**: Built with a flat, modern design with smooth opening transitions and animations when hovering over certain elements.
