@@ -23,14 +23,6 @@ The `404` page requires styling to be inlined in the .html file, otherwise acces
 
 Different browsers will set different default values to HTML elements. The `reset.css` file is used to set all elements to the same value for consistency across browsers. 
 
-## To do
-
-- Clean up duplicate CSS in `layouts.css`.
-- Make Social/Contact page.
-- Fix one way transitions.
-- More themes (requires js).
-- Merge reset.css with static.css
-
 
 ## Preview
 For a live preview, visit https://infinitylabs.dev
