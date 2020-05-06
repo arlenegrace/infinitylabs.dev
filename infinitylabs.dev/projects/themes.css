@@ -4,27 +4,28 @@
     }
     
     .portfolio_header_wrapper  h1 {
-        color: #f0d5b6;
+        color: #313131;
     }
     .portfolio_header_wrapper  p {
         color: rgb(230, 230, 230);
     }
     
-    .portfolio {
-        background-color: rgb(245, 245, 245);
+    .portfolio .collage_container .project_container_1,
+    .portfolio .collage_container .project_container_top,
+    .portfolio .collage_container .project_container_bottom {
+        background-color: rgb(243, 243, 243);
     }
-    .portfolio .container {
-        background-color: #ffffff;
-        box-shadow: 0px 0px 55px rgba(12, 12, 12, 0.2)
+    .portfolio .collage_container h1 {
+        color: #313131;
     }
-    .biography h1 {
-        color: #333333;
+    .portfolio .collage_container p {
+        color: #414141;
     }
-    .biography p {
-        color: rgb(93, 93, 93);
+    .portfolio .collage_container .button_link {
+        background-color: #dfdfdf;
     }
-    .footer {
-        background-color: rgb(245, 245, 245);
+    .portfolio .collage_container a {
+        color: #252525;
     }
 }
 
@@ -36,6 +37,7 @@
     .center_header {
         background-color: rgb(33, 35, 41);
     }
+
     .portfolio .collage_container  {
         background-color: rgb(41, 46, 54);
     }
@@ -46,11 +48,22 @@
         color: rgb(230, 230, 230);
     }
 
-    .portfolio .collage_container .project_container_1, .project_container_top, .project_container_bottom {
+    .portfolio .collage_container .project_container_1,
+    .portfolio .collage_container .project_container_top,
+    .portfolio .collage_container .project_container_bottom {
         background-color: rgb(51, 57, 64);
     }
-    .portfolio .collage_container .project_container_1 .project_image {
-        background-color: rgb(75, 75, 75);
+    .portfolio .collage_container h1 {
+        color: #dfdfdf;
+    }
+    .portfolio .collage_container p {
+        color: #cacaca;
+    }
+    .portfolio .collage_container .button_link {
+        background-color: #dfdfdf;
+    }
+    .portfolio .collage_container a {
+        color: #252525;
     }
 
     .footer {

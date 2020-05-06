@@ -11,22 +11,6 @@
         padding-right: 80px;
         font-size: 18px;
     }
-    .portfolio .container {
-        width: 80%;
-        padding: 100px 30px;
-    }
-    .portrait {
-        width: 35vw;
-    }
-    .biography {
-        width: auto;
-    }
-    .biography h1 {
-        font-size: 46px;
-    }
-    .biography p {
-        font-size: 18px;
-    }
 }
 @media screen and (max-width: 950px) {
     .portfolio_header_wrapper  {
@@ -41,54 +25,42 @@
         margin-top: 30px;
         padding-bottom: 40px;
     }
-    .portfolio .container {
-        padding: 20px 20px;
-        display: inline-block;
-    }
-    .portrait_wrapper .portrait {
-        width: 100%;
-        padding-bottom: 40px;
-    }
-    .biography {
-        padding-left: 0px;
-    }
-    .biography h1 {
-        font-size: 36px;
-        text-align: left;
-    }
-    .biography p {
-        font-size: 18px;
-        margin-top: 10px;
-    }
 }
 
 @media screen and (max-width: 750px) {
-    .portfolio {
-        padding-bottom: 70px;
-    }
     .portfolio_header_wrapper  p {
         padding-left: 4vw;
         padding-right: 4vw;
     }
-    .portrait {
-        padding-bottom: 50px;
+    .portfolio .collage_container .collage_square {
+        display: block;
     }
-    .biography h1 {
-        font-size: 46px;
+    .portfolio .collage_container .project_column_left {
+        width: 100%;
+        margin-right: 0px;
+        margin-bottom: 30px;
+    }
+    .portfolio .collage_container .project_column_right {
+        width: 100%;
+        margin-left: 0px;
+    }
+    .portfolio .collage_container .project_container_1 .project_image_wrapper,
+    .portfolio .collage_container .project_column_left .project_container_top .project_image_wrapper,
+    .portfolio .collage_container .project_column_right .project_container_bottom .project_image_wrapper,
+    .portfolio .collage_container .project_column_left .project_container_bottom .project_image_wrapper,
+    .portfolio .collage_container .project_column_right .project_container_top .project_image_wrapper {
+        height: 280px;
     }
 
-    .footer {
-        margin-top: 30px;
+    .portfolio .collage_container .project_text_container {
+        padding: 20px 20px;
     }
 }
 
-@media screen and (max-width: 600px) { /* PHONE LAYOUT*/
-    .portfolio {
-        padding-bottom: 40px;
-    }
+@media screen and (max-width: 600px) {
     .portfolio_header_wrapper  {
-        padding-top: 60px;
-        padding-bottom: 60px;
+        padding-top: 40px;
+        padding-bottom: 130px;
     }
     .portfolio_header_wrapper  h1 {
         font-size: 36px;
@@ -102,27 +74,8 @@
         width: auto;
         padding: 15px 15px;
 
-        margin-top: -50px;
-        margin-right: 15px;
-        margin-left: 15px;
+        margin-top: -80px;
     
         display: inline-block;
-    }
-    .portrait_wrapper .portrait {
-        width: 100%;
-        padding-bottom: 40px;
-    }
-    .biography {
-        padding-left: 0px;
-    }
-    .biography h1 {
-        font-size: 32px;
-    }
-    .biography p {
-        margin-top: 10px;
-    }
-
-    .footer {
-        margin-top: 30px;
     }
 }

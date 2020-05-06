@@ -40,17 +40,20 @@
     align-items: center;
 }
 .portfolio .container {
-    width: 1200px;
+    width: auto;
+    max-width: 1260px;
     margin: 0 auto;
     margin-top: -100px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
-/* BIG PROJECT PROPERTIES */
+/* MAIN PROJECT PROPERTIES */
 .portfolio .collage_container .project_container_1 {
     width: 100%;
 }
 .portfolio .collage_container .project_container_1 .project_image_wrapper {
-    height: 560px;
+    height: 500px;
 }
 
 /* SHARED PROPERTIES */
@@ -59,16 +62,16 @@
 }
 .portfolio .collage_container .project_column_left {
     width: 50%;
-    margin-right: 10px;
+    margin-right: 15px;
 }
 .portfolio .collage_container .project_column_right {
     width: 50%;
-    margin-left: 10px;
+    margin-left: 15px;
 }
 .portfolio .collage_container .project_container_1,
 .portfolio .collage_container .project_column_left .project_container_top,
 .portfolio .collage_container .project_column_right .project_container_top {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 .portfolio .collage_container .project_container_1 .project_image_wrapper,
 .portfolio .collage_container .project_image_wrapper {
@@ -96,7 +99,7 @@
 .portfolio .collage_container .project_text_container {
     font-family: 'Open Sans', sans-serif;
     text-align: left;
-    padding: 15px 30px;
+    padding: 30px 30px;
 }
 .portfolio .collage_container h1 {
     font-size: 26px;
@@ -104,15 +107,13 @@
     line-height: 1.1;
     letter-spacing: 0.03em;
     margin-bottom: 10px;
-    color: #dfdfdf;
 }
 .portfolio .collage_container p {
     font-size: 16px;
     font-weight: 400;
     line-height: 1.55;
     letter-spacing: 0.035em;
-    margin-bottom: 20px;
-    color: #cacaca;
+    margin-bottom: 30px;
 }
 .portfolio .collage_container .button_container {
     display: flex;
@@ -120,9 +121,8 @@
 .portfolio .collage_container .button_link {
     font-size: 20px;
     font-weight: 700;
-    margin-right: 5px;
+    margin-right: 10px;
     padding: 8px 24px;
-    background-color: #dfdfdf;
     text-decoration: none;
     transition: all 0.3s;
     text-align: center;
@@ -130,14 +130,20 @@
 }
 .portfolio .collage_container a {
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 600;
     margin: auto auto;
     text-decoration: none;
-    color: #252525;
 }
 
 /* MOUSE HOVER-OVER ANIMATIONS */
-.portfolio .collage_container .project_preview:hover {
+.portfolio .collage_container .project_container_1,
+.portfolio .collage_container .project_column_left .project_container_top,
+.portfolio .collage_container .project_column_left .project_container_bottom,
+.portfolio .collage_container .project_column_right .project_container_top,
+.portfolio .collage_container .project_column_right .project_container_bottom {
+    transition: all 0.5s;
+}
+.portfolio .collage_container .button_link:hover {
     -webkit-transform: translateY(-3px);
     transform: translateY(-3px);
 }
@@ -148,24 +154,17 @@
 .portfolio .collage_container .project_column_right .project_container_bottom:hover .project_image {
     transform: scale(1.05);
 }
-.portfolio .collage_container .project_container_1,
-.portfolio .collage_container .project_column_left .project_container_top,
-.portfolio .collage_container .project_column_left .project_container_bottom,
-.portfolio .collage_container .project_column_right .project_container_top,
-.portfolio .collage_container .project_column_right .project_container_bottom {
-    transition: all 0.5s;
-}
 .portfolio .collage_container .project_container_1:hover,
 .portfolio .collage_container .project_column_left .project_container_top:hover,
 .portfolio .collage_container .project_column_left .project_container_bottom:hover,
 .portfolio .collage_container .project_column_right .project_container_top:hover,
 .portfolio .collage_container .project_column_right .project_container_bottom:hover {
-    box-shadow: 0px 10px 22px rgba(12, 12, 12, 0.3);
+    box-shadow: 0px 10px 22px rgba(12, 12, 12, 0.2);
 }
 
 /* PROJECT IMAGES */
 .portfolio .collage_container .project_container_1 .project_image {
-    background-image: url("../images/dark_hhkb.jpg");
+    background-image: url("../images/mordred.jpg");
 }
 .portfolio .collage_container .project_column_left .project_container_top .project_image {
     background-image: url("../images/Andromeda_main_menu.jpg");
