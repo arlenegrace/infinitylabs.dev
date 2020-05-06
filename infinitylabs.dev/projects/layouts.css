@@ -1,0 +1,128 @@
+@media screen and (max-width: 1300px) {
+    .portfolio_header_wrapper  {
+        width: auto;
+    }
+    .portfolio_header_wrapper  h1 {
+        font-size: 46px;
+    }
+    .portfolio_header_wrapper  p {
+        max-width: auto;
+        padding-left: 80px;
+        padding-right: 80px;
+        font-size: 18px;
+    }
+    .portfolio .container {
+        width: 80%;
+        padding: 100px 30px;
+    }
+    .portrait {
+        width: 35vw;
+    }
+    .biography {
+        width: auto;
+    }
+    .biography h1 {
+        font-size: 46px;
+    }
+    .biography p {
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 950px) {
+    .portfolio_header_wrapper  {
+        padding-top: 125px;
+        padding-bottom: 200px;
+    }
+    .portfolio_header_wrapper  h1 {
+        font-size: 42px;
+    }
+    .portfolio_header_wrapper  p {
+        font-size: 18px;
+        margin-top: 30px;
+        padding-bottom: 40px;
+    }
+    .portfolio .container {
+        padding: 20px 20px;
+        display: inline-block;
+    }
+    .portrait_wrapper .portrait {
+        width: 100%;
+        padding-bottom: 40px;
+    }
+    .biography {
+        padding-left: 0px;
+    }
+    .biography h1 {
+        font-size: 36px;
+        text-align: left;
+    }
+    .biography p {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .portfolio {
+        padding-bottom: 70px;
+    }
+    .portfolio_header_wrapper  p {
+        padding-left: 4vw;
+        padding-right: 4vw;
+    }
+    .portrait {
+        padding-bottom: 50px;
+    }
+    .biography h1 {
+        font-size: 46px;
+    }
+
+    .footer {
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 600px) { /* PHONE LAYOUT*/
+    .portfolio {
+        padding-bottom: 40px;
+    }
+    .portfolio_header_wrapper  {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .portfolio_header_wrapper  h1 {
+        font-size: 36px;
+    }
+    .portfolio_header_wrapper  p {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-top: 20px;
+    }
+    .portfolio .container {
+        width: auto;
+        padding: 15px 15px;
+
+        margin-top: -50px;
+        margin-right: 15px;
+        margin-left: 15px;
+    
+        display: inline-block;
+    }
+    .portrait_wrapper .portrait {
+        width: 100%;
+        padding-bottom: 40px;
+    }
+    .biography {
+        padding-left: 0px;
+    }
+    .biography h1 {
+        font-size: 32px;
+    }
+    .biography p {
+        margin-top: 10px;
+    }
+
+    .footer {
+        margin-top: 30px;
+    }
+}

@@ -1,0 +1,59 @@
+@media screen and (prefers-color-scheme: light) {
+    body {
+        background-color: #ffffff;
+    }
+    
+    .portfolio_header_wrapper  h1 {
+        color: #f0d5b6;
+    }
+    .portfolio_header_wrapper  p {
+        color: rgb(230, 230, 230);
+    }
+    
+    .portfolio {
+        background-color: rgb(245, 245, 245);
+    }
+    .portfolio .container {
+        background-color: #ffffff;
+        box-shadow: 0px 0px 55px rgba(12, 12, 12, 0.2)
+    }
+    .biography h1 {
+        color: #333333;
+    }
+    .biography p {
+        color: rgb(93, 93, 93);
+    }
+    .footer {
+        background-color: rgb(245, 245, 245);
+    }
+}
+
+@media screen and (prefers-color-scheme: dark) {
+    body {
+        background-color: rgb(33, 35, 41);
+    }
+
+    .center_header {
+        background-color: rgb(33, 35, 41);
+    }
+    .portfolio .collage_container  {
+        background-color: rgb(41, 46, 54);
+    }
+    .portfolio_header_wrapper  h1 {
+        color: #f0d5b6;
+    }
+    .portfolio_header_wrapper  p {
+        color: rgb(230, 230, 230);
+    }
+
+    .portfolio .collage_container .project_container_1, .project_container_top, .project_container_bottom {
+        background-color: rgb(51, 57, 64);
+    }
+    .portfolio .collage_container .project_container_1 .project_image {
+        background-color: rgb(75, 75, 75);
+    }
+
+    .footer {
+        background-color: rgb(41, 46, 54);
+    }
+}

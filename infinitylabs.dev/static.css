@@ -8,14 +8,12 @@
     overflow-y: hidden;
     transition: 0.5s;
 }
-/* Position the content inside the overlay */
 .dropdown_links {
     position: relative;
     top: 25%;
     width: 100%;
     margin-top: 30px;
 }
-/* The navigation links inside the overlay */
 .dropdown_links a {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
@@ -229,7 +227,6 @@
     margin: 0 auto;
 }
 
-/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
 @media screen and (max-height: 450px) {
     .dropdown_menu {
         overflow-y: auto;
@@ -272,6 +269,7 @@
         width: auto;
     }
 }
+
 @media screen and (max-width: 1000px) {
     .nav_bar {
         padding-left: 3vw;
