@@ -2,6 +2,10 @@
     body {
         background-color: #ffffff;
     }
+
+    .dropdown_menu {
+        background-color: #ffffff;
+    }
     
     .portfolio_header_wrapper  h1 {
         color: #313131;
@@ -31,6 +35,10 @@
 
 @media screen and (prefers-color-scheme: dark) {
     body {
+        background-color: rgb(33, 35, 41);
+    }
+
+    .dropdown_menu {
         background-color: rgb(33, 35, 41);
     }
 

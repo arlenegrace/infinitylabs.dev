@@ -1,5 +1,4 @@
 .image_showcase {
-    padding-top: 80px;
     padding-left: 5vw;
     padding-right: 5vw;
     margin: 0 auto;
@@ -15,8 +14,9 @@
     font-size: 46px;
     font-weight: 700;
     text-align: center;
+    letter-spacing: 0.03em;
     text-transform: uppercase;
-    padding-top: 75px;
+    padding-top: 155px;
     padding-bottom: 80px;
 }
 .image_showcase .collage .collage_wrapper {
@@ -26,6 +26,7 @@
 }
 .image_showcase .collage_wrapper .image_container {
     width: 100%;
+    max-width: 90vw;
     height: 100%;
     overflow: hidden;
     font-size: 0;
