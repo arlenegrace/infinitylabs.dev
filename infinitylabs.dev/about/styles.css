@@ -12,7 +12,8 @@
     padding-bottom: 300px;
     margin: 0 auto;
 }
-.enthusiast_wrapper h1, .enthusiast_wrapper p {
+.enthusiast_wrapper h1,
+.enthusiast_wrapper p {
     font-family: 'Open Sans', sans-serif;
 }
 .enthusiast_wrapper h1 {
@@ -60,7 +61,8 @@
 .biography {
     padding-left: 50px;
 }
-.biography h1, .biography p {
+.biography h1,
+.biography p {
     font-family: 'Open Sans', sans-serif;
 }
 .biography h1 {

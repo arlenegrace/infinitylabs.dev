@@ -8,7 +8,8 @@
     padding-bottom: 100px;
     margin: 0 auto;
 }
-.landing .landing_container h1, .landing .landing_container p {
+.landing .landing_container h1,
+.landing .landing_container p {
     font-family: 'Open Sans', sans-serif;
     text-align: center;
 }
@@ -61,7 +62,9 @@
     padding-top: 20px;
     padding-bottom: 20px;
 }
-.body1:hover .text_container .text, .body2:hover .text_container .text, .body3:hover .text_container .text {
+.body1:hover .text_container .text,
+.body2:hover .text_container .text,
+.body3:hover .text_container .text {
     margin-top: -10px;
 }
 .body1 {
@@ -114,7 +117,8 @@
 .body1:hover .image_container .image {
     transform: scale(1.1);
 }
-.body1 .body1headline, .body1 .body1paragraph {
+.body1 .body1headline,
+.body1 .body1paragraph {
     font-family: 'Open Sans', sans-serif;
     position: relative;
     z-index: 2;
@@ -206,7 +210,8 @@
     transform: scale(1.1);
     transition: all .5s;
 }
-.body2 .body2headline, .body2 .body2paragraph {
+.body2 .body2headline,
+.body2 .body2paragraph {
     font-family: 'Open Sans', sans-serif;
     position: relative;
     z-index: 2;
@@ -298,7 +303,8 @@
     -o-transition: all .5s;
     transition: all .5s;
 }
-.body3 .body3headline, .body3 .body3paragraph {
+.body3 .body3headline,
+.body3 .body3paragraph {
     font-family: 'Open Sans', sans-serif;
     position: relative;
     z-index: 2;

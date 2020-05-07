@@ -79,6 +79,9 @@
     
         display: inline-block;
     }
+    .portfolio .collage_container  {
+        padding-bottom: 70px;
+    }
     .portfolio .collage_container .project_container_1 .project_image_wrapper,
     .portfolio .collage_container .project_column_left .project_container_top .project_image_wrapper,
     .portfolio .collage_container .project_column_right .project_container_bottom .project_image_wrapper,

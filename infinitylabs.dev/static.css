@@ -74,7 +74,8 @@
 .right_header div {
     margin-left: 25px;
 }
-.left_header a, .right_header a {
+.left_header a,
+.right_header a {
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     font-size: 17px;
@@ -182,7 +183,11 @@
     margin-left: auto;
     text-align: right;
 }
-.youtube, .instagram, .twitter, .discord, .github {
+.youtube,
+.instagram,
+.twitter,
+.discord,
+.github {
     margin-left: 15px;
     width: 30px;
     height: 30px;
@@ -285,7 +290,8 @@
     .right_header div {
         margin-left: 25px;
     }
-    .left_header a, .right_header a {
+    .left_header a,
+    .right_header a {
         font-size: 16px;
     }
     .center_header a {
@@ -330,7 +336,8 @@
         width: 125px;
         height: 87px;
     }
-    .left_header a, .right_header a {
+    .left_header a,
+    .right_header a {
         font-size: 14px;
     }
     .center_header a {
@@ -368,21 +375,26 @@
         color: rgb(109, 109, 109);
     }
     /* When you mouse over the navigation links, change their color */
-    .dropdown_links a:hover, .dropdown_menu a:focus {
+    .dropdown_links a:hover,
+    .dropdown_menu a:focus {
         color: #424242;
         transition-duration: 0.5s;
     }
-    .bar1, .bar2, .bar3 {
+    .bar1,
+    .bar2,
+    .bar3 {
         background-color: rgb(109, 109, 109);
     }
 
-    .left_header a, .right_header a {
+    .left_header a,
+    .right_header a {
         color: rgb(139, 139, 139);
     }
     .left_header .current {
         color: #424242;
     }
-    .left_header a:hover, .right_header a:hover {
+    .left_header a:hover,
+    .right_header a:hover {
         color: #2f2f2f;
         transition-duration: 0.5s;
     }
@@ -399,9 +411,6 @@
     .copyright {
         color: #c5c5c5;
     }
-    .social_container {
-        background-color: rgb(119, 119, 119);
-    }
 }
 
 @media screen and (prefers-color-scheme: dark) {
@@ -412,21 +421,26 @@
         color: rgb(179, 179, 179);
     }
     /* When you mouse over the navigation links, change their color */
-    .dropdown_links a:hover, .dropdown_menu a:focus {
+    .dropdown_links a:hover,
+    .dropdown_menu a:focus {
         color: #ffeccf;
         transition-duration: 0.5s;
     }
-    .bar1, .bar2, .bar3 {
+    .bar1,
+    .bar2,
+    .bar3 {
         background-color: #f0d5b6;
     }
 
-    .left_header a, .right_header a {
+    .left_header a,
+    .right_header a {
         color: rgb(179, 179, 179);
     }
     .left_header .current {
         color: #f0d5b6;
     }
-    .left_header a:hover, .right_header a:hover {
+    .left_header a:hover,
+    .right_header a:hover {
         color: #ffeccf;
         transition-duration: 0.5s;
     }
