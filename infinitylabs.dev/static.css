@@ -305,6 +305,9 @@
         font-size: 20px
     }
 
+    .nav_bar {
+        padding-top: 0px;
+    }
     .nav_bar .hamburger {
         position: absolute;
         display: block;
@@ -377,10 +380,10 @@
         color: rgb(139, 139, 139);
     }
     .left_header .current {
-        color: #e6c7a4;
+        color: #424242;
     }
     .left_header a:hover, .right_header a:hover {
-        color: #424242;
+        color: #2f2f2f;
         transition-duration: 0.5s;
     }
     .center_header {
@@ -395,6 +398,9 @@
 
     .copyright {
         color: #c5c5c5;
+    }
+    .social_container {
+        background-color: rgb(119, 119, 119);
     }
 }
 

@@ -5,9 +5,12 @@
     background-size: cover;
 }
 .portfolio_header_wrapper  {
-    width: 1200px;
+    width: auto;
+    max-width: 1260px;
     padding-top: 100px;
     padding-bottom: 200px;
+    padding-left: 30px;
+    padding-right: 30px;
     margin: 0 auto;
 }
 .portfolio_header_wrapper  h1, .portfolio_header_wrapper  p {
