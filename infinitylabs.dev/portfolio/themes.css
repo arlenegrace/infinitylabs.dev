@@ -1,3 +1,4 @@
+/* 
 @media screen and (prefers-color-scheme: light) {
     body {
         background-color: #ffffff;
@@ -32,49 +33,70 @@
         color: #252525;
     }
 }
+ */
+body {
+    background-color: #e8c4b8;
+}
 
-@media screen and (prefers-color-scheme: dark) {
-    body {
-        background-color: rgb(33, 35, 41);
-    }
+.dropdown_menu {
+    background-color: #e8c4b8;
+}
+.dropdown_links a {
+    color: rgb(95, 95, 95);
+}
 
-    .dropdown_menu {
-        background-color: rgb(33, 35, 41);
-    }
+.center_header {
+    background-color: #e8c4b8;
+}
+.left_header a,
+.right_header a {
+    color: rgb(121, 121, 121);
+}
+.nav_bar .current {
+    color: rgb(83, 83, 83);
+}
+.left_header a:hover,
+.right_header a:hover {
+    color: #ffffff;
+}
+.center_header a {
+    color: #292929;
+}
+.center_header .header_logo figure {
+    background-image: url("../images/logo_dark.png");
+}
 
-    .center_header {
-        background-color: rgb(33, 35, 41);
-    }
+.portfolio .collage_container  {
+    background-color: #353232;
+}
+.portfolio_header_wrapper  h1 {
+    color: #333;
+}
+.portfolio_header_wrapper  p {
+    color: rgb(230, 230, 230);
+}
 
-    .portfolio .collage_container  {
-        background-color: rgb(41, 46, 54);
-    }
-    .portfolio_header_wrapper  h1 {
-        color: #f0d5b6;
-    }
-    .portfolio_header_wrapper  p {
-        color: rgb(230, 230, 230);
-    }
+.portfolio .collage_container .project_container_1,
+.portfolio .collage_container .project_container_top,
+.portfolio .collage_container .project_container_bottom {
+    background-color: rgb(71, 71, 71);
+}
+.portfolio .collage_container h1 {
+    color: #e8c4b8;
+}
+.portfolio .collage_container p {
+    color: #f0f0f0;
+}
+.portfolio .collage_container .button_link {
+    background-color: #f0f0f0;
+}
+.portfolio .collage_container a {
+    color: #333;
+}
 
-    .portfolio .collage_container .project_container_1,
-    .portfolio .collage_container .project_container_top,
-    .portfolio .collage_container .project_container_bottom {
-        background-color: rgb(51, 57, 64);
-    }
-    .portfolio .collage_container h1 {
-        color: #dfdfdf;
-    }
-    .portfolio .collage_container p {
-        color: #cacaca;
-    }
-    .portfolio .collage_container .button_link {
-        background-color: #dfdfdf;
-    }
-    .portfolio .collage_container a {
-        color: #252525;
-    }
-
-    .footer {
-        background-color: rgb(41, 46, 54);
-    }
+.footer {
+    background-color: #353232;
+}
+.copyright {
+    color: #4b4747;
 }

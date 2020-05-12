@@ -150,6 +150,7 @@
 .portfolio .collage_container .button_link:hover {
     -webkit-transform: translateY(-3px);
     transform: translateY(-3px);
+    box-shadow: 0px 10px 22px rgba(12, 12, 12, 0.2);
 }
 .portfolio .collage_container .project_container_1:hover .project_image,
 .portfolio .collage_container .project_column_left .project_container_top:hover .project_image,
@@ -168,17 +169,17 @@
 
 /* PROJECT IMAGES */
 .portfolio .collage_container .project_container_1 .project_image {
-    background-image: url("../images/mordred.jpg");
+    background-image: url("../images/burgundy.jpeg");
 }
 .portfolio .collage_container .project_column_left .project_container_top .project_image {
-    background-image: url("../images/Andromeda_main_menu.jpg");
+    background-image: url("../images/burgundy.jpeg");
 }
 .portfolio .collage_container .project_column_left .project_container_bottom .project_image {
-    background-image: url("../images/w.png");
+    background-image: url("../images/burgundy.jpeg");
 }
 .portfolio .collage_container .project_column_right .project_container_top .project_image {
-    background-image: url("../images/scarletw.jpg");
+    background-image: url("../images/burgundy.jpeg");
 }
 .portfolio .collage_container .project_column_right .project_container_bottom .project_image {
-    background-image: url("../images/w.jpg");
+    background-image: url("../images/burgundy.jpeg");
 }
