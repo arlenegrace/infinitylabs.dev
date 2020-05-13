@@ -44,16 +44,21 @@ body {
 .dropdown_links a {
     color: rgb(95, 95, 95);
 }
+.bar1,
+.bar2,
+.bar3 {
+    background-color: #333;
+}
 
 .center_header {
     background-color: #e8c4b8;
 }
 .left_header a,
 .right_header a {
-    color: rgb(121, 121, 121);
+    color: rgb(107, 107, 107);
 }
 .nav_bar .current {
-    color: rgb(83, 83, 83);
+    color: rgb(71, 71, 71);
 }
 .left_header a:hover,
 .right_header a:hover {
@@ -79,7 +84,7 @@ body {
 .portfolio .collage_container .project_container_1,
 .portfolio .collage_container .project_container_top,
 .portfolio .collage_container .project_container_bottom {
-    background-color: rgb(71, 71, 71);
+    background-color: rgb(80, 80, 80);
 }
 .portfolio .collage_container h1 {
     color: #e8c4b8;
