@@ -58,9 +58,40 @@
     transform: scale(1.03);
 }
 
+.landing .landing_container .creator_container {
+    -webkit-animation: fadein_creator 0.5s;
+    -moz-animation:    fadein_creator 0.5s;
+    -ms-animation:     fadein_creator 0.5s;
+    -o-animation:      fadein_creator 0.5s;
+    animation:         fadein_creator 0.5s;
+}
+.landing .landing_container .developer_container {
+    -webkit-animation: fadein_developer 0.6s;
+    -moz-animation:    fadein_developer 0.6s;
+    -ms-animation:     fadein_developer 0.6s;
+    -o-animation:      fadein_developer 0.6s;
+    animation:         fadein_developer 0.6s;
+}
+.landing .landing_container .designer_container {
+    -webkit-animation: fadein_designer 0.7s;
+    -moz-animation:    fadein_designer 0.7s;
+    -ms-animation:     fadein_designer 0.7s;
+    -o-animation:      fadein_designer 0.7s;
+    animation:         fadein_designer 0.7s;
+}
+
 .work {
     padding-top: 20px;
     padding-bottom: 20px;
+}
+.body1,
+.body2,
+.body3 {
+    -webkit-animation: slide_up 0.5s;
+    -moz-animation:    slide_up 0.5s;
+    -ms-animation:     slide_up 0.5s;
+    -o-animation:      slide_up 0.5s;
+    animation:         slide_up 0.5s;
 }
 .body1:hover .text_container .text,
 .body2:hover .text_container .text,
@@ -123,12 +154,6 @@
     position: relative;
     z-index: 2;
     left: 0px;
-    
-    -webkit-animation: fadein_txt1 1.5s;
-    -moz-animation: fadein_txt1 1.5s;
-    -ms-animation: fadein_txt1 1.5s;
-    -o-animation: fadein_txt1 1.5s;
-    animation: fadein_txt1 1.5s;
 }
 .body1 .body1headline {
     font-size: 48px;
@@ -216,12 +241,6 @@
     position: relative;
     z-index: 2;
     left: 0px;
-    
-    -webkit-animation: fadein_txt1 1.5s;
-    -moz-animation: fadein_txt1 1.5s;
-    -ms-animation: fadein_txt1 1.5s;
-    -o-animation: fadein_txt1 1.5s;
-    animation: fadein_txt1 1.5s;
 }
 .body2 .body2headline {
     font-size: 48px;

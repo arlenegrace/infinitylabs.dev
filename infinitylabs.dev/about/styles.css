@@ -8,8 +8,8 @@
 }
 .enthusiast_wrapper {
     width: 1200px;
-    padding-top: 200px;
-    padding-bottom: 300px;
+    padding-top: 150px;
+    padding-bottom: 240px;
     margin: 0 auto;
 }
 .enthusiast_wrapper h1,
@@ -54,6 +54,12 @@
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+
+    -webkit-animation: slide_up 0.5s;
+    -moz-animation:    slide_up 0.5s;
+    -ms-animation:     slide_up 0.5s;
+    -o-animation:      slide_up 0.5s;
+    animation:         slide_up 0.5s;
 }
 .portrait {
     width: 500px;
