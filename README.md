@@ -26,9 +26,7 @@ Different browsers will set different default values to HTML elements. The `rese
 
 
 ## Preview
-For a live preview, visit https://infinitylabs.dev
-
-![Main page](https://github.com/arlenegrace/infinitylabs.dev/blob/master/images/site.jpg?raw=true)
+For a live preview, visit https://infinitylabs.dev. Be sure to change your system theme to switch between light and dark mode.
 
 
 ## License
