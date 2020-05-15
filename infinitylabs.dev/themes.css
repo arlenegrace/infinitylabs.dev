@@ -1,20 +1,63 @@
 @media screen and (prefers-color-scheme: light) {
     body {
-        background-color: white;
+        background-color: rgb(37, 37, 37);
     }
 
-    .landing .landing_container h1 {
-        color: #333333;
+    /* DARK THEME NAV BAR FOR DARK LANDING DIV */
+    .dropdown_menu {
+        background-color: rgb(37, 37, 37);
+    }
+    .dropdown_links a {
+        color: #fafafa;
+    }
+    /* When you mouse over the navigation links, change their color */
+    .dropdown_links a:hover,
+    .dropdown_menu a:focus {
+        color: #ffeccf;
+    }
+    .bar1,
+    .bar2,
+    .bar3 {
+        background-color: #f0d5b6;
+    }
+
+    .left_header a,
+    .right_header a {
+        color: rgb(179, 179, 179);
+    }
+    .nav_bar .current {
+        color: #f0d5b6;
+    }
+    .left_header a:hover,
+    .right_header a:hover {
+        color: #ffeccf;
+    }
+    .center_header {
+        background-color: rgb(37, 37, 37);
+    }
+    .center_header a {
+        color: #ffffff;
+    }
+    .center_header .header_logo figure {
+        background-image: url("images/logo_white.png");
+    }
+
+    /* LIGHT THEME */
+    .landing .landing_title h1 {
+        color: #ffeccf;
+    }
+    .landing .landing_icon_container  h1 {
+        color: #fafafa;
     }
     .landing .landing_container p {
-        color: rgb(98, 98, 98);
+        color: #fafafa;
     }
     .landing .landing_icon_container  span:hover h1{
-        color: #e6c7a4;
+        color: #ffeccf;
     }
 
     .work {
-        background-color: #fafafa;
+        background-color: #ffffff;
     }
     .body1, .body2, .body3 {
         background-color: #eeeeee;
@@ -22,13 +65,13 @@
     .body1 .text_container .text,
     .body2 .text_container .text,
     .body3 .text_container .text {
-        background-color: #fafafa;
-        box-shadow: 10px 10px 32px rgba(12, 12, 12, 0.267);
+        background-color: #ffffff;
+        box-shadow: 0px 10px 32px rgba(12, 12, 12, 0.267);
     }
     .body1:hover .text_container .text,
     .body2:hover .text_container .text,
     .body3:hover .text_container .text {
-        box-shadow: 10px 10px 32px rgba(12, 12, 12, 0.356);
+        box-shadow: 0px 10px 32px rgba(12, 12, 12, 0.356);
     }
     .body1 .body1headline,
     .body2 .body2headline,
@@ -48,7 +91,7 @@
         color: rgb(98, 98, 98);
     }
     .footer {
-        background-color: #fafafa;
+        background-color: #ffffff;
     }
 }
 
@@ -80,12 +123,12 @@
     .body2 .text_container .text,
     .body3 .text_container .text {
         background-color: #292929;
-        box-shadow: 10px 10px 32px rgba(12, 12, 12, 0.4);
+        box-shadow: 0px 10px 32px rgba(12, 12, 12, 0.4);
     }
     .body1:hover .text_container .text,
     .body2:hover .text_container .text,
     .body3:hover .text_container .text {
-        box-shadow: 10px 10px 32px rgba(12, 12, 12, 0.5);
+        box-shadow: 0px 10px 32px rgba(12, 12, 12, 0.5);
         margin-top: -10px;
     }
     .body1 .body1headline,

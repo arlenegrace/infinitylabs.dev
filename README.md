@@ -1,6 +1,6 @@
 # [infinitylabs.dev](https://www.infinitylabs.dev)
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT) ![W3C validator](https://img.shields.io/w3c-validation/html?targetUrl=https%3A%2F%2Finfinitylabs.dev) ![Repo size](https://img.shields.io/github/repo-size/arlenegrace/infinitylabs.dev)
 
 Free to use template for creating a responsive static personal portfolio website. Built entirely using HTML, CSS and just one JavaScript function making it fast, lightweight and compatible across all browsers.
 
@@ -9,8 +9,9 @@ Free to use template for creating a responsive static personal portfolio website
 - **Easy to use**: Everything is given a descriptive name, CSS is split into separate files for modularity and maintainability, comments for added clarity and readability, and the entire landing page is written in less than 160 lines of HTML.
 - **Responsive**: Automatically changes layout based on resolution and screen size, and dynamically switches between light and dark theme based on OS setting.
 - **Dark theme**: Designed with aesthetics and readability in mind - the gray on gray color scheme is easier on the eyes and better combats black smearing on OLED displays compared to a pure black background.
-- **Modern design**: Built with a flat, modern design with smooth opening transitions and animations when hovering over certain elements.
+- **Modern design**: Built with a minimal modern design with smooth opening transitions and animations when hovering over certain elements.
 - **Modular**: The `static.css` file contains styling shared across multiple pages allowing all pages to be modified at once. This helps maintain consistency and scaling as the number of pages grows and design changes are made in the future.
+
 
 ## Usage
 This repo contains all necessary files except for images which you provide. It is recommended to create a folder named `images` and store all your media there to maintain organization. Each sub-folder is a URL directory that opens to the `index.html` file. For example, the `about` folder would translate to `https://www.infinitylabs.dev/about`.
@@ -21,7 +22,7 @@ To add more images to the `gallery` page, simply open up the `index.html` file a
 
 The `404` page requires styling to be inlined in the .html file, otherwise accessing an invalid subdirectory will not fetch the .css files, only the .html file.
 
-Different browsers will set different default values to HTML elements. The `reset.css` file is used to set all elements to the same value for consistency across browsers. 
+Different browsers will set different default values to HTML elements. The `reset.css` file is used to set all elements to the same value for consistency across browsers.
 
 
 ## Preview

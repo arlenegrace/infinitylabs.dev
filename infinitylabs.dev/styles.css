@@ -135,7 +135,7 @@
     overflow: hidden;
 }
 .body1 .image_container .image {
-    background-image: url("images/scarletw.jpg");
+    background-image: url("images/helium_8K.jpg"); /* https://sobschack.artstation.com/projects/5rD61 */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -221,7 +221,7 @@
     overflow: hidden;
 }
 .body2 .image_container .image {
-    background-image: url("images/one_dark.png");
+    background-image: url("images/one_dark.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -312,7 +312,7 @@
     transition: all .5s;
 }
 .body3 .image_container .image {
-    background-image: url("images/Andromeda_main_menu.jpg");
+    background-image: url("images/designer.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
