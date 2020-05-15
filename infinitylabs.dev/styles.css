@@ -84,6 +84,20 @@
     padding-top: 20px;
     padding-bottom: 20px;
 }
+/* 
+ * To maintain code reusability, all groups are named either .body_left or
+ * .body_right. The only thing that changes is the image used. To distinguish
+ * between different bodies, refer to the "id" with a hash instead of a period.
+ */
+#body_creator .image {
+    background-image: url("images/helium_8K.jpg"); /* https://sobschack.artstation.com/projects/5rD61 */
+}
+#body_developer .image {
+    background-image: url("images/one_dark.jpg");
+}
+#body_designer .image {
+    background-image: url("images/designer.jpg");
+}
 .body_left,
 .body_right,
 .body3 {
@@ -135,7 +149,6 @@
     overflow: hidden;
 }
 .body_left .image_container .image {
-    background-image: url("images/helium_8K.jpg"); /* https://sobschack.artstation.com/projects/5rD61 */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -221,7 +234,6 @@
     overflow: hidden;
 }
 .body_right .image_container .image {
-    background-image: url("images/one_dark.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
