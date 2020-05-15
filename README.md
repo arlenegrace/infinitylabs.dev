@@ -1,6 +1,6 @@
 # [infinitylabs.dev](https://www.infinitylabs.dev)
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT) ![W3C validator](https://img.shields.io/w3c-validation/html?targetUrl=https%3A%2F%2Finfinitylabs.dev) ![Repo size](https://img.shields.io/github/repo-size/arlenegrace/infinitylabs.dev)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT) [![W3C validator](https://img.shields.io/w3c-validation/html?targetUrl=https%3A%2F%2Finfinitylabs.dev)](https://validator.w3.org/nu/?doc=https%3A%2F%2Fwww.infinitylabs.dev%2F) [![Repo size](https://img.shields.io/github/repo-size/arlenegrace/infinitylabs.dev)](https://github.com/arlenegrace/infinitylabs.dev)
 
 Free to use template for creating a responsive static personal portfolio website. Built entirely using HTML, CSS and just one JavaScript function making it fast, lightweight and compatible across all browsers.
 
