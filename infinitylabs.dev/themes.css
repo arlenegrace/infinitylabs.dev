@@ -59,28 +59,24 @@
     .work {
         background-color: #ffffff;
     }
-    .body1, .body2, .body3 {
+    .body_left, .body_right, .body3 {
         background-color: #eeeeee;
     }
-    .body1 .text_container .text,
-    .body2 .text_container .text,
-    .body3 .text_container .text {
+    .body_left .text_container .text,
+    .body_right .text_container .text {
         background-color: #ffffff;
         box-shadow: 0px 10px 32px rgba(12, 12, 12, 0.267);
     }
-    .body1:hover .text_container .text,
-    .body2:hover .text_container .text,
-    .body3:hover .text_container .text {
+    .body_left:hover .text_container .text,
+    .body_right:hover .text_container .text {
         box-shadow: 0px 10px 32px rgba(12, 12, 12, 0.356);
     }
-    .body1 .body1headline,
-    .body2 .body2headline,
-    .body3 .body3headline {
+    .body_left .body_left_headline,
+    .body_right .body_right_headline {
         color: #333333;
     }
-    .body1 .body1paragraph,
-    .body2 .body2paragraph,
-    .body3 .body3paragraph {
+    .body_left .body_left_paragraph,
+    .body_right .body_right_paragraph {
         color: rgb(98, 98, 98);
     }
 
@@ -116,29 +112,26 @@
     .work {
         background-color: #292929;
     }
-    .body1, .body2, .body3 {
+    .body_left,
+    .body_right {
         background-color: #414141;
     }
-    .body1 .text_container .text,
-    .body2 .text_container .text,
-    .body3 .text_container .text {
+    .body_left .text_container .text,
+    .body_right .text_container .text {
         background-color: #292929;
         box-shadow: 0px 10px 32px rgba(12, 12, 12, 0.4);
     }
-    .body1:hover .text_container .text,
-    .body2:hover .text_container .text,
-    .body3:hover .text_container .text {
+    .body_left:hover .text_container .text,
+    .body_right:hover .text_container .text {
         box-shadow: 0px 10px 32px rgba(12, 12, 12, 0.5);
         margin-top: -10px;
     }
-    .body1 .body1headline,
-    .body2 .body2headline,
-    .body3 .body3headline {
+    .body_left .body_left_headline,
+    .body_right .body_right_headline {
         color: #f0d5b6;
     }
-    .body1 .body1paragraph,
-    .body2 .body2paragraph,
-    .body3 .body3paragraph {
+    .body_left .body_left_paragraph,
+    .body_right .body_right_paragraph {
         color: #d6d6d6;
     }
 

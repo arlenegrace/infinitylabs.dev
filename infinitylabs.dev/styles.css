@@ -84,8 +84,8 @@
     padding-top: 20px;
     padding-bottom: 20px;
 }
-.body1,
-.body2,
+.body_left,
+.body_right,
 .body3 {
     -webkit-animation: slide_up 0.5s;
     -moz-animation:    slide_up 0.5s;
@@ -93,12 +93,12 @@
     -o-animation:      slide_up 0.5s;
     animation:         slide_up 0.5s;
 }
-.body1:hover .text_container .text,
-.body2:hover .text_container .text,
+.body_left:hover .text_container .text,
+.body_right:hover .text_container .text,
 .body3:hover .text_container .text {
     margin-top: -10px;
 }
-.body1 {
+.body_left {
     width: 1200px;
     margin: 0 auto;
     margin-top: 100px;
@@ -107,7 +107,7 @@
     display: flex;
     flex-direction: row-reverse;
 }
-.body1 .text_container {
+.body_left .text_container {
     width: 50%;
 
     display: -webkit-box;
@@ -117,7 +117,7 @@
     -ms-flex-align: center;
     align-items: center;
 }
-.body1 .text_container .text {
+.body_left .text_container .text {
     padding: 40px 40px;
     margin-left: 30px;
     margin-right: -30px;
@@ -129,12 +129,12 @@
     -o-transition: all .5s;
     transition: all .5s;
 }
-.body1 .image_container {
+.body_left .image_container {
     width: 50%;
     height: 500px;
     overflow: hidden;
 }
-.body1 .image_container .image {
+.body_left .image_container .image {
     background-image: url("images/helium_8K.jpg"); /* https://sobschack.artstation.com/projects/5rD61 */
     background-position: center;
     background-repeat: no-repeat;
@@ -145,17 +145,17 @@
     -o-transition: all .5s;
     transition: all .5s;
 }
-.body1:hover .image_container .image {
+.body_left:hover .image_container .image {
     transform: scale(1.1);
 }
-.body1 .body1headline,
-.body1 .body1paragraph {
+.body_left .body_left_headline,
+.body_left .body_left_paragraph {
     font-family: 'Open Sans', sans-serif;
     position: relative;
     z-index: 2;
     left: 0px;
 }
-.body1 .body1headline {
+.body_left .body_left_headline {
     font-size: 48px;
     font-weight: 600;
     text-align: left;
@@ -165,7 +165,7 @@
     -o-transition: all .5s;
     transition: all .5s;
 }
-.body1 .body1paragraph {
+.body_left .body_left_paragraph {
     font-size: 19px;
     font-weight: 300;
     line-height: 1.85;
@@ -173,7 +173,7 @@
     text-align: left;
     margin-top: 30px;
 }
-.body1 img {
+.body_left img {
     object-fit: cover;
     object-position: center;
     background-position: center;
@@ -185,7 +185,7 @@
     height: 500px;
 }
 
-.body2 {
+.body_right {
     width: 1200px;
     margin: 0 auto;
     margin-top: 100px;
@@ -194,7 +194,7 @@
     display: flex;
     flex-direction: row;
 }
-.body2 .text_container {
+.body_right .text_container {
     width: 50%;
 
     display: -webkit-box;
@@ -204,7 +204,7 @@
     -ms-flex-align: center;
     align-items: center;
 }
-.body2 .text_container .text {
+.body_right .text_container .text {
     padding: 40px 40px;
     margin-left: -30px;
     margin-right: 30px;
@@ -215,12 +215,12 @@
     -o-transition: all .5s;
     transition: all .5s;
 }
-.body2 .image_container {
+.body_right .image_container {
     width: 50%;
     height: 500px;
     overflow: hidden;
 }
-.body2 .image_container .image {
+.body_right .image_container .image {
     background-image: url("images/one_dark.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -231,18 +231,18 @@
     -o-transition: all .5s;
     transition: all .5s;
 }
-.body2:hover .image_container .image {
+.body_right:hover .image_container .image {
     transform: scale(1.1);
     transition: all .5s;
 }
-.body2 .body2headline,
-.body2 .body2paragraph {
+.body_right .body_right_headline,
+.body_right .body_right_paragraph {
     font-family: 'Open Sans', sans-serif;
     position: relative;
     z-index: 2;
     left: 0px;
 }
-.body2 .body2headline {
+.body_right .body_right_headline {
     font-size: 48px;
     font-weight: 600;
     text-align: left;
@@ -252,7 +252,7 @@
     -o-transition: all .5s;
     transition: all .5s;
 }
-.body2 .body2paragraph {
+.body_right .body_right_paragraph {
     font-size: 19px;
     font-weight: 300;
     line-height: 1.85;
@@ -260,94 +260,7 @@
     text-align: left;
     margin-top: 30px;
 }
-.body2 img {
-    object-fit: cover;
-    object-position: center;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    z-index: 1;
-    max-height: 500px;
-    height: 500px;
-}
-
-.body3 {
-    width: 1200px;
-    margin: 0 auto;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    text-align: center;
-    display: flex;
-    flex-direction: row-reverse;
-}
-.body3 .text_container {
-    width: 50%;
-
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-}
-.body3 .text_container .text {
-    padding: 40px 40px;
-    margin-left: 30px;
-    margin-right: -30px;
-    height: 440px;
-    z-index: 2;
-    -webkit-transition: all .5s;
-    -moz-transition: all .5s;
-    -o-transition: all .5s;
-    transition: all .5s;
-}
-.body3 .image_container {
-    width: 50%;
-    height: 500px;
-    overflow: hidden;
-}
-.body3:hover .image_container .image {
-    transform: scale(1.1);
-    transition: all .5s;
-}
-.body3 .image_container .image {
-    background-image: url("images/designer.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
-    -webkit-transition: all .5s;
-    -moz-transition: all .5s;
-    -o-transition: all .5s;
-    transition: all .5s;
-}
-.body3 .body3headline,
-.body3 .body3paragraph {
-    font-family: 'Open Sans', sans-serif;
-    position: relative;
-    z-index: 2;
-    left: 0px;
-}
-.body3 .body3headline {
-    font-size: 48px;
-    font-weight: 600;
-    text-align: left;
-    line-height: 1.1;
-    -webkit-transition: all .5s;
-    -moz-transition: all .5s;
-    -o-transition: all .5s;
-    transition: all .5s;
-}
-.body3 .body3paragraph {
-    font-size: 19px;
-    font-weight: 300;
-    line-height: 1.85;
-    letter-spacing: 0.02em;
-    text-align: left;
-    margin-top: 30px;
-}
-.body3 img {
+.body_right img {
     object-fit: cover;
     object-position: center;
     background-position: center;
