@@ -62,7 +62,7 @@ body {
 }
 .left_header a:hover,
 .right_header a:hover {
-    color: #ffffff;
+    color: #292929;
 }
 .center_header a {
     color: #292929;
@@ -77,6 +77,9 @@ body {
 .portfolio_header_wrapper  h1 {
     color: #333;
 }
+.portfolio_header_wrapper  h2 {
+    color: rgb(95, 95, 95);
+}
 .portfolio_header_wrapper  p {
     color: rgb(230, 230, 230);
 }
@@ -84,13 +87,13 @@ body {
 .portfolio .collage_container .project_container_1,
 .portfolio .collage_container .project_container_top,
 .portfolio .collage_container .project_container_bottom {
-    background-color: rgb(80, 80, 80);
+    background-color: #2a2828;
 }
 .portfolio .collage_container h1 {
-    color: #e8c4b8;
+    color: rgb(156, 156, 156);
 }
 .portfolio .collage_container p {
-    color: #f0f0f0;
+    color: rgb(221, 221, 221);
 }
 .portfolio .collage_container .button_link {
     background-color: #f0f0f0;
