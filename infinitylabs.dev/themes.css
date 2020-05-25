@@ -59,13 +59,13 @@
     .work {
         background-color: #ffffff;
     }
-    .body_left, .body_right, .body3 {
-        background-color: #eeeeee;
+    .body_left, .body_right {
+        background-color: rgb(240, 240, 240);
     }
     .body_left .text_container .text,
     .body_right .text_container .text {
         background-color: #ffffff;
-        box-shadow: 0px 10px 32px rgba(12, 12, 12, 0.267);
+        box-shadow: 0px 10px 26px rgba(12, 12, 12, 0.267);
     }
     .body_left:hover .text_container .text,
     .body_right:hover .text_container .text {
@@ -77,7 +77,7 @@
     }
     .body_left .body_left_paragraph,
     .body_right .body_right_paragraph {
-        color: rgb(98, 98, 98);
+        color: rgb(77, 77, 77);
     }
 
     .landing .headline {
@@ -86,14 +86,11 @@
     .landing .paragraph {
         color: rgb(98, 98, 98);
     }
-    .footer {
-        background-color: #ffffff;
-    }
 }
 
 @media screen and (prefers-color-scheme: dark) {
     body {
-        background-color: rgb(37, 37, 37);
+        background-color: rgb(34, 34, 34);
     }
 
     .landing .landing_title h1 {
@@ -110,20 +107,20 @@
     }
 
     .work {
-        background-color: #292929;
+        background-color: rgb(42, 42, 42);
     }
     .body_left,
     .body_right {
-        background-color: #414141;
+        background-color: rgb(34, 34, 34);
     }
     .body_left .text_container .text,
     .body_right .text_container .text {
-        background-color: #292929;
-        box-shadow: 0px 10px 32px rgba(12, 12, 12, 0.4);
+        background-color: rgb(49, 49, 49);
+        box-shadow: 10px 10px 32px rgba(12, 12, 12, 0.4);
     }
     .body_left:hover .text_container .text,
     .body_right:hover .text_container .text {
-        box-shadow: 0px 10px 32px rgba(200, 200, 200, 0.2);
+        box-shadow: 0px 10px 28px rgba(255, 255, 255, 0.1);
         margin-top: -10px;
     }
     .body_left .body_left_headline,
@@ -133,9 +130,5 @@
     .body_left .body_left_paragraph,
     .body_right .body_right_paragraph {
         color: #d6d6d6;
-    }
-
-    .footer {
-        background-color: #292929;
     }
 }

@@ -145,7 +145,8 @@
     }
 }
 
-@media screen and (max-width: 600px) { /* PHONE LAYOUT*/
+/* PHONE LAYOUT */
+@media screen and (max-width: 600px) {
     .landing_container {
         width: auto;
         margin: 0 auto;

@@ -14,7 +14,11 @@
 
 @media screen and (prefers-color-scheme: dark) {
     body {
-        background-color: rgb(37, 37, 37);
+        background-color: rgb(39, 39, 39);
+    }
+
+    .center_header {
+        background-color: rgb(39, 39, 39);
     }
 
     .image_showcase .collage .collage_title {
@@ -23,5 +27,9 @@
     .image_showcase .collage .row .image_right,
     .image_showcase .row .bottom .image_left {
         background-color: rgb(37, 37, 37);
+    }
+
+    .footer {
+        background-color: rgb(34, 34, 34);
     }
 }

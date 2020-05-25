@@ -106,6 +106,7 @@
     -ms-flex-direction: column;
     -webkit-flex-direction: column;
     flex-direction: column;
+
     -webkit-box-align: center;
     -ms-flex-align: center;
     -webkit-align-items: center;
@@ -116,7 +117,7 @@
     font-weight: 700;
     font-size: 14px;
     line-height: 17px;
-    letter-spacing: .08em;
+    letter-spacing: .1em;
     text-decoration: none;
     transition: .3s;
 }
@@ -141,8 +142,6 @@
 }
 /*ANIMATED HAMBURGER*/
 .hamburger {
-    margin: 5px;
-    margin-right: 15px;
     display: inline-block;
     cursor: pointer;
     z-index: 10;
@@ -167,69 +166,83 @@
 
 
 .footer {
-    width: 100%;
-    padding: 20px 0;
+    padding: 30px 30px;
+}
+.footer .footer_container {
+    width: auto;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    padding: 30px 0px;
+}
+.footer .logo_wrapper {
+    width: 33%;
+    margin-right: auto;
+    display: flex;
+}
+.footer .logo_wrapper figure {
+    background-image: url("images/logo_white.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 42px;
+    height: 30px;
+}
+.footer .logo_wrapper h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.08em;
+    margin: auto 0;
 }
 .social {
-    width: 1200px;
+    width: 33%;
     margin: 0 auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    text-align: center;
+ /* child is using inline-block which disables margin 0 auto for horizontal centering.
+    Use text-align center in the parent div (this) to compensate. */
 }
-.social_container {
-    width: 250px;
-    margin-right: 0px;
+.social .social_container {
+    width: auto;
+    margin: 0 auto;
+    display: inline-block;
+}
+.copyright {
+    width: 33%;
+    height: 30px;
     margin-left: auto;
-    text-align: right;
+    display: flex;
 }
+.copyright h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: right;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+}
+
 .youtube,
 .instagram,
 .twitter,
 .discord,
 .github {
-    margin-left: 15px;
+    margin-left: 7px;
+    margin-right: 7px;
     width: 30px;
     height: 30px;
     background-size: cover;
     background-repeat: no-repeat;
     display: inline-block;
+    transition: all 0.2s;
 }
-.youtube {
-    background-image: url("images/social_black/Youtube_2.svg");
-}
-.instagram {
-    background-image: url("images/social_black/Instagram_2.svg");
-}
-.twitter {
-    background-image: url("images/social_black/Twitter_2.svg");
-}
-.discord {
-    background-image: url("images/social_black/Discord_2.svg");
-}
-.github {
-    background-image: url("images/social_black/Github_2.svg");
-}
-.youtube:hover {
-    background-image: url("images/social_gray/Youtube_1.svg");
-}
-.instagram:hover {
-    background-image: url("images/social_gray/Instagram_1.svg");
-}
-.twitter:hover {
-    background-image: url("images/social_gray/Twitter_1.svg");
-}
-.discord:hover {
-    background-image: url("images/social_gray/Dribbble_1.svg");
-}
+.youtube:hover,
+.instagram:hover,
+.twitter:hover,
+.discord:hover,
 .github:hover {
-    background-image: url("images/social_gray/Github_1.svg");
-}
-.copyright {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 600;
-    font-size: 12px;
-    width: 1200px;
-    margin: 0 auto;
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
 }
 
 @media screen and (max-height: 450px) {
@@ -262,16 +275,7 @@
     }
 
     .footer {
-        width: auto;
         padding: 20px 30px;
-    }
-    .social {
-        width: auto;
-        margin-bottom: 40px;
-    }
-    .copyright {
-        font-size: 14px;
-        width: auto;
     }
 }
 
@@ -296,25 +300,60 @@
     .center_header a {
         font-size: 14px;
     }
-    
+}
+
+/* COMPRESS FOOTER INTO VERTICAL STACK */
+@media screen and (max-width: 750px) {
     .footer {
-        padding: 20px 30px;
+        padding: 10px 30px;
     }
+    .footer .footer_container {
+        display: block;
+    }
+    .footer .logo_wrapper,
+    .social,
     .copyright {
-        font-size: 12px;
+        width: auto;
+        margin: 0 auto;
+    }
+    .social {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .footer .logo_wrapper figure {
+        margin-left: auto;
+        width: 60px;
+        height: 40px;
+    }
+    .footer .logo_wrapper h1 {
+        font-size: 17px;
+        margin-right: auto;
+    }
+    .copyright h1 {
+        text-align: center;
+        margin: auto auto;
+    }
+
+    .youtube,
+    .instagram,
+    .twitter,
+    .discord,
+    .github {
+        margin-left: 15px;
+        margin-right: 15px;
     }
 }
 
+/* SHOW HAMBURGER MENU WHEN NAV BAR RUNS OUT OF SPACE (MOBILE) */
 @media screen and (max-width: 650px) {
     .dropdown_menu button {
         font-size: 20px
     }
 
     .nav_bar {
-        padding-top: 0px;
+        padding-top: 20px;
     }
     .nav_bar .hamburger {
-        position: absolute;
         display: block;
         cursor: pointer;
         right: 0;
@@ -331,38 +370,75 @@
     .right_header div {
         margin-left: 15px;
     }
+    .center_header {
+        margin-left: 0;
+        -webkit-box-orient: horizontal;
+        -ms-flex-direction: row;
+        -webkit-flex-direction: row;
+        flex-direction: row;
+    }
     .center_header .header_logo figure {
-        width: 125px;
-        height: 87px;
+        width: 59px;
+        height: 41px;
     }
     .left_header a,
     .right_header a {
         font-size: 14px;
     }
     .center_header a {
-        font-size: 12px;
-    }
-
-    .footer {
-        width: auto;
-        padding: 20px 15px;
+        font-size: 18px;
+        letter-spacing: .13em;
     }
 }
 
-@media screen and (max-width: 600px) {
+/* SHRINK FOOTER FOR SMALLER PHONES */
+@media screen and (max-width: 400px) {
     .social {
-        width: auto;
-        margin-top: 30px;
-        margin-bottom: 30px;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
-    .social_container {
-        width: 250px;
-        margin-right: 0px;
-        margin-left: auto;
+    .footer .logo_wrapper figure {
+        width: 42px;
+        height: 30px;
     }
-    .copyright {
+    .footer .logo_wrapper h1 {
+        font-size: 14px;
+    }
+    .copyright h1 {
         font-size: 12px;
-        width: auto;
+    }
+
+    .youtube,
+    .instagram,
+    .twitter,
+    .discord,
+    .github {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+/* SHRINK NAV BAR LOGO BELOW IPHONE 8/X WIDTH */
+@media screen and (max-width: 374px) {
+    .center_header a {
+        font-size: 16px;
+        letter-spacing: .1em;
+    }
+    .hamburger {
+        transform: scale(0.9);
+    }
+}
+
+/* ONLY KEEP NAV BAR LOGO BELOW IPHONE SE (320PX) */
+@media screen and (max-width: 319px) {
+    .center_header figure {
+        transform: scale(1.3);
+    }
+    .center_header .header_title {
+        display: none;
+    }
+    .hamburger {
+        transform: scale(1);
     }
 }
 
@@ -373,7 +449,6 @@
     .dropdown_links a {
         color: rgb(109, 109, 109);
     }
-    /* When you mouse over the navigation links, change their color */
     .dropdown_links a:hover,
     .dropdown_menu a:focus {
         color: #424242;
@@ -396,9 +471,6 @@
     .right_header a:hover {
         color: #2f2f2f;
     }
-    .center_header {
-        background-color: white;
-    }
     .center_header a {
         color: #292929;
     }
@@ -406,8 +478,40 @@
         background-image: url("images/logo_dark.png");
     }
 
+    .footer {
+        background-color: rgb(240, 240, 240);
+    }
+    .footer .logo_wrapper h1 {
+        color: rgb(185, 185, 185);
+    }
+    .footer .logo_wrapper figure {
+        filter: brightness(0.5);
+    }
+    .youtube,
+    .instagram,
+    .twitter,
+    .discord,
+    .github {
+        filter: brightness(3);
+    }
+    .youtube {
+        background-image: url("images/social_black/Youtube_2.svg");
+    }
+    .instagram {
+        background-image: url("images/social_black/Instagram_2.svg");
+    }
+    .twitter {
+        background-image: url("images/social_black/Twitter_2.svg");
+    }
+    .discord {
+        background-image: url("images/social_black/Discord_2.svg");
+    }
+    .github {
+        background-image: url("images/social_black/Github_2.svg");
+    }
+
     .copyright {
-        color: #d1d1d1;
+        color: rgb(185, 185, 185);
     }
 }
 
@@ -416,9 +520,8 @@
         background-color: rgb(37, 37, 37);
     }
     .dropdown_links a {
-        color: rgb(179, 179, 179);
+        color: rgb(199, 199, 199);
     }
-    /* When you mouse over the navigation links, change their color */
     .dropdown_links a:hover,
     .dropdown_menu a:focus {
         color: #ffeccf;
@@ -440,9 +543,6 @@
     .right_header a:hover {
         color: #ffeccf;
     }
-    .center_header {
-        background-color: rgb(37, 37, 37);
-    }
     .center_header a {
         color: #ffffff;
     }
@@ -450,7 +550,52 @@
         background-image: url("images/logo_white.png");
     }
 
+    .footer {
+        background-color: rgb(34, 34, 34);
+    }
+    .footer .logo_wrapper h1 {
+        color: rgb(98, 98, 98);
+    }
+    .footer .logo_wrapper figure {
+        filter: brightness(0.8);
+    }
+    .youtube,
+    .instagram,
+    .twitter,
+    .discord,
+    .github {
+        filter: brightness(0.8);
+    }
+
+    .youtube {
+        background-image: url("images/social_gray/Youtube_1.svg");
+    }
+    .instagram {
+        background-image: url("images/social_gray/Instagram_1.svg");
+    }
+    .twitter {
+        background-image: url("images/social_gray/Twitter_1.svg");
+    }
+    .discord {
+        background-image: url("images/social_gray/Discord_1.svg");
+    }
+    .github {
+        background-image: url("images/social_gray/Github_1.svg");
+    }
+
     .copyright {
-        color: rgb(58, 58, 58);
+        color: rgb(98, 98, 98);
+    }
+}
+
+/* DECREASE MOBILE NAV BAR LOGO'S CONTRAST AGAINST BACKGROUND */
+@media screen and (prefers-color-scheme: dark) and (max-width: 650px) {
+    .center_header {
+        filter: brightness(0.8);
+    }
+}
+@media screen and (prefers-color-scheme: light) and (max-width: 650px) {
+    .center_header {
+        filter: brightness(2.6);
     }
 }

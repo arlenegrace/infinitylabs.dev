@@ -12,10 +12,7 @@
     .enthusiast_wrapper p {
         color: rgb(230, 230, 230);
     }
-    
-    .aboutme {
-        background-color: rgb(245, 245, 245);
-    }
+
     .aboutme .container {
         background-color: #ffffff;
         box-shadow: 0px 0px 55px rgba(12, 12, 12, 0.2)
@@ -33,7 +30,7 @@
 
 @media screen and (prefers-color-scheme: dark) {
     body {
-        background-color: rgb(37, 37, 37);
+        background-color: rgb(34, 34, 34);
     }
 
     .enthusiast {
@@ -46,14 +43,17 @@
         color: rgb(230, 230, 230);
     }
 
+    .aboutme {
+        background-color: rgb(39, 39, 39);
+    }
     .aboutme .container {
-        background-color: #353535;
-        box-shadow: 0px 0px 55px rgba(12, 12, 12, 0.4)
+        background-color: #2a2a2a;
+        box-shadow: 0px 0px 55px rgba(255, 255, 255, 0.1)
     }
     .biography h1 {
         color: #f0d5b6;
     }
     .biography p {
-        color: rgb(197, 197, 197);
+        color: rgb(209, 209, 209);
     }
 }

@@ -51,7 +51,7 @@ body {
 }
 
 .center_header {
-    background-color: #e8c4b8;
+    filter: brightness(1.5);
 }
 .left_header a,
 .right_header a {
@@ -102,9 +102,39 @@ body {
     color: #333;
 }
 
+/* PASTED FROM STATIC.CSS, PORTFOLIO ONLY HAS ONE THEME (DARK) */
 .footer {
-    background-color: #353232;
+    background-color: #2a2828;
+}
+.footer .logo_wrapper h1 {
+    color: rgb(98, 98, 98);
+}
+.footer .logo_wrapper figure {
+    filter: brightness(0.8);
+}
+.youtube,
+.instagram,
+.twitter,
+.discord,
+.github {
+    filter: brightness(0.8);
 }
 .copyright {
-    color: #4b4747;
+    color: rgb(98, 98, 98);
+}
+
+.youtube {
+    background-image: url("../images/social_gray/Youtube_1.svg");
+}
+.instagram {
+    background-image: url("../images/social_gray/Instagram_1.svg");
+}
+.twitter {
+    background-image: url("../images/social_gray/Twitter_1.svg");
+}
+.discord {
+    background-image: url("../images/social_gray/Discord_1.svg");
+}
+.github {
+    background-image: url("../images/social_gray/Github_1.svg");
 }
