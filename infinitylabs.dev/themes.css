@@ -11,16 +11,14 @@ body {
     background-color: rgb(34, 34, 34);
 }
 
-.landing .landing_title h1 {
+.landing .landing_title h2 {
     color: #ffeccf;
 }
-.landing .landing_icon_container  h1 {
-    color: #e2e2e2;
-}
-.landing .landing_container p {
+.landing .landing_container p,
+.landing .landing_icon_container  h3 {
     color: #d6d6d6;
 }
-.landing .landing_icon_container  .card_container:hover h1{
+.landing .landing_icon_container .card_container:hover h3 {
     color: #f0d5b6;
 }
 
@@ -62,7 +60,6 @@ body {
     .dropdown_links a {
         color: #fafafa;
     }
-    /* When you mouse over the navigation links, change their color */
     .dropdown_links a:hover,
     .dropdown_menu a:focus {
         color: #ffeccf;
@@ -92,16 +89,14 @@ body {
     }
 
     /* LIGHT THEME */
-    .landing .landing_title h1 {
+    .landing .landing_title h2 {
         color: #ffeccf;
     }
-    .landing .landing_icon_container  h1 {
+    .landing .landing_container p,
+    .landing .landing_icon_container  h3 {
         color: #fafafa;
     }
-    .landing .landing_container p {
-        color: #fafafa;
-    }
-    .landing .landing_icon_container  .card_container:hover h1{
+    .landing .landing_icon_container .card_container:hover h3 {
         color: #ffeccf;
     }
 

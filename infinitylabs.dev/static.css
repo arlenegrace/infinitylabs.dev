@@ -138,22 +138,12 @@
 }
 .nav_bar .hamburger {
     display: none;
-
-    /*terraforge settings*/
     position: relative;
     display: none;
-    background: none;
-    border: none;
-    padding: 0;
-    outline: none;
-    cursor: pointer;
-}
-/*ANIMATED HAMBURGER*/
-.hamburger {
-    display: inline-block;
     cursor: pointer;
     z-index: 10;
 }
+/*ANIMATED HAMBURGER*/
 .bar1, .bar2, .bar3 {
     width: 35px;
     height: 3px;
