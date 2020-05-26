@@ -2,7 +2,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT) [![W3C validator](https://img.shields.io/w3c-validation/html?targetUrl=https%3A%2F%2Finfinitylabs.dev)](https://validator.w3.org/nu/?doc=https%3A%2F%2Fwww.infinitylabs.dev%2F) [![Repo size](https://img.shields.io/github/repo-size/arlenegrace/infinitylabs.dev)](https://github.com/arlenegrace/infinitylabs.dev)
 
-Source code for Infinity Labs' (my) website. Free to use template for creating responsive static personal portfolio websites. Built entirely using HTML, CSS and just one JavaScript function, making it fast, lightweight and compatible across all browsers.
+Source code for https://infinitylabs.dev. Free to use template for creating responsive static personal portfolio websites. Built entirely using HTML, CSS and just one JavaScript function, making it fast, lightweight and compatible across all browsers.
 
 
 ## Features
@@ -15,15 +15,17 @@ Source code for Infinity Labs' (my) website. Free to use template for creating r
 
 
 ## Usage
-This repo contains all necessary files except for images which you provide. It is recommended to create a folder named `images` and store all your media there to maintain organization. Each sub-folder is a URL directory that opens to the `index.html` file. For example, the `about` folder would translate to `https://www.infinitylabs.dev/about`.
+This repo contains all necessary files except for images which you provide. It is recommended to create a folder named `images` and store all your media there to maintain organization. Each sub-folder is a URL directory that opens to the `index.html` file. For example, the `about` folder would translate to `https://www.infinitylabs.dev/about/`.
 
 The CSS styling for the header and footer are located in `static.css` which is used to style elements that are shared across all pages. Any styling that is shared by multiple pages should be done here for maintainability.
 
 To add more images to the `gallery` page, simply open up the `index.html` file and copy and paste the `image_container` div. The CSS styling will automatically arrange all images into a grid.
 
-The `404` page requires styling to be inlined in the .html file, otherwise accessing an invalid subdirectory will not fetch the .css files, only the .html file.
+The `404` page requires styling to be inlined in the head of the .html file because accessing an invalid subdirectory will not fetch the required .css files, only the .html file.
 
-Different browsers will set different default values to HTML elements. The `reset.css` file is used to set all elements to the same value for consistency across browsers.
+Different browsers will set different default values to HTML elements. The `reset.css` file is used to set all elements to the same value for consistency across browsers. Be sure to include it in new .html files.
+
+Browsers that do not support the `@media and (prefers-color-scheme)` query (e.g. pre-iOS 13's Safari browser) will not pick the light theme by default, resulting in no theming for your webpage. To resolve this issue, the `prefers-color-scheme` query for dark theme has been removed, setting it as the default theme. If the browser does support the `prefers-color-scheme` query and the user is using light theme, it will override the default dark theme as long as the light theme is below the dark theme. HTML prioritizes CSS rules in order of declaration which makes it important that you include your CSS files in the correct order in the head of your HTML files.
 
 
 ## Preview
