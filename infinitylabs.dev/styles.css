@@ -28,11 +28,11 @@
 .landing .landing_container .landing_icon_container {
     display: flex;
 }
-.landing .landing_container .landing_icon_container span {
+.landing .landing_container .landing_icon_container .card_container {
     width: 300px;
     margin: 0 auto;
 }
-.landing .landing_container .landing_icon_container span h1 {
+.landing .landing_container .landing_icon_container .card_container h1 {
     font-family: 'Open Sans', sans-serif;
     text-align: center;
     margin-bottom: 10px;
@@ -41,20 +41,20 @@
     text-transform: uppercase;
     transition-duration: 0.3s;
 }
-.landing .landing_container .landing_icon_container span a {
+.landing .landing_container .landing_icon_container .card_container a {
     width: 90px;
     height: 90px;
     margin: 0 auto;
     display: block;
 }
-.landing .landing_container .landing_icon_container span img {
+.landing .landing_container .landing_icon_container .card_container img {
     width: 90px;
     height: 90px;
     margin: 0 auto;
     display: block;
     transition-duration: 0.3s;
 }
-.landing .landing_container .landing_icon_container span:hover img {
+.landing .landing_container .landing_icon_container .card_container:hover img {
     transform: scale(1.03);
 }
 

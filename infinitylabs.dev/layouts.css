@@ -13,17 +13,17 @@
         width: 950px;
         margin: 0 auto;
     }
-    .landing .landing_container .landing_icon_container span h1 {
+    .landing .landing_container .landing_icon_container .card_container h1 {
         font-size: 18px;
     }
-    .landing .landing_container .landing_icon_container span img {
+    .landing .landing_container .landing_icon_container .card_container img {
         width: 80px;
         height: 80px;
     }
-    .landing .landing_container .landing_icon_container span {
+    .landing .landing_container .landing_icon_container .card_container {
         width: 200px;
     }
-    .landing .landing_container .landing_icon_container span a {
+    .landing .landing_container .landing_icon_container .card_container a {
         width: 80px;
         height: 80px;
     }
@@ -73,7 +73,7 @@
     .landing .landing_container .landing_icon_container {
         width: auto;
     }
-    .landing .landing_container .landing_icon_container span img {
+    .landing .landing_container .landing_icon_container .card_container img {
         width: 70px;
         height: 70px;
     }
@@ -178,14 +178,14 @@
     .landing .landing_container .landing_icon_container {
         display: flex;
     }
-    .landing .landing_container .landing_icon_container span {
+    .landing .landing_container .landing_icon_container .card_container {
         width: 20vw;
         margin: 0 auto;
     }
-    .landing .landing_container .landing_icon_container span h1 {
+    .landing .landing_container .landing_icon_container .card_container h1 {
         display: none;
     }
-    .landing .landing_container .landing_icon_container span img {
+    .landing .landing_container .landing_icon_container .card_container img {
         width: 50px;
         height: 50px;
         margin: 0 auto;
