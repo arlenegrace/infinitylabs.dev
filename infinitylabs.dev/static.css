@@ -557,14 +557,14 @@
         color: rgb(98, 98, 98);
     }
     .footer .logo_wrapper figure {
-        filter: brightness(0.8);
+        filter: brightness(0.6);
     }
     .youtube,
     .instagram,
     .twitter,
     .discord,
     .github {
-        filter: brightness(0.8);
+        filter: brightness(0.6);
     }
 
     .youtube {
