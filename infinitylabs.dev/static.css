@@ -197,14 +197,12 @@
 .social {
     width: 33%;
     margin: 0 auto;
-    text-align: center;
- /* child is using inline-block which disables margin 0 auto for horizontal centering.
-    Use text-align center in the parent div (this) to compensate. */
 }
 .social .social_container {
     width: auto;
     margin: 0 auto;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
 }
 .copyright {
     width: 33%;
