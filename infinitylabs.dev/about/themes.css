@@ -1,3 +1,40 @@
+/* 
+ * ON SYSTEMS WITHOUT DARK MODE SUPPORT (E.G. PRE-iOS 13), NO THEMING WILL OCCUR
+ * BECAUSE IT WILL NOT DEFAULT TO LIGHT THEME. THE WORKAROUND IS TO REMOVE THE
+ * @MEDIA (PREFERS-COLOR-SCHEME) RULE SO IT DEFAULTS TO ONE OF THE THEMES.
+ * HERE, WE DEFAULT TO DARK THEME BUT IF A DEVICE THAT SUPPORTS (PREFERS-COLOR-SCHEME)
+ * IS USING LIGHT THEME, THE LIGHT THEME CSS WILL OVERRIDE THE DEFAULT BECAUSE
+ * IT IS DECLARED LATER IN THE FILE. HTML PRIORITIZES CSS IN ORDER OF NEWEST TO OLDEST.
+ */
+
+body {
+    background-color: rgb(34, 34, 34);
+}
+
+.enthusiast {
+    background-image: url("../images/dark_hhkb.jpg");
+}
+.enthusiast_wrapper h1 {
+    color: #f0d5b6;
+}
+.enthusiast_wrapper p {
+    color: rgb(230, 230, 230);
+}
+
+.aboutme {
+    background-color: rgb(39, 39, 39);
+}
+.aboutme .container {
+    background-color: #2a2a2a;
+    box-shadow: 0px 0px 55px rgba(255, 255, 255, 0.1)
+}
+.biography h1 {
+    color: #f0d5b6;
+}
+.biography p {
+    color: rgb(209, 209, 209);
+}
+
 @media screen and (prefers-color-scheme: light) {
     body {
         background-color: #ffffff;
@@ -25,35 +62,5 @@
     }
     .footer {
         background-color: rgb(245, 245, 245);
-    }
-}
-
-@media screen and (prefers-color-scheme: dark) {
-    body {
-        background-color: rgb(34, 34, 34);
-    }
-
-    .enthusiast {
-        background-image: url("../images/dark_hhkb.jpg");
-    }
-    .enthusiast_wrapper h1 {
-        color: #f0d5b6;
-    }
-    .enthusiast_wrapper p {
-        color: rgb(230, 230, 230);
-    }
-
-    .aboutme {
-        background-color: rgb(39, 39, 39);
-    }
-    .aboutme .container {
-        background-color: #2a2a2a;
-        box-shadow: 0px 0px 55px rgba(255, 255, 255, 0.1)
-    }
-    .biography h1 {
-        color: #f0d5b6;
-    }
-    .biography p {
-        color: rgb(209, 209, 209);
     }
 }

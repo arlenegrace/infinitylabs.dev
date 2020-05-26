@@ -1,39 +1,9 @@
 /* 
-@media screen and (prefers-color-scheme: light) {
-    body {
-        background-color: #ffffff;
-    }
-
-    .dropdown_menu {
-        background-color: #ffffff;
-    }
-    
-    .portfolio_header_wrapper  h1 {
-        color: #313131;
-    }
-    .portfolio_header_wrapper  p {
-        color: rgb(230, 230, 230);
-    }
-    
-    .portfolio .collage_container .project_container_1,
-    .portfolio .collage_container .project_container_top,
-    .portfolio .collage_container .project_container_bottom {
-        background-color: rgb(243, 243, 243);
-    }
-    .portfolio .collage_container h1 {
-        color: #313131;
-    }
-    .portfolio .collage_container p {
-        color: #414141;
-    }
-    .portfolio .collage_container .button_link {
-        background-color: #dfdfdf;
-    }
-    .portfolio .collage_container a {
-        color: #252525;
-    }
-}
+ * PORTFOLIO IS A SPECIAL PAGE WITH ONLY THE OLIVIA THEME (PINK ON GRAY)
+ * IF YOU NEED A SEPARATE LIGHT AND DARK THEME, JUST ADD AN @MEDIA RULE FROM
+ * ANY OTHER THEMES.CSS FILE.
  */
+
 body {
     background-color: #e8c4b8;
 }
@@ -102,7 +72,8 @@ body {
     color: #333;
 }
 
-/* PASTED FROM STATIC.CSS, PORTFOLIO ONLY HAS ONE THEME (DARK) */
+/* PASTED FROM STATIC.CSS, PORTFOLIO ONLY HAS ONE THEME (DARK)! OVERRIDE LIGHT THEME */
+/* PASTED FROM STATIC.CSS, PORTFOLIO ONLY HAS ONE THEME (DARK)! OVERRIDE LIGHT THEME */
 .footer {
     background-color: #2a2828;
 }
@@ -112,29 +83,22 @@ body {
 .footer .logo_wrapper figure {
     filter: brightness(0.8);
 }
-.youtube,
-.instagram,
-.twitter,
-.discord,
-.github {
-    filter: brightness(0.8);
-}
 .copyright {
     color: rgb(98, 98, 98);
 }
 
 .youtube {
-    background-image: url("../images/social_gray/Youtube_1.svg");
+    background-image: url("../images/footer/youtube_dark.png");
 }
 .instagram {
-    background-image: url("../images/social_gray/Instagram_1.svg");
+    background-image: url("../images/footer/instagram_dark.png");
 }
 .twitter {
-    background-image: url("../images/social_gray/Twitter_1.svg");
+    background-image: url("../images/footer/twitter_dark.png");
 }
 .discord {
-    background-image: url("../images/social_gray/Discord_1.svg");
+    background-image: url("../images/footer/discord_dark.png");
 }
 .github {
-    background-image: url("../images/social_gray/Github_1.svg");
+    background-image: url("../images/footer/github_dark.png");
 }

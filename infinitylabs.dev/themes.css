@@ -1,3 +1,55 @@
+/* 
+ * ON SYSTEMS WITHOUT DARK MODE SUPPORT (E.G. PRE-iOS 13), NO THEMING WILL OCCUR
+ * BECAUSE IT WILL NOT DEFAULT TO LIGHT THEME. THE WORKAROUND IS TO REMOVE THE
+ * @MEDIA (PREFERS-COLOR-SCHEME) RULE SO IT DEFAULTS TO ONE OF THE THEMES.
+ * HERE, WE DEFAULT TO DARK THEME BUT IF A DEVICE THAT SUPPORTS (PREFERS-COLOR-SCHEME)
+ * IS USING LIGHT THEME, THE LIGHT THEME CSS WILL OVERRIDE THE DEFAULT BECAUSE
+ * IT IS DECLARED LATER IN THE FILE. HTML PRIORITIZES CSS IN ORDER OF NEWEST TO OLDEST.
+ */
+
+body {
+    background-color: rgb(34, 34, 34);
+}
+
+.landing .landing_title h1 {
+    color: #ffeccf;
+}
+.landing .landing_icon_container  h1 {
+    color: #e2e2e2;
+}
+.landing .landing_container p {
+    color: #d6d6d6;
+}
+.landing .landing_icon_container  span:hover h1{
+    color: #f0d5b6;
+}
+
+.work {
+    background-color: rgb(42, 42, 42);
+}
+.body_left,
+.body_right {
+    background-color: rgb(34, 34, 34);
+}
+.body_left .text_container .text,
+.body_right .text_container .text {
+    background-color: rgb(49, 49, 49);
+    box-shadow: 10px 10px 32px rgba(12, 12, 12, 0.4);
+}
+.body_left:hover .text_container .text,
+.body_right:hover .text_container .text {
+    box-shadow: 0px 10px 28px rgba(255, 255, 255, 0.1);
+    margin-top: -10px;
+}
+.body_left .body_left_headline,
+.body_right .body_right_headline {
+    color: #f0d5b6;
+}
+.body_left .body_left_paragraph,
+.body_right .body_right_paragraph {
+    color: #d6d6d6;
+}
+
 @media screen and (prefers-color-scheme: light) {
     body {
         background-color: rgb(37, 37, 37);
@@ -82,50 +134,5 @@
     }
     .landing .paragraph {
         color: rgb(98, 98, 98);
-    }
-}
-
-@media screen and (prefers-color-scheme: dark) {
-    body {
-        background-color: rgb(34, 34, 34);
-    }
-
-    .landing .landing_title h1 {
-        color: #ffeccf;
-    }
-    .landing .landing_icon_container  h1 {
-        color: #e2e2e2;
-    }
-    .landing .landing_container p {
-        color: #d6d6d6;
-    }
-    .landing .landing_icon_container  span:hover h1{
-        color: #f0d5b6;
-    }
-
-    .work {
-        background-color: rgb(42, 42, 42);
-    }
-    .body_left,
-    .body_right {
-        background-color: rgb(34, 34, 34);
-    }
-    .body_left .text_container .text,
-    .body_right .text_container .text {
-        background-color: rgb(49, 49, 49);
-        box-shadow: 10px 10px 32px rgba(12, 12, 12, 0.4);
-    }
-    .body_left:hover .text_container .text,
-    .body_right:hover .text_container .text {
-        box-shadow: 0px 10px 28px rgba(255, 255, 255, 0.1);
-        margin-top: -10px;
-    }
-    .body_left .body_left_headline,
-    .body_right .body_right_headline {
-        color: #f0d5b6;
-    }
-    .body_left .body_left_paragraph,
-    .body_right .body_right_paragraph {
-        color: #d6d6d6;
     }
 }

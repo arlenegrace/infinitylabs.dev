@@ -1,3 +1,11 @@
+/* 
+ * STRUCTURE:
+ * DEFAULT (DESKTOP) CSS
+ * LAYOUTS
+ * THEMES
+ */
+
+/* DEFAULT CSS */
 .dropdown_menu {
     height: 0%;
     width: 100%;
@@ -243,6 +251,9 @@
     transform: translateY(-2px);
 }
 
+/* LAYOUTS CSS */
+
+/* SHRINK DROPDOWN MENU TEXT FOR SHORT SCREENS (SUB 450PX HEIGHT) */
 @media screen and (max-height: 450px) {
     .dropdown_menu {
         overflow-y: auto;
@@ -252,6 +263,10 @@
     }
 }
 
+/* 
+ * CURRENTLY NOT WORKING. HIDE DROPDOWN MENU WHEN ENLARGING WINDOW WHILE
+ * DROPDOWN MENU IS ACTIVE.
+ */
 @media screen and (min-width: 940px) {
     .dropdown_menu {
         height: 0%;
@@ -331,7 +346,6 @@
         text-align: center;
         margin: auto auto;
     }
-
     .youtube,
     .instagram,
     .twitter,
@@ -342,7 +356,7 @@
     }
 }
 
-/* SHOW HAMBURGER MENU WHEN NAV BAR RUNS OUT OF SPACE (MOBILE) */
+/* SHOW HAMBURGER MENU WHEN NAV BAR RUNS OUT OF SPACE (MOBILE SUB-650PX WIDTH) */
 @media screen and (max-width: 650px) {
     .dropdown_menu button {
         font-size: 20px
@@ -350,6 +364,8 @@
 
     .nav_bar {
         padding-top: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
     .nav_bar .hamburger {
         display: block;
@@ -416,12 +432,8 @@
     }
 }
 
-/* SHRINK NAV BAR LOGO BELOW IPHONE 8/X WIDTH */
+/* SHRINK HAMBURGER ICON BELOW IPHONE 8/X WIDTH */
 @media screen and (max-width: 374px) {
-    .center_header a {
-        font-size: 16px;
-        letter-spacing: .1em;
-    }
     .hamburger {
         transform: scale(0.9);
     }
@@ -439,6 +451,79 @@
         transform: scale(1);
     }
 }
+
+/* 
+ * ON SYSTEMS WITHOUT DARK MODE SUPPORT (E.G. PRE-iOS 13), NO THEMING WILL OCCUR
+ * BECAUSE IT WILL NOT DEFAULT TO LIGHT THEME. THE WORKAROUND IS TO REMOVE THE
+ * @MEDIA (PREFERS-COLOR-SCHEME) RULE SO IT DEFAULTS TO ONE OF THE THEMES.
+ * HERE, WE DEFAULT TO DARK THEME BUT IF A DEVICE THAT SUPPORTS (PREFERS-COLOR-SCHEME)
+ * IS USING LIGHT THEME, THE LIGHT THEME CSS WILL OVERRIDE THE DEFAULT BECAUSE
+ * IT IS DECLARED LATER IN THE FILE. HTML PRIORITIZES CSS IN ORDER OF NEWEST TO OLDEST.
+ */
+.dropdown_menu {
+    background-color: rgb(37, 37, 37);
+}
+.dropdown_links a {
+    color: rgb(199, 199, 199);
+}
+.dropdown_links a:hover,
+.dropdown_menu a:focus {
+    color: #ffeccf;
+}
+.bar1,
+.bar2,
+.bar3 {
+    background-color: #f0d5b6;
+}
+
+.left_header a,
+.right_header a {
+    color: rgb(179, 179, 179);
+}
+.nav_bar .current {
+    color: #f0d5b6;
+}
+.left_header a:hover,
+.right_header a:hover {
+    color: #ffeccf;
+}
+.center_header a {
+    color: #ffffff;
+}
+.center_header .header_logo figure {
+    background-image: url("images/logo_white.png");
+}
+
+.footer {
+    background-color: rgb(34, 34, 34);
+}
+.footer .logo_wrapper h1 {
+    color: rgb(98, 98, 98);
+}
+.footer .logo_wrapper figure {
+    filter: brightness(0.6);
+}
+
+.youtube {
+    background-image: url("images/footer/youtube_dark.png");
+}
+.instagram {
+    background-image: url("images/footer/instagram_dark.png");
+}
+.twitter {
+    background-image: url("images/footer/twitter_dark.png");
+}
+.discord {
+    background-image: url("images/footer/discord_dark.png");
+}
+.github {
+    background-image: url("images/footer/github_dark.png");
+}
+
+.copyright {
+    color: rgb(98, 98, 98);
+}
+
 
 @media screen and (prefers-color-scheme: light) {
     .dropdown_menu {
@@ -485,27 +570,20 @@
     .footer .logo_wrapper figure {
         filter: brightness(0.5);
     }
-    .youtube,
-    .instagram,
-    .twitter,
-    .discord,
-    .github {
-        filter: brightness(3);
-    }
     .youtube {
-        background-image: url("images/social_black/Youtube_2.svg");
+        background-image: url("images/footer/youtube_light.png");
     }
     .instagram {
-        background-image: url("images/social_black/Instagram_2.svg");
+        background-image: url("images/footer/instagram_light.png");
     }
     .twitter {
-        background-image: url("images/social_black/Twitter_2.svg");
+        background-image: url("images/footer/twitter_light.png");
     }
     .discord {
-        background-image: url("images/social_black/Discord_2.svg");
+        background-image: url("images/footer/discord_light.png");
     }
     .github {
-        background-image: url("images/social_black/Github_2.svg");
+        background-image: url("images/footer/github_light.png");
     }
 
     .copyright {
@@ -513,85 +591,12 @@
     }
 }
 
-@media screen and (prefers-color-scheme: dark) {
-    .dropdown_menu {
-        background-color: rgb(37, 37, 37);
-    }
-    .dropdown_links a {
-        color: rgb(199, 199, 199);
-    }
-    .dropdown_links a:hover,
-    .dropdown_menu a:focus {
-        color: #ffeccf;
-    }
-    .bar1,
-    .bar2,
-    .bar3 {
-        background-color: #f0d5b6;
-    }
-
-    .left_header a,
-    .right_header a {
-        color: rgb(179, 179, 179);
-    }
-    .nav_bar .current {
-        color: #f0d5b6;
-    }
-    .left_header a:hover,
-    .right_header a:hover {
-        color: #ffeccf;
-    }
-    .center_header a {
-        color: #ffffff;
-    }
-    .center_header .header_logo figure {
-        background-image: url("images/logo_white.png");
-    }
-
-    .footer {
-        background-color: rgb(34, 34, 34);
-    }
-    .footer .logo_wrapper h1 {
-        color: rgb(98, 98, 98);
-    }
-    .footer .logo_wrapper figure {
-        filter: brightness(0.6);
-    }
-    .youtube,
-    .instagram,
-    .twitter,
-    .discord,
-    .github {
-        filter: brightness(0.6);
-    }
-
-    .youtube {
-        background-image: url("images/social_gray/Youtube_1.svg");
-    }
-    .instagram {
-        background-image: url("images/social_gray/Instagram_1.svg");
-    }
-    .twitter {
-        background-image: url("images/social_gray/Twitter_1.svg");
-    }
-    .discord {
-        background-image: url("images/social_gray/Discord_1.svg");
-    }
-    .github {
-        background-image: url("images/social_gray/Github_1.svg");
-    }
-
-    .copyright {
-        color: rgb(98, 98, 98);
-    }
-}
-
 /* DECREASE MOBILE NAV BAR LOGO'S CONTRAST AGAINST BACKGROUND */
-@media screen and (prefers-color-scheme: dark) and (max-width: 650px) {
-    .center_header {
-        filter: brightness(0.8);
-    }
+/* DEFAULT TO DARK THEME (SEE LINE 456) */
+.center_header {
+    filter: brightness(0.8);
 }
+
 @media screen and (prefers-color-scheme: light) and (max-width: 650px) {
     .center_header {
         filter: brightness(2.6);
