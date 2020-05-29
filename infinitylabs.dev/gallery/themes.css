@@ -19,10 +19,6 @@ body {
     background-color: rgb(37, 37, 37);
 }
 
-.footer {
-    background-color: rgb(34, 34, 34);
-}
-
  @media screen and (prefers-color-scheme: light) {
     body {
         background-color: white;
