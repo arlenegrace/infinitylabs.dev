@@ -1,6 +1,7 @@
 @media screen and (max-width: 1300px) {
     .enthusiast_wrapper {
         width: auto;
+        max-width: 90vw;
     }
     .enthusiast_wrapper h1 {
         font-size: 46px;
@@ -12,7 +13,7 @@
         font-size: 18px;
     }
     .aboutme .container {
-        width: 80%;
+        width: 85%;
         padding: 100px 30px;
     }
     .portrait {
@@ -31,7 +32,7 @@
 @media screen and (max-width: 950px) {
     .enthusiast_wrapper {
         padding-top: 125px;
-        padding-bottom: 200px;
+        padding-bottom: 190px;
     }
     .enthusiast_wrapper h1 {
         font-size: 42px;
@@ -95,7 +96,6 @@
     }
     .enthusiast_wrapper p {
         font-size: 16px;
-        line-height: 1.5;
         margin-top: 20px;
     }
     .aboutme .container {

@@ -18,7 +18,7 @@ body {
     color: #f0d5b6;
 }
 .enthusiast_wrapper p {
-    color: rgb(230, 230, 230);
+    color: rgb(211, 210, 210);
 }
 
 .aboutme {
@@ -32,7 +32,7 @@ body {
     color: #f0d5b6;
 }
 .biography p {
-    color: rgb(209, 209, 209);
+    color: rgb(200, 200, 200);
 }
 
 @media screen and (prefers-color-scheme: light) {
@@ -58,10 +58,12 @@ body {
         box-shadow: 0px 0px 55px rgba(12, 12, 12, 0.2)
     }
     .biography h1 {
-        color: #333333;
+        color: rgb(68, 68, 68);
+        font-weight: 600;
     }
     .biography p {
-        color: rgb(93, 93, 93);
+        color: rgb(129, 129, 129);
+        font-weight: 500;
     }
     .footer {
         background-color: rgb(245, 245, 245);

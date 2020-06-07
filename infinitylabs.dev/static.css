@@ -23,7 +23,7 @@
     margin-top: 30px;
 }
 .dropdown_links a {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 28px;
     text-align: center;
@@ -51,8 +51,6 @@
     width: auto;
     max-width: 1260px;
 
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     align-items: center;
 }
@@ -61,15 +59,11 @@
 }
 .left_header {
     width: 230px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
 }
 .right_header {
     text-align: right;
     width: 230px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
 }
 .right_header nav {
@@ -84,8 +78,8 @@
 }
 .left_header a,
 .right_header a {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
     font-size: 17px;
     line-height: 17px;
     letter-spacing: .1em;
@@ -96,14 +90,11 @@
     z-index: 6;
     margin-left: auto;
     margin-right: auto;
-    
-    display: -webkit-box;
-    display: -ms-flexbox;
+
     display: flex;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-
 
     -webkit-box-flex: 1;
     -ms-flex: 0 0 auto;
@@ -121,8 +112,8 @@
     align-items: center;
 }
 .center_header a {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
     font-size: 14px;
     line-height: 17px;
     letter-spacing: .1em;
@@ -186,7 +177,7 @@
     height: 30px;
 }
 .footer .logo_wrapper h1 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 700;
     font-size: 16px;
     letter-spacing: 0.08em;
@@ -209,7 +200,7 @@
     display: flex;
 }
 .copyright h1 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 600;
     font-size: 14px;
     text-align: right;

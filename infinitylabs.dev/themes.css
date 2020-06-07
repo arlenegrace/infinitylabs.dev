@@ -16,7 +16,7 @@ body {
 }
 .landing .landing_container p,
 .landing .landing_icon_container  h3 {
-    color: #d6d6d6;
+    color: rgb(200, 200, 200);
 }
 .landing .landing_icon_container .card_container:hover h3 {
     color: #f0d5b6;
@@ -45,7 +45,7 @@ body {
 }
 .body_left .body_left_paragraph,
 .body_right .body_right_paragraph {
-    color: #d6d6d6;
+    color: rgb(200, 200, 200);
 }
 
 @media screen and (prefers-color-scheme: light) {
@@ -94,7 +94,7 @@ body {
     }
     .landing .landing_container p,
     .landing .landing_icon_container  h3 {
-        color: #fafafa;
+        color: rgb(195, 195, 195);
     }
     .landing .landing_icon_container .card_container:hover h3 {
         color: #ffeccf;
@@ -117,11 +117,13 @@ body {
     }
     .body_left .body_left_headline,
     .body_right .body_right_headline {
-        color: #333333;
+        color: rgb(68, 68, 68);
+        font-weight: 600;
     }
     .body_left .body_left_paragraph,
     .body_right .body_right_paragraph {
-        color: rgb(77, 77, 77);
+        color: rgb(129, 129, 129);
+        font-weight: 500;
     }
 
     .landing .headline {

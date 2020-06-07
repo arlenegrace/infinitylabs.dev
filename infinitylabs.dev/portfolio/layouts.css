@@ -90,16 +90,16 @@
         height: 280px;
     }
     .portfolio .collage_container h1 {
-        font-size: 16px;
+        font-size: 14px;
         line-height: 1.05;
-        letter-spacing: 0.03em;
+        letter-spacing: 0.06em;
         margin-bottom: 10px;
     }
     .portfolio .collage_container p {
         font-size: 16px;
         font-weight: 400;
-        line-height: 1.35;
-        letter-spacing: 0.035em;
+        line-height: 1.7;
+        letter-spacing: 0.06em;
         margin-bottom: 30px;
     }
 }

@@ -26,6 +26,7 @@ body {
 .left_header a,
 .right_header a {
     color: rgb(107, 107, 107);
+    font-weight: 600;
 }
 .nav_bar .current {
     color: rgb(71, 71, 71);
@@ -36,6 +37,7 @@ body {
 }
 .center_header a {
     color: #292929;
+    font-weight: 600;
 }
 .center_header .header_logo figure {
     background-image: url("../images/logo_dark.png");

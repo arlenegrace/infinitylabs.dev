@@ -10,11 +10,11 @@
 }
 .image_showcase .collage .collage_title {
     margin: 0 auto;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 46px;
-    font-weight: 700;
+    font-weight: 600;
     text-align: center;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.06em;
     text-transform: uppercase;
     padding-top: 155px;
     padding-bottom: 80px;
