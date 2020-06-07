@@ -135,22 +135,19 @@
     z-index: 10;
 }
 /*ANIMATED HAMBURGER*/
-.bar1, .bar2, .bar3 {
-    width: 35px;
+.bar1, .bar3 {
+    width: 25px;
     height: 3px;
     margin: 8px 0;
     transition: 0.4s;
 }
 .change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 7px);
-    transform: rotate(-45deg) translate(-9px, 7px);
-}
-.change .bar2 {
-    opacity: 0;
+    -webkit-transform: rotate(-45deg) translate(-5px, 4px);
+    transform: rotate(-45deg) translate(-5.5px, 4px);
 }
 .change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -7px);
-    transform: rotate(45deg) translate(-8px, -7px);
+    -webkit-transform: rotate(45deg) translate(-4px, -3px);
+    transform: rotate(45deg) translate(-3.5px, -2.5px);
 }
 
 
