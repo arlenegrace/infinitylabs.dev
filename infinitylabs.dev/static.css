@@ -5,6 +5,13 @@
  * THEMES
  */
 
+
+ @keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
 /* DEFAULT CSS */
 .dropdown_menu {
     height: 0%;
@@ -419,9 +426,6 @@
 
 /* ONLY KEEP NAV BAR LOGO BELOW IPHONE SE (320PX) */
 @media screen and (max-width: 319px) {
-    .center_header figure {
-        transform: scale(1.3);
-    }
     .center_header .header_title {
         display: none;
     }

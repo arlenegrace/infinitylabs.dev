@@ -169,28 +169,31 @@
         font-size: 36px;
         text-transform: uppercase;
     }
-    .landing .landing_container p {    
+    .landing .landing_container p {
         font-size: 18px;
         font-weight: 300;
         line-height: 1.7;
     }
-    .landing .landing_container .landing_icon_container {
-        display: flex;
-    }
     .landing .landing_container .landing_icon_container .card_container {
-        width: 20vw;
+        width: auto;
         margin: 0 auto;
+    }
+    .landing .landing_container .landing_icon_container #creator_container {
+        margin-left: 0px;
+    }
+    .landing .landing_container .landing_icon_container #designer_container {
+        margin-right: 0px;
     }
     .landing .landing_container .landing_icon_container .card_container a {
         width: auto;
         height: auto;
     }
     .landing .landing_container .landing_icon_container .card_container h3 {
-        display: none;
+        font-size: 11px;
     }
     .landing .landing_container .landing_icon_container .card_container img {
-        width: 50px;
-        height: 50px;
+        width: 60px;
+        height: 60px;
         margin: 0 auto;
         display: block;
     }
@@ -231,6 +234,5 @@
     .body_right .body_right_paragraph {
         font-size: 17px;
         line-height: 1.7em;
-        letter-spacing: 0.1em;
     }
 }

@@ -18,9 +18,6 @@ body {
 .landing .landing_icon_container  h3 {
     color: rgb(200, 200, 200);
 }
-.landing .landing_icon_container .card_container:hover h3 {
-    color: #f0d5b6;
-}
 
 .work {
     background-color: rgb(42, 42, 42);
@@ -32,12 +29,11 @@ body {
 .body_left .text_container .text,
 .body_right .text_container .text {
     background-color: rgb(49, 49, 49);
-    box-shadow: 10px 10px 32px rgba(12, 12, 12, 0.4);
+    box-shadow: 0px 20px 39px rgba(0, 0, 0, 0.3);
 }
 .body_left:hover .text_container .text,
 .body_right:hover .text_container .text {
-    box-shadow: 0px 10px 28px rgba(255, 255, 255, 0.1);
-    margin-top: -10px;
+    margin-top: -20px;
 }
 .body_left .body_left_headline,
 .body_right .body_right_headline {
