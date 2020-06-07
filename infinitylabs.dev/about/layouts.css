@@ -23,7 +23,7 @@
         width: auto;
     }
     .biography h1 {
-        font-size: 46px;
+        font-size: 40px;
     }
     .biography p {
         font-size: 18px;
@@ -116,9 +116,10 @@
         padding-left: 0px;
     }
     .biography h1 {
-        font-size: 32px;
+        font-size: 28px;
     }
     .biography p {
+        font-size: 16px;
         margin-top: 10px;
     }
 

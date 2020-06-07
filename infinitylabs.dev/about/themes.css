@@ -25,14 +25,14 @@ body {
     background-color: rgb(39, 39, 39);
 }
 .aboutme .container {
-    background-color: #2a2a2a;
-    box-shadow: 0px 0px 55px rgba(255, 255, 255, 0.1)
+    background-color: rgb(37, 37, 37);
+    box-shadow: 0 30px 45px rgba(255, 255, 255, .1);
 }
 .biography h1 {
     color: #f0d5b6;
 }
 .biography p {
-    color: rgb(200, 200, 200);
+    color: rgb(190, 190, 190);
 }
 
 @media screen and (prefers-color-scheme: light) {
@@ -55,7 +55,7 @@ body {
     }
     .aboutme .container {
         background-color: #ffffff;
-        box-shadow: 0px 0px 55px rgba(12, 12, 12, 0.2)
+        box-shadow: 0 30px 45px rgba(12, 12, 12, 0.2);
     }
     .biography h1 {
         color: rgb(68, 68, 68);
