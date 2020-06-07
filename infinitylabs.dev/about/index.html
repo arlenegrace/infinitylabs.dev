@@ -40,24 +40,56 @@
 
         <!-- HAMBURGER BUTTON -->
         <script>
-            function open_nav(x) {
-                x.classList.toggle("change");
-                let dropdown = document.getElementById('dropdown_menu_id');
-                dropdown.style.height = dropdown.style.height == '100%' ? '0%' : '100%';
+            function open_nav() {
+                /* MANUALLY CALCULATE DROPDOWN WIDTH, AUTO DOESN'T PLAY CLOSING TRANSITION */
+                let sidenav = document.getElementById('sidenav');
+                let dropdown = document.getElementById('sidenav_container_id');
+                let bg = document.getElementById('sidenav_bg');
+                let header_logo = document.getElementById('center_header');
+                let body = document.getElementsByTagName("body")[0];
+                let main = document.getElementsByTagName("main")[0];
+                const opened = dropdown.style.width == '230px' ? true : false;
+
+                document.getElementById('hamburger').classList.toggle("change");
+
+                if (opened) {
+                    dropdown.style.width = '0vw';
+                    sidenav.style.width = '0vw';
+                    bg.style.width = '0vw';
+
+                    body.style.overflow = 'auto';
+                    main.style.opacity = '1';
+                    main.style.filter = 'blur(0px)';
+                    header_logo.style.opacity = '1';
+                    header_logo.style.filter = 'blur(0px)';
+                } else {
+                    dropdown.style.width = '230px';
+                    sidenav.style.width = '100vw';
+                    bg.style.width = '100vw';
+
+                    body.style.overflow = 'hidden';
+                    main.style.opacity = '0.3';
+                    main.style.filter = 'blur(10px)';
+                    header_logo.style.opacity = '0.3';
+                    header_logo.style.filter = 'blur(10px)';
+                }
             }
         </script>
     </head>
 
     <body>
-        <!-- MOBILE LAYOUT NAVIGATION DROPDOWN MENU -->
-        <nav class="dropdown_menu" id="dropdown_menu_id" style="height: 0%;">
-            <div class="dropdown_links">
-                <a href="https://www.infinitylabs.dev/">Work</a>
-                <a href="https://www.infinitylabs.dev/about/">About</a>
-                <a href="https://www.infinitylabs.dev/gallery/">Gallery</a>
-                <a href="https://www.infinitylabs.dev/portfolio/">Portfolio</a>
-            </div>
-        </nav>
+        <header class="sidenav" id="sidenav" style="width: 0vw;">
+            <div class="sidenav_bg" id="sidenav_bg" onclick="open_nav()"></div>
+
+            <nav class="sidenav_container" id="sidenav_container_id" style="width: 0vw;">
+                <div class="sidenav_links">
+                    <a href="https://www.infinitylabs.dev/">Work</a>
+                    <a href="https://www.infinitylabs.dev/gallery/">Gallery</a>
+                    <a href="https://www.infinitylabs.dev/about/">About</a>
+                    <a href="https://www.infinitylabs.dev/portfolio/">Portfolio</a>
+                </div>
+            </nav>
+        </header>
 
         <header class="nav_bar">
             <div class="left_header">
@@ -70,7 +102,7 @@
                     </div>
                 </nav>
             </div>
-            <div class="center_header">
+            <div class="center_header" id="center_header">
                 <div>
                     <a class="header_logo" href="https://www.infinitylabs.dev/">
                         <figure></figure>
@@ -91,40 +123,42 @@
                 </nav>
             </div>
 
-            <div class="hamburger" onclick="open_nav(this)">
+            <div class="hamburger" id="hamburger" onclick="open_nav()">
                 <div class="bar1"></div>
                 <div class="bar3"></div>
             </div>
         </header>
 
-        <section class = "aboutme">
-            <div class="enthusiast">
-                <div class="enthusiast_wrapper">
-                    <h1>ENTHUSIAST</h1>
-                    <p>
-                        Technology has become an important part of our lives with much of our time spent interacting with it.
-                        For something so integral, why compromise on something less?
-                    </p>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="container">
-                    <div class="portrait_wrapper">
-                        <img class="portrait" src="../images/IMG_7453.jpeg" alt="Infinity Labs">
-                    </div>
-                    <div class="biography">
-                        <h1>About Me</h1>
+        <main style="opacity: 1">
+            <section class = "aboutme">
+                <div class="enthusiast">
+                    <div class="enthusiast_wrapper">
+                        <h1>ENTHUSIAST</h1>
                         <p>
-                            Fascinated by technology from a young age, Mark set out to explore the bleeding edge of consumer electronics.
-                            He later created Infinity Labs to share the experience with other enthusiasts. Currently residing on Mars,
-                            he works as a software developer, content creator, and web developer. Hobbies include UI/UX design,
-                            DIY electronics and custom mechanical keyboards.
+                            Technology has become an important part of our lives with much of our time spent interacting with it.
+                            For something so integral, why compromise on something less?
                         </p>
                     </div>
                 </div>
-            </div>
-        </section>
+    
+                <div class="card">
+                    <div class="container">
+                        <div class="portrait_wrapper">
+                            <img class="portrait" src="../images/IMG_7453.jpeg" alt="Infinity Labs">
+                        </div>
+                        <div class="biography">
+                            <h1>About Me</h1>
+                            <p>
+                                Fascinated by technology from a young age, Mark set out to explore the bleeding edge of consumer electronics.
+                                He later created Infinity Labs to share the experience with other enthusiasts. Currently residing on Mars,
+                                he works as a software developer, content creator, and web developer. Hobbies include UI/UX design,
+                                DIY electronics and custom mechanical keyboards.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
 
         <footer class="footer">
             <div class="footer_container">

@@ -42,24 +42,56 @@
 
         <!-- HAMBURGER BUTTON -->
         <script>
-            function open_nav(x) {
-                x.classList.toggle("change");
-                let dropdown = document.getElementById('dropdown_menu_id');
-                dropdown.style.height = dropdown.style.height == '100%' ? '0%' : '100%';
+            function open_nav() {
+                /* MANUALLY CALCULATE DROPDOWN WIDTH, AUTO DOESN'T PLAY CLOSING TRANSITION */
+                let sidenav = document.getElementById('sidenav');
+                let dropdown = document.getElementById('sidenav_container_id');
+                let bg = document.getElementById('sidenav_bg');
+                let header_logo = document.getElementById('center_header');
+                let body = document.getElementsByTagName("body")[0];
+                let main = document.getElementsByTagName("main")[0];
+                const opened = dropdown.style.width == '230px' ? true : false;
+
+                document.getElementById('hamburger').classList.toggle("change");
+
+                if (opened) {
+                    dropdown.style.width = '0vw';
+                    sidenav.style.width = '0vw';
+                    bg.style.width = '0vw';
+
+                    body.style.overflow = 'auto';
+                    main.style.opacity = '1';
+                    main.style.filter = 'blur(0px)';
+                    header_logo.style.opacity = '1';
+                    header_logo.style.filter = 'blur(0px)';
+                } else {
+                    dropdown.style.width = '230px';
+                    sidenav.style.width = '100vw';
+                    bg.style.width = '100vw';
+
+                    body.style.overflow = 'hidden';
+                    main.style.opacity = '0.3';
+                    main.style.filter = 'blur(10px)';
+                    header_logo.style.opacity = '0.3';
+                    header_logo.style.filter = 'blur(10px)';
+                }
             }
         </script>
     </head>
 
     <body>
-        <!-- MOBILE LAYOUT NAVIGATION DROPDOWN MENU -->
-        <nav class="dropdown_menu" id="dropdown_menu_id" style="height: 0%;">
-            <div class="dropdown_links">
-                <a href="https://www.infinitylabs.dev/">Work</a>
-                <a href="https://www.infinitylabs.dev/about/">About</a>
-                <a href="https://www.infinitylabs.dev/gallery/">Gallery</a>
-                <a href="https://www.infinitylabs.dev/portfolio/">Portfolio</a>
-            </div>
-        </nav>
+        <header class="sidenav" id="sidenav" style="width: 0vw;">
+            <div class="sidenav_bg" id="sidenav_bg" onclick="open_nav()"></div>
+
+            <nav class="sidenav_container" id="sidenav_container_id" style="width: 0vw;">
+                <div class="sidenav_links">
+                    <a href="https://www.infinitylabs.dev/">Work</a>
+                    <a href="https://www.infinitylabs.dev/gallery/">Gallery</a>
+                    <a href="https://www.infinitylabs.dev/about/">About</a>
+                    <a href="https://www.infinitylabs.dev/portfolio/">Portfolio</a>
+                </div>
+            </nav>
+        </header>
 
         <header class="nav_bar">
             <div class="left_header">
@@ -72,7 +104,7 @@
                     </div>
                 </nav>
             </div>
-            <div class="center_header">
+            <div class="center_header" id="center_header">
                 <div>
                     <a class="header_logo" href="https://www.infinitylabs.dev/">
                         <figure></figure>
@@ -93,105 +125,107 @@
                 </nav>
             </div>
 
-            <div class="hamburger" onclick="open_nav(this)">
+            <div class="hamburger" id="hamburger" onclick="open_nav()">
                 <div class="bar1"></div>
                 <div class="bar3"></div>
             </div>
         </header>
 
-        <section class="landing">
-            <div class="landing_container">
-                <div class="landing_title">
-                    <h2>Infinity Labs</h2>
-                    <p>Content creator, software developer, and UI/UX designer.</p>
+        <main style="opacity: 1">
+            <section class="landing">
+                <div class="landing_container">
+                    <div class="landing_title">
+                        <h2>Infinity Labs</h2>
+                        <p>Content creator, software developer, and UI/UX designer.</p>
+                    </div>
+    
+                    <div class="landing_icon_container">
+                        <div class="card_container" id="creator_container">
+                            <h3>Creator</h3>
+                            <a href="https://www.youtube.com/infinitylabstech">
+                                <img src="images/icon_yt.png" alt="YouTube">
+                            </a>
+                        </div>
+                        <div class="card_container" id="developer_container">
+                            <h3>Developer</h3>
+                            <a href="https://www.github.com/arlenegrace">
+                                <img src="images/icon-github.png" alt="GitHub">
+                            </a>
+                        </div>
+                        <div class="card_container" id="designer_container">
+                            <h3>Designer</h3>
+                            <a href="https://www.github.com/arlenegrace/infinitylabs.dev">
+                                <img src="images/icon-vsc.png" alt="Source Repo">
+                            </a>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="landing_icon_container">
-                    <div class="card_container" id="creator_container">
-                        <h3>Creator</h3>
-                        <a href="https://www.youtube.com/infinitylabstech">
-                            <img src="images/icon_yt.png" alt="YouTube">
-                        </a>
+            </section>
+    
+            <section class="work">
+                <div class="body_left" id="body_creator">
+                    <div class="image_container">
+                        <div class="image"></div>
                     </div>
-                    <div class="card_container" id="developer_container">
-                        <h3>Developer</h3>
-                        <a href="https://www.github.com/arlenegrace">
-                            <img src="images/icon-github.png" alt="GitHub">
-                        </a>
+                    
+                    <div class="text_container">
+                        <div class="text">
+                            <h2 class="body_left_headline">
+                                Content Creator
+                            </h2>
+                            <p class="body_left_paragraph">
+                                Created in May 2017, Infinity Labs focuses on reviewing laptops.
+                                As computers get faster with lower power consumption, laptops and tablets
+                                are becoming increasingly popular due to their portability. With premium laptops
+                                reaching $2,400 or more, it is important you pick the right laptop to suit your
+                                needs and preferences.
+                            </p>
+                        </div>
                     </div>
-                    <div class="card_container" id="designer_container">
-                        <h3>Designer</h3>
-                        <a href="https://www.github.com/arlenegrace/infinitylabs.dev">
-                            <img src="images/icon-vsc.png" alt="Source Repo">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="work">
-            <div class="body_left" id="body_creator">
-                <div class="image_container">
-                    <div class="image"></div>
                 </div>
                 
-                <div class="text_container">
-                    <div class="text">
-                        <h2 class="body_left_headline">
-                            Content Creator
-                        </h2>
-                        <p class="body_left_paragraph">
-                            Created in May 2017, Infinity Labs focuses on reviewing laptops.
-                            As computers get faster with lower power consumption, laptops and tablets
-                            are becoming increasingly popular due to their portability. With premium laptops
-                            reaching $2,400 or more, it is important you pick the right laptop to suit your
-                            needs and preferences.
-                        </p>
+                <div class="body_right" id="body_developer">
+                    <div class="image_container">
+                        <div class="image"></div>
+                    </div>
+                    
+                    <div class="text_container">
+                        <div class="text">
+                            <h2 class="body_right_headline">
+                                Developer
+                            </h2>
+                            <p class="body_right_paragraph">
+                                Starting out in 2012 with Lua with a brief introduction to JavaScript in 2017,
+                                C++ became the language of choice for its efficiency, performance, freedom and
+                                its low level nature. It offers direct access to memory and threads, allowing
+                                you to learn more about how computers work in a hands-on way.
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            
-            <div class="body_right" id="body_developer">
-                <div class="image_container">
-                    <div class="image"></div>
-                </div>
-                
-                <div class="text_container">
-                    <div class="text">
-                        <h2 class="body_right_headline">
-                            Developer
-                        </h2>
-                        <p class="body_right_paragraph">
-                            Starting out in 2012 with Lua with a brief introduction to JavaScript in 2017,
-                            C++ became the language of choice for its efficiency, performance, freedom and
-                            its low level nature. It offers direct access to memory and threads, allowing
-                            you to learn more about how computers work in a hands-on way.
-                        </p>
+    
+                <div class="body_left" id="body_designer">
+                    <div class="image_container">
+                        <div class="image"></div>
+                    </div>
+                    
+                    <div class="text_container">
+                        <div class="text">
+                            <h2 class="body_left_headline">
+                                Designer
+                            </h2>
+                            <p class="body_left_paragraph">
+                                A secondary outlet for creativity - web design lead to the development of this website.
+                                Everything here was written entirely using HTML and CSS making it extremely fast and
+                                compatible across all browsers. It even has an automatic dark theme - just enable it
+                                in your operating system.
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="body_left" id="body_designer">
-                <div class="image_container">
-                    <div class="image"></div>
-                </div>
-                
-                <div class="text_container">
-                    <div class="text">
-                        <h2 class="body_left_headline">
-                            Designer
-                        </h2>
-                        <p class="body_left_paragraph">
-                            A secondary outlet for creativity - web design lead to the development of this website.
-                            Everything here was written entirely using HTML and CSS making it extremely fast and
-                            compatible across all browsers. It even has an automatic dark theme - just enable it
-                            in your operating system.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
+            </section>
+        </main>
+    
         <footer class="footer">
             <div class="footer_container">
                 <div class="logo_wrapper">

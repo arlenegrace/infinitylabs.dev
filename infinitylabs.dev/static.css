@@ -1,49 +1,66 @@
 /* 
  * STRUCTURE:
- * DEFAULT (DESKTOP) CSS
+ * DESKTOP CSS
  * LAYOUTS
  * THEMES
  */
 
-
- @keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+/* DESKTOP CSS */
+main {
+    transition: opacity 0.5s, filter 0.5s;
 }
 
 
-/* DEFAULT CSS */
-.dropdown_menu {
-    height: 0%;
-    width: 100%;
+.sidenav {
+    width: 100vw;
+    height: 100vh;
     position: fixed;
-    z-index: 5;
     top: 0;
-    left: 0;
-    overflow-y: hidden;
+    right: 0;
+    z-index: 2;
+    overflow: hidden;
     transition: 0.5s;
 }
-.dropdown_links {
-    position: relative;
-    top: 25%;
-    width: 100%;
-    margin-top: 30px;
+.sidenav .sidenav_bg {
+    width: 0vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+
+    opacity: 0;
+    transition: 0.5s;
 }
-.dropdown_links a {
+.sidenav_container {
+    width: 80vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    overflow-y: hidden;
+    transition: 0.5s;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+.sidenav_links {
+    position: relative;
+    top: 20%;
+    width: 100%;
+}
+.sidenav_links a {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 28px;
-    text-align: center;
+    letter-spacing: 0.03em;
+    text-align: right;
     text-decoration: none;
+    cursor: pointer;
 
-    padding: 14px 28px;
+    padding: 14px 32px;
     display: block;
     transition: 0.3s;
-    
-    background-color: inherit;
-    padding: 14px 28px;
-    cursor: pointer;
-    display: block;
 }
 
 .nav_bar {
@@ -94,9 +111,10 @@
     transition-duration: 0.3s;
 }
 .center_header {
-    z-index: 6;
+    z-index: 1;
     margin-left: auto;
     margin-right: auto;
+    transition: all 0.5s;
 
     display: flex;
     -webkit-box-align: center;
@@ -240,10 +258,10 @@
 
 /* SHRINK DROPDOWN MENU TEXT FOR SHORT SCREENS (SUB 450PX HEIGHT) */
 @media screen and (max-height: 450px) {
-    .dropdown_menu {
+    .sidenav_container {
         overflow-y: auto;
     }
-    .dropdown_menu a {
+    .sidenav_container a {
         font-size: 20px
     }
 }
@@ -253,7 +271,7 @@
  * DROPDOWN MENU IS ACTIVE.
  */
 @media screen and (min-width: 940px) {
-    .dropdown_menu {
+    .sidenav_container {
         height: 0%;
     }
 }
@@ -343,7 +361,7 @@
 
 /* SHOW HAMBURGER MENU WHEN NAV BAR RUNS OUT OF SPACE (MOBILE SUB-650PX WIDTH) */
 @media screen and (max-width: 650px) {
-    .dropdown_menu button {
+    .sidenav_container button {
         font-size: 20px
     }
 
@@ -442,14 +460,14 @@
  * IS USING LIGHT THEME, THE LIGHT THEME CSS WILL OVERRIDE THE DEFAULT BECAUSE
  * IT IS DECLARED LATER IN THE FILE. HTML PRIORITIZES CSS IN ORDER OF NEWEST TO OLDEST.
  */
-.dropdown_menu {
-    background-color: rgb(37, 37, 37);
+.sidenav_container {
+    background-color: rgb(42, 42, 42);
 }
-.dropdown_links a {
+.sidenav_links a {
     color: rgb(199, 199, 199);
 }
-.dropdown_links a:hover,
-.dropdown_menu a:focus {
+.sidenav_links a:hover,
+.sidenav_container a:focus {
     color: #ffeccf;
 }
 .bar1,
@@ -508,17 +526,6 @@
 
 
 @media screen and (prefers-color-scheme: light) {
-    .dropdown_menu {
-        background-color: white;
-    }
-    .dropdown_links a {
-        color: rgb(109, 109, 109);
-    }
-    .dropdown_links a:hover,
-    .dropdown_menu a:focus {
-        color: #424242;
-        transition-duration: 0.5s;
-    }
     .bar1,
     .bar2,
     .bar3 {

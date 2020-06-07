@@ -50,14 +50,15 @@ body {
     }
 
     /* DARK THEME NAV BAR FOR DARK LANDING DIV */
-    .dropdown_menu {
-        background-color: rgb(37, 37, 37);
+    .sidenav_container {
+        background-color: rgb(42, 42, 42);
     }
-    .dropdown_links a {
-        color: #fafafa;
+    .sidenav_links a {
+        color: rgb(199, 199, 199);
+        font-weight: 400;
     }
-    .dropdown_links a:hover,
-    .dropdown_menu a:focus {
+    .sidenav_links a:hover,
+    .sidenav_container a:focus {
         color: #ffeccf;
     }
     .bar1,
@@ -91,9 +92,6 @@ body {
     .landing .landing_container p,
     .landing .landing_icon_container  h3 {
         color: rgb(195, 195, 195);
-    }
-    .landing .landing_icon_container .card_container:hover h3 {
-        color: #ffeccf;
     }
 
     .work {

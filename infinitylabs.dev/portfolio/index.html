@@ -40,24 +40,62 @@
 
         <!-- HAMBURGER BUTTON -->
         <script>
-            function open_nav(x) {
-                x.classList.toggle("change");
-                let dropdown = document.getElementById('dropdown_menu_id');
-                dropdown.style.height = dropdown.style.height == '100%' ? '0%' : '100%';
+            function open_nav() {
+                /* MANUALLY CALCULATE DROPDOWN WIDTH, AUTO DOESN'T PLAY CLOSING TRANSITION */
+                let sidenav = document.getElementById('sidenav');
+                let dropdown = document.getElementById('sidenav_container_id');
+                let bg = document.getElementById('sidenav_bg');
+                let header_logo = document.getElementById('center_header');
+                let bar1 = document.getElementById('bar1');
+                let bar3 = document.getElementById('bar3');
+                let body = document.getElementsByTagName("body")[0];
+                let main = document.getElementsByTagName("main")[0];
+                const opened = dropdown.style.width == '230px' ? true : false;
+
+                document.getElementById('hamburger').classList.toggle("change");
+
+                if (opened) {
+                    dropdown.style.width = '0vw';
+                    sidenav.style.width = '0vw';
+                    bg.style.width = '0vw';
+
+                    body.style.overflow = 'auto';
+                    main.style.opacity = '1';
+                    main.style.filter = 'blur(0px)';
+                    header_logo.style.opacity = '1';
+                    header_logo.style.filter = 'blur(0px)';
+                    bar1.style.backgroundColor = '#333';
+                    bar3.style.backgroundColor = '#333';
+                } else {
+                    dropdown.style.width = '230px';
+                    sidenav.style.width = '100vw';
+                    bg.style.width = '100vw';
+
+                    body.style.overflow = 'hidden';
+                    main.style.opacity = '0.3';
+                    main.style.filter = 'blur(10px)';
+                    header_logo.style.opacity = '0.3';
+                    header_logo.style.filter = 'blur(10px)';
+                    bar1.style.backgroundColor = '#e8c4b8';
+                    bar3.style.backgroundColor = '#e8c4b8';
+                }
             }
         </script>
     </head>
 
     <body>
-        <!-- MOBILE LAYOUT NAVIGATION DROPDOWN MENU -->
-        <nav class="dropdown_menu" id="dropdown_menu_id" style="height: 0%;">
-            <div class="dropdown_links">
-                <a href="https://www.infinitylabs.dev/">Work</a>
-                <a href="https://www.infinitylabs.dev/about/">About</a>
-                <a href="https://www.infinitylabs.dev/gallery/">Gallery</a>
-                <a href="https://www.infinitylabs.dev/portfolio/">Portfolio</a>
-            </div>
-        </nav>
+        <header class="sidenav" id="sidenav" style="width: 0vw;">
+            <div class="sidenav_bg" id="sidenav_bg" onclick="open_nav()"></div>
+
+            <nav class="sidenav_container" id="sidenav_container_id" style="width: 0vw;">
+                <div class="sidenav_links">
+                    <a href="https://www.infinitylabs.dev/">Work</a>
+                    <a href="https://www.infinitylabs.dev/gallery/">Gallery</a>
+                    <a href="https://www.infinitylabs.dev/about/">About</a>
+                    <a href="https://www.infinitylabs.dev/portfolio/">Portfolio</a>
+                </div>
+            </nav>
+        </header>
 
         <header class="nav_bar">
             <div class="left_header">
@@ -70,7 +108,7 @@
                     </div>
                 </nav>
             </div>
-            <div class="center_header">
+            <div class="center_header" id="center_header">
                 <div>
                     <a class="header_logo" href="https://www.infinitylabs.dev/">
                         <figure></figure>
@@ -91,129 +129,131 @@
                 </nav>
             </div>
 
-            <div class="hamburger" onclick="open_nav(this)">
-                <div class="bar1"></div>
-                <div class="bar3"></div>
+            <div class="hamburger" id="hamburger" onclick="open_nav()">
+                <div class="bar1" id="bar1" style="background-color: #333;"></div>
+                <div class="bar3" id="bar3" style="background-color: #333;"></div>
             </div>
         </header>
 
-        <section class = "portfolio">
-            <div class="portfolio_header_container">
-                <div class="portfolio_header_wrapper">
-                    <h1>PROJECTS</h1>
-                    <h2>In progress</h2>
-                </div>
-            </div>
-
-            <div class="collage_container">
-                <div class="container">
-                    
-                    <div class="project_container_1" id="navi">
-                        <div class="project_image_wrapper">
-                            <figure class="project_image"></figure>
-                        </div>
-                        <div class="project_text_container">
-                            <h1>— NAVI.COM</h1>
-                            <p>Static product-page website for marketing apps, products and services.</p>
-                            <div class="button_container">
-                                <div class="button_link">
-                                    <a href="https://infinitylabs.dev/concepts/navi_beta_1/index.html">Preview</a>
-                                </div>
-                                <div class="button_link">
-                                    <a href="https://github.com/arlenegrace/navi">GitHub</a>
-                                </div>
-                            </div>
-                        </div>
+        <main style="opacity: 1;">
+            <section class = "portfolio">
+                <div class="portfolio_header_container">
+                    <div class="portfolio_header_wrapper">
+                        <h1>PROJECTS</h1>
+                        <h2>In progress</h2>
                     </div>
-
-                    <div class="collage_square">
-                        <div class="project_column_left">
-    
-                            <div class="project_container_top" id="quick_array">
-                                <div class="project_image_wrapper">
-                                    <figure class="project_image"></figure>
-                                </div>
-                                <div class="project_text_container">
-                                    <h1>— QUICK ARRAY</h1>
-                                    <p>
-                                        A fast C++ resizable array library with small object optimization.
-                                    </p>
-                                    <div class="button_container">
-                                        <div class="button_link">
-                                            <a href="https://github.com/arlenegrace/quickarray">Preview</a>
-                                        </div>
-                                        <div class="button_link">
-                                            <a href="https://github.com/arlenegrace/quickarray">GitHub</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-    
-                            <div class="project_container_bottom" id="andromeda">
-                                <div class="project_image_wrapper">
-                                    <figure class="project_image"></figure>
-                                </div>
-                                <div class="project_text_container">
-                                    <h1>— ANDROMEDA</h1>
-                                    <p>A third-person RPG game built using Unity with a retro low-poly design.</p>
-                                    <div class="button_container">
-                                        <div class="button_link">
-                                            <a href="https://github.com/arlenegrace/">Preview</a>
-                                        </div>
-                                        <div class="button_link">
-                                            <a href="https://github.com/arlenegrace/">GitHub</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-    
-                        </div>
-    
-                        <div class="project_column_right">
-    
-                            <div class="project_container_top" id="infinitylabs">
-                                <div class="project_image_wrapper">
-                                    <figure class="project_image"></figure>
-                                </div>
-                                <div class="project_text_container">
-                                    <h1>— INFINITYLABS.DEV</h1>
-                                    <p>A simple and maintainable portfolio website written in HTML and CSS.</p>
-                                    <div class="button_container">
-                                        <div class="button_link">
-                                            <a href="https://infinitylabs.dev">Preview</a>
-                                        </div>
-                                        <div class="button_link">
-                                            <a href="https://github.com/arlenegrace/infinitylabs.dev">GitHub</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-    
-                            <div class="project_container_bottom" id="mira">
-                                <div class="project_image_wrapper">
-                                    <figure class="project_image"></figure>
-                                </div>
-                                <div class="project_text_container">
-                                    <h1>— MIRA</h1>
-                                    <p>Quickly and easily reprogram any keyboard with various layouts and key codes.</p>
-                                    <div class="button_container">
-                                        <div class="button_link">
-                                            <a href="https://github.com/arlenegrace/">Preview</a>
-                                        </div>
-                                        <div class="button_link">
-                                            <a href="https://github.com/arlenegrace/">GitHub</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="white_shadow"></div>
-                            </div>
-                            
-                        </div>
-                    </div>
-
                 </div>
-            </div>
-        </section>
+    
+                <div class="collage_container">
+                    <div class="container">
+                        
+                        <div class="project_container_1" id="navi">
+                            <div class="project_image_wrapper">
+                                <figure class="project_image"></figure>
+                            </div>
+                            <div class="project_text_container">
+                                <h1>— NAVI.COM</h1>
+                                <p>Static product-page website for marketing apps, products and services.</p>
+                                <div class="button_container">
+                                    <div class="button_link">
+                                        <a href="https://infinitylabs.dev/concepts/navi_beta_1/index.html">Preview</a>
+                                    </div>
+                                    <div class="button_link">
+                                        <a href="https://github.com/arlenegrace/navi">GitHub</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="collage_square">
+                            <div class="project_column_left">
+        
+                                <div class="project_container_top" id="quick_array">
+                                    <div class="project_image_wrapper">
+                                        <figure class="project_image"></figure>
+                                    </div>
+                                    <div class="project_text_container">
+                                        <h1>— QUICK ARRAY</h1>
+                                        <p>
+                                            A fast C++ resizable array library with small object optimization.
+                                        </p>
+                                        <div class="button_container">
+                                            <div class="button_link">
+                                                <a href="https://github.com/arlenegrace/quickarray">Preview</a>
+                                            </div>
+                                            <div class="button_link">
+                                                <a href="https://github.com/arlenegrace/quickarray">GitHub</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="project_container_bottom" id="andromeda">
+                                    <div class="project_image_wrapper">
+                                        <figure class="project_image"></figure>
+                                    </div>
+                                    <div class="project_text_container">
+                                        <h1>— ANDROMEDA</h1>
+                                        <p>A third-person RPG game built using Unity with a retro low-poly design.</p>
+                                        <div class="button_container">
+                                            <div class="button_link">
+                                                <a href="https://github.com/arlenegrace/">Preview</a>
+                                            </div>
+                                            <div class="button_link">
+                                                <a href="https://github.com/arlenegrace/">GitHub</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                            </div>
+        
+                            <div class="project_column_right">
+        
+                                <div class="project_container_top" id="infinitylabs">
+                                    <div class="project_image_wrapper">
+                                        <figure class="project_image"></figure>
+                                    </div>
+                                    <div class="project_text_container">
+                                        <h1>— INFINITYLABS.DEV</h1>
+                                        <p>A simple and maintainable portfolio website written in HTML and CSS.</p>
+                                        <div class="button_container">
+                                            <div class="button_link">
+                                                <a href="https://infinitylabs.dev">Preview</a>
+                                            </div>
+                                            <div class="button_link">
+                                                <a href="https://github.com/arlenegrace/infinitylabs.dev">GitHub</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="project_container_bottom" id="mira">
+                                    <div class="project_image_wrapper">
+                                        <figure class="project_image"></figure>
+                                    </div>
+                                    <div class="project_text_container">
+                                        <h1>— MIRA</h1>
+                                        <p>Quickly and easily reprogram any keyboard with various layouts and key codes.</p>
+                                        <div class="button_container">
+                                            <div class="button_link">
+                                                <a href="https://github.com/arlenegrace/">Preview</a>
+                                            </div>
+                                            <div class="button_link">
+                                                <a href="https://github.com/arlenegrace/">GitHub</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="white_shadow"></div>
+                                </div>
+                                
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+            </section>
+        </main>
 
         <footer class="footer">
             <div class="footer_container">
