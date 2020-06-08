@@ -41,8 +41,6 @@ main {
     right: 0;
     overflow-y: hidden;
     transition: 0.5s;
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
 }
 .sidenav_links {
     position: relative;
