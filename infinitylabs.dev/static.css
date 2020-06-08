@@ -44,7 +44,7 @@ main {
 }
 .sidenav_links {
     position: relative;
-    top: 20%;
+    top: 100px;
     width: 100%;
 }
 .sidenav_links a {
@@ -60,6 +60,7 @@ main {
     display: block;
     transition: 0.3s;
 }
+
 
 .nav_bar {
     padding-left: 30px;
@@ -254,6 +255,7 @@ main {
     transform: translateY(-2px);
 }
 
+
 /* LAYOUTS CSS */
 
 /* SHRINK DROPDOWN MENU TEXT FOR SHORT SCREENS (SUB 450PX HEIGHT) */
@@ -426,7 +428,6 @@ main {
     .copyright h1 {
         font-size: 12px;
     }
-
     .youtube,
     .instagram,
     .twitter,
@@ -478,6 +479,7 @@ main {
     background-color: #f0d5b6;
 }
 
+
 .left_header a,
 .right_header a {
     color: rgb(179, 179, 179);
@@ -496,6 +498,7 @@ main {
     background-image: url("images/logo_white.png");
 }
 
+
 .footer {
     background-color: rgb(34, 34, 34);
 }
@@ -505,6 +508,7 @@ main {
 .footer .logo_wrapper figure {
     filter: brightness(0.6);
 }
+
 
 .youtube {
     background-image: url("images/footer/youtube_dark.png");
@@ -521,6 +525,7 @@ main {
 .github {
     background-image: url("images/footer/github_dark.png");
 }
+
 
 .copyright {
     color: rgb(98, 98, 98);
@@ -552,6 +557,7 @@ main {
         background-image: url("images/logo_dark.png");
     }
 
+
     .footer {
         background-color: rgb(240, 240, 240);
     }
@@ -576,7 +582,6 @@ main {
     .github {
         background-image: url("images/footer/github_light.png");
     }
-
     .copyright {
         color: rgb(185, 185, 185);
     }
@@ -584,8 +589,10 @@ main {
 
 /* DECREASE MOBILE NAV BAR LOGO'S CONTRAST AGAINST BACKGROUND */
 /* DEFAULT TO DARK THEME (SEE LINE 456) */
-.center_header {
-    filter: brightness(0.8);
+@media (max-width: 650px) {
+    .center_header {
+        filter: brightness(0.8);
+    }
 }
 
 @media screen and (prefers-color-scheme: light) and (max-width: 650px) {

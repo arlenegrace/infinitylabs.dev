@@ -8,7 +8,7 @@
     width: auto;
     max-width: 1260px;
     padding-top: 100px;
-    padding-bottom: 200px;
+    padding-bottom: 150px;
     padding-left: 30px;
     padding-right: 30px;
     margin: 0 auto;
@@ -116,7 +116,7 @@
 .portfolio .collage_container .project_text_container {
     font-family: 'Inter', sans-serif;
     text-align: left;
-    padding: 30px 30px;
+    padding: 30px;
 }
 .portfolio .collage_container h1 {
     font-size: 16px;
@@ -200,5 +200,6 @@
 /* GRAY OUT EMPTY PROJECT IMAGES */
 #mira,
 #andromeda {
-    opacity: 0.4;
+    opacity: 0.15;
+    filter: brightness(0.5);
 }
