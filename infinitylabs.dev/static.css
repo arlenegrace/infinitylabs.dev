@@ -193,6 +193,7 @@ main {
 }
 .footer .logo_wrapper figure {
     background-image: url("images/logo_white.png");
+    background-position: right;
     background-size: contain;
     background-repeat: no-repeat;
     width: 42px;
@@ -202,7 +203,7 @@ main {
     font-family: 'Inter', sans-serif;
     font-weight: 700;
     font-size: 16px;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.06em;
     margin: auto 0;
 }
 .social {
@@ -226,6 +227,7 @@ main {
     font-weight: 600;
     font-size: 14px;
     text-align: right;
+    letter-spacing: 0.04em;
     margin-top: auto;
     margin-bottom: auto;
     margin-left: auto;
@@ -333,16 +335,15 @@ main {
         margin: 0 auto;
     }
     .social {
-        padding-top: 20px;
-        padding-bottom: 20px;
+        padding: 10px 0px;
     }
     .footer .logo_wrapper figure {
         margin-left: auto;
-        width: 60px;
-        height: 40px;
+        width: 37px;
+        height: 25px;
     }
     .footer .logo_wrapper h1 {
-        font-size: 17px;
+        font-size: 14px;
         margin-right: auto;
     }
     .copyright h1 {
@@ -356,6 +357,8 @@ main {
     .github {
         margin-left: 15px;
         margin-right: 15px;
+        width: 24px;
+        height: 24px;
     }
 }
 
@@ -406,14 +409,15 @@ main {
         font-size: 18px;
         letter-spacing: .06em;
     }
+
+    .footer {
+        width: auto;
+        padding: 20px 15px;
+    }
 }
 
 /* SHRINK FOOTER FOR SMALLER PHONES */
 @media screen and (max-width: 400px) {
-    .social {
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
     .footer .logo_wrapper figure {
         width: 42px;
         height: 30px;
@@ -430,8 +434,8 @@ main {
     .twitter,
     .discord,
     .github {
-        margin-left: 10px;
-        margin-right: 10px;
+        margin-left: 12px;
+        margin-right: 12px;
     }
 }
 
