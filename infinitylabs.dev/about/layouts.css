@@ -45,6 +45,7 @@
     .aboutme .container {
         padding: 20px 20px;
         display: inline-block;
+        box-shadow: 0 20px 40px rgba(255, 255, 255, .1);
     }
     .portrait_wrapper .portrait {
         width: 100%;
@@ -83,10 +84,8 @@
     }
 }
 
-@media screen and (max-width: 600px) { /* PHONE LAYOUT*/
-    .aboutme {
-        padding-bottom: 40px;
-    }
+/* PHONE LAYOUT*/
+@media screen and (max-width: 600px) {
     .enthusiast_wrapper {
         padding-top: 60px;
         padding-bottom: 60px;
@@ -107,8 +106,8 @@
         margin-top: -50px;
         margin-right: 15px;
         margin-left: 15px;
-    
-        display: inline-block;
+
+        box-shadow: 0 10px 35px rgba(255, 255, 255, .1);
     }
     .portrait_wrapper .portrait {
         width: 100%;
