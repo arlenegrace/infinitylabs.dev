@@ -81,12 +81,12 @@ main {
     display: flex;
 }
 .left_header {
-    width: 230px;
+    width: 300px;
     display: flex;
 }
 .right_header {
     text-align: right;
-    width: 230px;
+    width: 300px;
     display: flex;
 }
 .right_header nav {
@@ -94,20 +94,22 @@ main {
     margin-right: 0;
 }
 .left_header div {
-    margin-right: 25px;
+    margin-right: 50px;
 }
 .right_header div {
-    margin-left: 25px;
+    margin-left: 50px;
 }
 .left_header a,
 .right_header a {
     font-family: 'Inter', sans-serif;
-    font-weight: 500;
-    font-size: 17px;
-    line-height: 17px;
+    font-weight: 600;
+    font-size: 16px;
     letter-spacing: .1em;
     text-decoration: none;
     transition-duration: 0.3s;
+}
+.right_header a {
+    text-align: right;
 }
 .center_header {
     z-index: 1;
@@ -137,7 +139,7 @@ main {
 }
 .center_header a {
     font-family: 'Inter', sans-serif;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 14px;
     line-height: 17px;
     letter-spacing: .1em;
@@ -268,16 +270,6 @@ main {
     }
 }
 
-/* 
- * CURRENTLY NOT WORKING. HIDE DROPDOWN MENU WHEN ENLARGING WINDOW WHILE
- * DROPDOWN MENU IS ACTIVE.
- */
-@media screen and (min-width: 940px) {
-    .sidenav_container {
-        height: 0%;
-    }
-}
-
 @media screen and (max-width: 1300px) {
     .header .header_container {
         width: auto;
@@ -297,28 +289,25 @@ main {
     }
 }
 
-@media screen and (max-width: 1000px) {
-    .left_header {
-        width: 230px;
-    }
-    .right_header {
-        text-align: right;
-        width: 230px;
-    }
-    .left_header div {
-        margin-right: 25px;
-    }
-    .right_header div {
-        margin-left: 25px;
-    }
-    .left_header a,
-    .right_header a {
-        font-size: 16px;
-    }
-    .center_header a {
-        font-size: 14px;
+/* 
+ * CURRENTLY NOT WORKING. HIDE DROPDOWN MENU WHEN ENLARGING WINDOW WHILE
+ * DROPDOWN MENU IS ACTIVE.
+ */
+@media screen and (min-width: 940px) {
+    .sidenav_container {
+        height: 0%;
     }
 }
+
+@media screen and (max-width: 900px) {
+    .left_header div {
+        margin-right: 40px;
+    }
+    .right_header div {
+        margin-left: 40px;
+    }
+}
+
 
 /* COMPRESS FOOTER INTO VERTICAL STACK */
 @media screen and (max-width: 750px) {
@@ -363,7 +352,7 @@ main {
 }
 
 /* SHOW HAMBURGER MENU WHEN NAV BAR RUNS OUT OF SPACE (MOBILE SUB-650PX WIDTH) */
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 700px) {
     .sidenav_container button {
         font-size: 20px
     }
@@ -477,25 +466,29 @@ main {
 .bar2,
 .bar3 {
     background-color: #f0d5b6;
+    background-color: rgb(204, 204, 204);
 }
 
 
 .left_header a,
 .right_header a {
     color: rgb(179, 179, 179);
+    color: rgb(219, 219, 219, 0.5);
 }
 .nav_bar .current {
     color: #f0d5b6;
+    color: rgb(219, 219, 219);
 }
 .left_header a:hover,
 .right_header a:hover {
-    color: #ffeccf;
+    color: rgb(219, 219, 219);
 }
 .center_header a {
-    color: #ffffff;
+    color: rgb(243, 243, 243);
 }
 .center_header .header_logo figure {
     background-image: url("images/logo_white.png");
+    filter: brightness(0.95);
 }
 
 
@@ -541,20 +534,21 @@ main {
 
     .left_header a,
     .right_header a {
-        color: rgb(139, 139, 139);
+        color: rgba(0, 0, 0, 0.4);
     }
     .nav_bar .current {
-        color: #424242;
+        color: rgb(61, 61, 61);
     }
     .left_header a:hover,
     .right_header a:hover {
-        color: #2f2f2f;
+        color: rgb(61, 61, 61);
     }
     .center_header a {
-        color: #292929;
+        color: rgb(61, 61, 61);
     }
     .center_header .header_logo figure {
         background-image: url("images/logo_dark.png");
+        filter: brightness(2.2);
     }
 
 

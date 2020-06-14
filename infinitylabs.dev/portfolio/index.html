@@ -25,17 +25,17 @@
         <meta name="msapplication-TileColor" content="#ff6256">
         <meta name="msapplication-config" content="../images/favicons/browserconfig.xml">
         <meta name="theme-color" content="#ff6256">
-        
+
         <!-- METADATA FOR EMBEDS AND PREVIEWS -->
         <meta name="description" content="Official website of Infinity Labs.">
         <meta name="keywords" content="Infinity Labs, YouTube">
         <meta name="author" content="Infinity Labs">
-        
+
         <meta property="og:site_name" content="Infinity Labs">
         <meta property="og:title" content="Portfolio — Infinity Labs">
         <meta property="og:image" content="https://www.infinitylabs.dev/images/logo_dark.png">
         <meta property="og:url" content="https://www.infinitylabs.dev/portfolio/">
-        
+
         <title>Portfolio — Infinity Labs</title>
 
         <!-- HAMBURGER BUTTON -->
@@ -46,8 +46,6 @@
                 let dropdown = document.getElementById('sidenav_container_id');
                 let bg = document.getElementById('sidenav_bg');
                 let header_logo = document.getElementById('center_header');
-                let bar1 = document.getElementById('bar1');
-                let bar3 = document.getElementById('bar3');
                 let body = document.getElementsByTagName("body")[0];
                 let main = document.getElementsByTagName("main")[0];
                 const opened = dropdown.style.width == '230px' ? true : false;
@@ -64,8 +62,6 @@
                     main.style.filter = 'blur(0px)';
                     header_logo.style.opacity = '1';
                     header_logo.style.filter = 'blur(0px)';
-                    bar1.style.backgroundColor = '#333';
-                    bar3.style.backgroundColor = '#333';
                 } else {
                     dropdown.style.width = '230px';
                     sidenav.style.width = '100vw';
@@ -76,8 +72,6 @@
                     main.style.filter = 'blur(10px)';
                     header_logo.style.opacity = '0.3';
                     header_logo.style.filter = 'blur(10px)';
-                    bar1.style.backgroundColor = '#e8c4b8';
-                    bar3.style.backgroundColor = '#e8c4b8';
                 }
             }
         </script>
@@ -130,126 +124,61 @@
             </div>
 
             <div class="hamburger" id="hamburger" onclick="open_nav()">
-                <div class="bar1" id="bar1" style="background-color: #333;"></div>
-                <div class="bar3" id="bar3" style="background-color: #333;"></div>
+                <div class="bar1"></div>
+                <div class="bar3"></div>
             </div>
         </header>
 
-        <main style="opacity: 1;">
-            <section class = "portfolio">
-                <div class="portfolio_header_container">
-                    <div class="portfolio_header_wrapper">
-                        <h1>PROJECTS</h1>
-                        <!-- <h2>In progress</h2> -->
+        <main style="opacity: 1">
+            <section class="project_showcase">
+                <div class="showcase_wrapper">
+                    <div class="showcase_title">
+                        <h1>Design</h1>
+                        <h2>Portfolio</h2>
                     </div>
-                </div>
-    
-                <div class="collage_container">
-                    <div class="container">
-                        
-                        <div class="project_container_1" id="navi">
-                            <div class="project_image_wrapper">
-                                <figure class="project_image"></figure>
-                            </div>
-                            <div class="project_text_container">
-                                <h1>— NAVI.COM</h1>
-                                <p>Static product-page website for marketing apps, products and services.</p>
-                                <div class="button_container">
-                                    <div class="button_link">
-                                        <a href="https://infinitylabs.dev/concepts/navi_beta_1/index.html">Preview</a>
-                                    </div>
-                                    <div class="button_link">
-                                        <a href="https://github.com/arlenegrace/navi">GitHub</a>
-                                    </div>
-                                </div>
+
+                    <div class="project_card" id="navi">
+                        <div class="bg_wrapper">
+                            <figure class="landing_background"></figure>
+                        </div>
+
+                        <div class="card_text_container">
+                            <h1>NAVI.COM</h1>
+                            <p>Modern product page website for marketing apps, products, and services.</p>
+                            <div class="card_links">
+                                <a class="card_github" href="https://github.com/arlenegrace/navi">GitHub →</a>
+                                <a class="card_preview" href="https://www.infinitylabs.dev/navi_rc3">Preview →</a>
                             </div>
                         </div>
-    
-                        <div class="collage_square">
-                            <div class="project_column_left">
-        
-                                <div class="project_container_top" id="quick_array">
-                                    <div class="project_image_wrapper">
-                                        <figure class="project_image"></figure>
-                                    </div>
-                                    <div class="project_text_container">
-                                        <h1>— QUICK ARRAY</h1>
-                                        <p>
-                                            A fast C++ resizable array library with small object optimization.
-                                        </p>
-                                        <div class="button_container">
-                                            <div class="button_link">
-                                                <a href="https://github.com/arlenegrace/quickarray">Preview</a>
-                                            </div>
-                                            <div class="button_link">
-                                                <a href="https://github.com/arlenegrace/quickarray">GitHub</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-        
-                                <div class="project_container_bottom" id="andromeda">
-                                    <div class="project_image_wrapper">
-                                        <figure class="project_image"></figure>
-                                    </div>
-                                    <div class="project_text_container">
-                                        <h1>— ANDROMEDA</h1>
-                                        <p>A third-person RPG game built using Unity with a retro low-poly design.</p>
-                                        <div class="button_container">
-                                            <div class="button_link">
-                                                <a href="https://github.com/arlenegrace/">Preview</a>
-                                            </div>
-                                            <div class="button_link">
-                                                <a href="https://github.com/arlenegrace/">GitHub</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-        
-                            </div>
-        
-                            <div class="project_column_right">
-        
-                                <div class="project_container_top" id="infinitylabs">
-                                    <div class="project_image_wrapper">
-                                        <figure class="project_image"></figure>
-                                    </div>
-                                    <div class="project_text_container">
-                                        <h1>— INFINITYLABS.DEV</h1>
-                                        <p>A simple and maintainable portfolio website written in HTML and CSS.</p>
-                                        <div class="button_container">
-                                            <div class="button_link">
-                                                <a href="https://infinitylabs.dev">Preview</a>
-                                            </div>
-                                            <div class="button_link">
-                                                <a href="https://github.com/arlenegrace/infinitylabs.dev">GitHub</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-        
-                                <div class="project_container_bottom" id="mira">
-                                    <div class="project_image_wrapper">
-                                        <figure class="project_image"></figure>
-                                    </div>
-                                    <div class="project_text_container">
-                                        <h1>— MIRA</h1>
-                                        <p>Quickly and easily reprogram any keyboard with various layouts and key codes.</p>
-                                        <div class="button_container">
-                                            <div class="button_link">
-                                                <a href="https://github.com/arlenegrace/">Preview</a>
-                                            </div>
-                                            <div class="button_link">
-                                                <a href="https://github.com/arlenegrace/">GitHub</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="white_shadow"></div>
-                                </div>
-                                
+                    </div>
+
+                    <div class="project_card" id="infinitylabs">
+                        <div class="bg_wrapper">
+                            <figure class="landing_background"></figure>
+                        </div>
+
+                        <div class="card_text_container">
+                            <h1>INFINITYLABS.DEV</h1>
+                            <p>Minimal personal portfolio website built for speed and browser compatibility.</p>
+                            <div class="card_links">
+                                <a class="card_github" href="https://github.com/arlenegrace/infinitylabs.dev">GitHub →</a>
+                                <a class="card_preview" href="https://www.infinitylabs.dev">Preview →</a>
                             </div>
                         </div>
-    
+                    </div>
+
+                    <div class="project_card" id="quickarray">
+                        <div class="bg_wrapper">
+                            <figure class="landing_background"></figure>
+                        </div>
+
+                        <div class="card_text_container">
+                            <h1>QUICK ARRAY</h1>
+                            <p>A fast C++ resizable array library with small object optimization.</p>
+                            <div class="card_links">
+                                <a class="card_github" href="https://github.com/arlenegrace/quickarray">GitHub →</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -270,7 +199,7 @@
                     </div>
                 </div>
                 <div class="copyright">
-                    <h1>Inspired by GMK Olivia</h1>
+                    <h1>Copyright Infinity Labs</h1>
                 </div>
             </div>
         </footer>
