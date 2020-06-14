@@ -111,6 +111,24 @@ main {
 .right_header a {
     text-align: right;
 }
+.nav_bar .header_link_1 {
+    animation: fade_in 0.5s;
+}
+.nav_bar .header_link_2 {
+    animation: blank 0.1s, fade_in 0.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 0s, 0.1s;
+}
+.nav_bar .header_link_3 {
+    animation: blank 0.2s, fade_in 0.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 0s, 0.2s;
+}
+.nav_bar .header_link_4 {
+    animation: blank 0.3s, fade_in 0.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 0s, 0.3s;
+}
 .center_header {
     z-index: 1;
     margin-left: auto;
@@ -145,6 +163,8 @@ main {
     letter-spacing: .1em;
     text-decoration: none;
     transition: .3s;
+
+    animation: fade_in 0.7s;
 }
 .center_header .header_logo figure {
     background-size: cover;
@@ -152,6 +172,8 @@ main {
     width: 150px;
     height: 105px;
     vertical-align: middle;
+
+    animation: text_in 0.5s;
 }
 .nav_bar .hamburger {
     display: none;
@@ -361,6 +383,7 @@ main {
         padding-top: 20px;
         padding-left: 15px;
         padding-right: 15px;
+        animation: fade_in 0.5s;
     }
     .nav_bar .hamburger {
         display: block;
@@ -386,10 +409,6 @@ main {
         -webkit-flex-direction: row;
         flex-direction: row;
     }
-    .center_header .header_logo figure {
-        width: 59px;
-        height: 41px;
-    }
     .left_header a,
     .right_header a {
         font-size: 14px;
@@ -397,6 +416,12 @@ main {
     .center_header a {
         font-size: 18px;
         letter-spacing: .06em;
+        animation: none;
+    }
+    .center_header .header_logo figure {
+        width: 59px;
+        height: 41px;
+        animation: none;
     }
 
     .footer {
