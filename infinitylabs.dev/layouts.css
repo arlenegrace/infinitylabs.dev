@@ -71,7 +71,7 @@
         margin: 0 auto;
     }
     .landing .landing_container .landing_icon_container .card_container {
-        margin: 0 55px;
+        margin: 0 65px;
     }
     .landing .landing_container .landing_icon_container #creator_container {
         margin-left: auto;
@@ -173,6 +173,9 @@
         font-size: 18px;
         font-weight: 300;
         line-height: 1.7;
+    }
+    .landing .landing_container .landing_icon_container {
+        max-width: 400px;
     }
     .landing .landing_container .landing_icon_container .card_container {
         width: auto;
