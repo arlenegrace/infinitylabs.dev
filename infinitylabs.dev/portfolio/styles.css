@@ -55,16 +55,25 @@
 }
 #infinitylabs .bg_wrapper {
     animation: zoom_out_10 2s;
-    animation-delay: 1s;
+    animation-delay: 1.4s;
 }
-#quickarray {
+#comet {
     animation: blank 1.8s, fade_in 1s;
     animation-fill-mode: forwards;
     animation-delay: 0s, 1.8s;
 }
+#comet .bg_wrapper {
+    animation: zoom_out_10 2s;
+    animation-delay: 1.8s;
+}
+#quickarray {
+    animation: blank 2.2s, fade_in 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 0s, 2.2s;
+}
 #quickarray .bg_wrapper {
     animation: zoom_out_10 2s;
-    animation-delay: 1s;
+    animation-delay: 2.2s;
 }
 .project_showcase .project_card .bg_wrapper {
     background-position: center;
@@ -76,6 +85,9 @@
 }
 .project_showcase #infinitylabs .bg_wrapper {
     background-image: url("../images/infinitylabs_landing.jpg");
+}
+.project_showcase #comet .bg_wrapper {
+    background-image: url("../images/comet_landing.jpg");
 }
 .project_showcase #quickarray .bg_wrapper {
     background-image: url("../images/quick_array.jpg");
