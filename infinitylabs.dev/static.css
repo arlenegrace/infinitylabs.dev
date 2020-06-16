@@ -188,6 +188,18 @@ main {
     height: 3px;
     margin: 8px 0;
     transition: 0.4s;
+
+
+    animation-fill-mode: forwards;
+
+    -webkit-animation-name: blank_width, hamburger_in;
+    -moz-animation-name:    blank_width, hamburger_in;
+    -ms-animation-name:     blank_width, hamburger_in;
+    -o-animation-name:      blank_width, hamburger_in;
+    animation-name:         blank_width, hamburger_in;
+
+    animation-delay: 0s, .1s;
+    animation-duration: .1s, 0.5s;
 }
 .change .bar1 {
     -webkit-transform: rotate(-45deg) translate(-5px, 4px);

@@ -8,6 +8,16 @@
     to   { opacity: 1; }
 }
 
+@keyframes blank_width {
+    from { width: 0px; }
+    to   { width: 0px; }
+}
+
+@keyframes hamburger_in {
+    from { width: 0px; }
+    to   { width: 25px; }
+}
+
 @keyframes text_in {
     from {
         opacity: 0;
