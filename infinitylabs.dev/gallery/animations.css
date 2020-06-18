@@ -1,0 +1,6 @@
+
+.image_showcase .collage .collage_title {
+    animation: blank 0.1s, text_in 0.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 0s, 0.1s;
+}

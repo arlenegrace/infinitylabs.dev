@@ -18,19 +18,11 @@
     font-weight: 300;
     letter-spacing: 0.06em;
     margin-bottom: 10px;
-
-    animation: blank 0.3s, text_in 0.5s;
-    animation-fill-mode: forwards;
-    animation-delay: 0s, 0.3s;
 }
 .project_showcase .showcase_title h2 {
     font-size: 54px;
     font-weight: 600;
     letter-spacing: 0.06em;
-
-    animation: blank 0.4s, text_in 0.5s;
-    animation-fill-mode: forwards;
-    animation-delay: 0s, 0.4s;
 }
 
 .project_showcase .project_card {
@@ -38,42 +30,6 @@
     width: 100%;
     position: relative;
     overflow: hidden;
-}
-#navi {
-    animation: blank 1s, fade_in 1s;
-    animation-fill-mode: forwards;
-    animation-delay: 0s, 1s;
-}
-#navi .bg_wrapper {
-    animation: zoom_out_10 2s;
-    animation-delay: 1s;
-}
-#infinitylabs {
-    animation: blank 1.4s, fade_in 1s;
-    animation-fill-mode: forwards;
-    animation-delay: 0s, 1.4s;
-}
-#infinitylabs .bg_wrapper {
-    animation: zoom_out_10 2s;
-    animation-delay: 1.4s;
-}
-#comet {
-    animation: blank 1.8s, fade_in 1s;
-    animation-fill-mode: forwards;
-    animation-delay: 0s, 1.8s;
-}
-#comet .bg_wrapper {
-    animation: zoom_out_10 2s;
-    animation-delay: 1.8s;
-}
-#quickarray {
-    animation: blank 2.2s, fade_in 1s;
-    animation-fill-mode: forwards;
-    animation-delay: 0s, 2.2s;
-}
-#quickarray .bg_wrapper {
-    animation: zoom_out_10 2s;
-    animation-delay: 2.2s;
 }
 .project_showcase .project_card .bg_wrapper {
     background-position: center;

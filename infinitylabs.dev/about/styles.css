@@ -22,10 +22,6 @@
     text-align: center;
     line-height: 1.1;
     letter-spacing: 0.06em;
-
-    animation: blank 0.1s, text_in 0.5s;
-    animation-fill-mode: forwards;
-    animation-delay: 0s, 0.1s;
 }
 .enthusiast_wrapper p {
     max-width: 1100px;
@@ -36,10 +32,6 @@
     letter-spacing: 0.04em;
     text-align: center;
     margin-top: 30px;
-
-    animation: blank 0.3s, text_in 0.5s;
-    animation-fill-mode: forwards;
-    animation-delay: 0s, 0.3s;
 }
 .aboutme .card {
     display: -webkit-box;
@@ -64,10 +56,6 @@
 }
 .portrait {
     width: 500px;
-
-    animation: blank 0.5s, text_in 0.5s;
-    animation-fill-mode: forwards;
-    animation-delay: 0s, 0.5s;
 }
 .biography {
     padding-left: 50px;
@@ -75,10 +63,6 @@
 .biography h1,
 .biography p {
     font-family: 'Inter', sans-serif;
-
-    animation: blank 0.6s, fade_in 0.5s;
-    animation-fill-mode: forwards;
-    animation-delay: 0s, 0.6s;
 }
 .biography h1 {
     font-size: 52px;

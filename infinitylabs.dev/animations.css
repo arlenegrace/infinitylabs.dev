@@ -1,0 +1,61 @@
+/* APPLY KEYFRAME ANIMATIONS TO ELEMENTS HERE */
+
+
+.landing .landing_container h2 {
+    animation: blank 0.1s, text_in 0.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 0s, 0.1s;
+}
+.landing .landing_container p {
+    animation: blank 0.3s, text_in 0.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 0s, 0.3s;
+}
+.landing .landing_container #developer_container,
+.landing .landing_container #designer_container,
+.landing .landing_container #creator_container {
+    animation-fill-mode: forwards;
+
+    -webkit-animation-name: blank, fade_in;
+    -moz-animation-name:    blank, fade_in;
+    -ms-animation-name:     blank, fade_in;
+    -o-animation-name:      blank, fade_in;
+    animation-name:         blank, fade_in;
+}
+.landing .landing_container #creator_container {
+    animation-duration: 0.8s, 1.3s;
+    animation-delay: 0s, 0.8s;
+}
+.landing .landing_container #developer_container {
+    animation-duration: 0.9s, 1.3s;
+    animation-delay: 0s, 0.9s;
+}
+.landing .landing_container #designer_container {
+    animation-duration: 1s, 1.3s;
+    animation-delay: 0s, 1s;
+}
+
+
+.work #body_creator,
+.work  #body_developer,
+.work  #body_designer {
+    animation-fill-mode: forwards;
+
+    -webkit-animation: blank, slide_up_80px;
+    -moz-animation:    blank, slide_up_80px;
+    -ms-animation:     blank, slide_up_80px;
+    -o-animation:      blank, slide_up_80px;
+    animation:         blank, slide_up_80px;
+}
+.work #body_creator {
+    animation-duration: 1s, .7s;
+    animation-delay: 0s, 1s;
+}
+.work  #body_developer {
+    animation-duration: 1.4s, .7s;
+    animation-delay: 0s, 1.4s;
+}
+.work  #body_designer {
+    animation-duration: 1.8s, .7s;
+    animation-delay: 0s, 1.8s;
+}
