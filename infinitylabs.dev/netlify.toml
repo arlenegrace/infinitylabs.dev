@@ -10,6 +10,21 @@
         X-XSS-Protection = "1; mode=block"
         X-Content-Type-Options = "nosniff"
         Referrer-Policy = "no-referrer-when-downgrade"
+        #Safari has conflicts with content-security-policy. To fix in future commit.
+        #Content-Security-Policy = "default-src https:"
+        Feature-Policy = '''\
+            accelerometer ‘none’; \
+            camera ‘none’; \
+            geolocation ‘none’; \
+            gyroscope ‘none’; \
+            magnetometer ‘none’; \
+            microphone ‘none’; \
+            payment ‘none’; \
+            usb ‘none’; \
+            midi ‘none’; \
+            notifications ‘none’; \
+        '''
+
 
 # If skip_processing = true, all other settings are ignored
 [build.processing]
