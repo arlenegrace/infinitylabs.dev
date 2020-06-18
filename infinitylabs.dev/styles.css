@@ -142,7 +142,8 @@
 .body_right:hover .text_container .text {
     margin-top: -10px;
 }
-.body_left {
+.body_left,
+.body_right {
     width: 1200px;
     margin: 0 auto;
     margin-top: 100px;
@@ -151,91 +152,13 @@
     display: flex;
     flex-direction: row-reverse;
 }
-.body_left .text_container {
-    width: 50%;
-
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+.body_left {
+    flex-direction: row-reverse;
 }
-.body_left .text_container .text {
-    padding: 40px 40px;
-    margin-left: 30px;
-    margin-right: -30px;
-    height: 440px;
-    z-index: 1;
-    -webkit-transition: all .5s;
-    -moz-transition: all .5s;
-    -o-transition: all .5s;
-    transition: all .5s;
-}
-.body_left .image_container {
-    width: 50%;
-    height: 500px;
-    overflow: hidden;
-}
-.body_left .image_container .image {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
-    -webkit-transition: all .5s;
-    -moz-transition: all .5s;
-    -o-transition: all .5s;
-    transition: all .5s;
-}
-.body_left:hover .image_container .image {
-    transform: scale(1.1);
-}
-.body_left .body_left_headline,
-.body_left .body_left_paragraph {
-    font-family: 'Inter', sans-serif;
-    position: relative;
-    z-index: 2;
-    left: 0px;
-}
-.body_left .body_left_headline {
-    font-size: 48px;
-    font-weight: 500;
-    text-align: left;
-    line-height: 1.1;
-    -webkit-transition: all .5s;
-    -moz-transition: all .5s;
-    -o-transition: all .5s;
-    transition: all .5s;
-}
-.body_left .body_left_paragraph {
-    font-size: 19px;
-    font-weight: 400;
-    line-height: 1.85;
-    letter-spacing: 0.02em;
-    text-align: left;
-    margin-top: 30px;
-}
-.body_left img {
-    object-fit: cover;
-    object-position: center;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    z-index: 1;
-    max-height: 500px;
-    height: 500px;
-}
-
 .body_right {
-    width: 1200px;
-    margin: 0 auto;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    text-align: center;
-    display: flex;
     flex-direction: row;
 }
+.body_left .text_container,
 .body_right .text_container {
     width: 50%;
 
@@ -246,10 +169,11 @@
     -ms-flex-align: center;
     align-items: center;
 }
+.body_left .text_container .text,
 .body_right .text_container .text {
     padding: 40px 40px;
-    margin-left: -30px;
-    margin-right: 30px;
+    margin-left: 30px;
+    margin-right: -30px;
     height: 440px;
     z-index: 1;
     -webkit-transition: all .5s;
@@ -257,11 +181,21 @@
     -o-transition: all .5s;
     transition: all .5s;
 }
+.body_left .text_container .text {
+    margin-left: 30px;
+    margin-right: -30px;
+}
+.body_right .text_container .text {
+    margin-left: -30px;
+    margin-right: 30px;
+}
+.body_left .image_container,
 .body_right .image_container {
     width: 50%;
     height: 500px;
     overflow: hidden;
 }
+.body_left .image_container .image,
 .body_right .image_container .image {
     background-position: center;
     background-repeat: no-repeat;
@@ -272,10 +206,12 @@
     -o-transition: all .5s;
     transition: all .5s;
 }
+.body_left:hover .image_container .image,
 .body_right:hover .image_container .image {
     transform: scale(1.1);
-    transition: all .5s;
 }
+.body_left .body_left_headline,
+.body_left .body_left_paragraph,
 .body_right .body_right_headline,
 .body_right .body_right_paragraph {
     font-family: 'Inter', sans-serif;
@@ -283,6 +219,7 @@
     z-index: 2;
     left: 0px;
 }
+.body_left .body_left_headline,
 .body_right .body_right_headline {
     font-size: 48px;
     font-weight: 500;
@@ -293,14 +230,16 @@
     -o-transition: all .5s;
     transition: all .5s;
 }
+.body_left .body_left_paragraph,
 .body_right .body_right_paragraph {
     font-size: 19px;
     font-weight: 400;
-    line-height: 1.7;
+    line-height: 1.85;
     letter-spacing: 0.02em;
     text-align: left;
     margin-top: 30px;
 }
+.body_left img,
 .body_right img {
     object-fit: cover;
     object-position: center;
