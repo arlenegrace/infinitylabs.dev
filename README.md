@@ -26,6 +26,8 @@ Different browsers will set different default values to HTML elements. The `rese
 
 Browsers that do not support the `@media and (prefers-color-scheme)` query (e.g. pre-iOS 13's Safari browser) will not pick the light theme by default, resulting in no theming for your webpage. To resolve this issue, the `prefers-color-scheme` query for dark theme has been removed, setting it as the default theme. If the browser does support the `prefers-color-scheme` query and the user is using light theme, it will override the default dark theme as long as the light theme is below the dark theme. HTML prioritizes CSS rules in order of declaration which makes it important that you include your CSS files in the correct order in the head of your HTML files.
 
+It is recommended that you merge all the external CSS files into one single file before deploying to your web server to reduce the number of HTTP requests, speeding up page load times. Some hosts will do this automatically, giving you the benefit of maintainability without any of the drawbacks.
+
 
 ## Preview
 For a live preview, visit https://infinitylabs.dev. Be sure to change your system theme to switch between light and dark mode.
