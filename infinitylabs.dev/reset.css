@@ -30,6 +30,8 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	scroll-behavior: smooth;
+	text-rendering: optimizeSpeed;
 }
 ol, ul {
 	list-style: none;
@@ -46,6 +48,26 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-* {
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
 	box-sizing: border-box;
+}
+
+/* Make images easier to work with */
+img {
+	max-width: 100%;
+	display: block;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+	* {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
 }
