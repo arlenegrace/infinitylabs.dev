@@ -56,12 +56,6 @@ table {
 	box-sizing: border-box;
 }
 
-/* Make images easier to work with */
-img {
-	max-width: 100%;
-	display: block;
-}
-
 /* Remove all animations and transitions for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
 	* {
