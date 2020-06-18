@@ -6,6 +6,11 @@
  */
 
 /* DESKTOP CSS */
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+
 main {
     transition: opacity 0.5s, filter 0.5s;
 }
@@ -48,7 +53,6 @@ main {
     width: 100%;
 }
 .sidenav_links a {
-    font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 28px;
     letter-spacing: 0.03em;
@@ -101,7 +105,6 @@ main {
 }
 .left_header a,
 .right_header a {
-    font-family: 'Inter', sans-serif;
     font-weight: 600;
     font-size: 16px;
     letter-spacing: .1em;
@@ -156,7 +159,6 @@ main {
     align-items: center;
 }
 .center_header a {
-    font-family: 'Inter', sans-serif;
     font-weight: 700;
     font-size: 14px;
     line-height: 17px;
@@ -235,7 +237,6 @@ main {
     height: 30px;
 }
 .footer .logo_wrapper h1 {
-    font-family: 'Inter', sans-serif;
     font-weight: 700;
     font-size: 16px;
     letter-spacing: 0.06em;
@@ -258,7 +259,6 @@ main {
     display: flex;
 }
 .copyright h1 {
-    font-family: 'Inter', sans-serif;
     font-weight: 600;
     font-size: 14px;
     text-align: right;

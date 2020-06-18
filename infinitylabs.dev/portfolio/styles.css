@@ -1,3 +1,7 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+
 .project_showcase {
     width: auto;
     max-width: 1260px;
@@ -7,7 +11,6 @@
     padding-bottom: 50px;
 }
 .project_showcase .showcase_title {
-    font-family: 'Inter', sans-serif;
     letter-spacing: 0.06em;
     padding-top: 100px;
     padding-bottom: 50px;
@@ -58,7 +61,6 @@
     );
 }
 .project_showcase .card_text_container {
-    font-family: 'Inter', sans-serif;
     letter-spacing: 0.05em;
     text-align: center;
 

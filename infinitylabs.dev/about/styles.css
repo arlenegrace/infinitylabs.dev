@@ -1,3 +1,7 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+
 .aboutme {
     padding-bottom: 100px;
 }
@@ -11,10 +15,6 @@
     padding-top: 150px;
     padding-bottom: 240px;
     margin: 0 auto;
-}
-.enthusiast_wrapper h1,
-.enthusiast_wrapper p {
-    font-family: 'Inter', sans-serif;
 }
 .enthusiast_wrapper h1 {
     font-size: 64px;
@@ -59,10 +59,6 @@
 }
 .biography {
     padding-left: 50px;
-}
-.biography h1,
-.biography p {
-    font-family: 'Inter', sans-serif;
 }
 .biography h1 {
     font-size: 52px;

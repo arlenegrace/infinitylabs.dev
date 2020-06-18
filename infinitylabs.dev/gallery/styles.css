@@ -1,3 +1,7 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+
 .image_showcase {
     padding-left: 5vw;
     padding-right: 5vw;
@@ -10,7 +14,6 @@
 }
 .image_showcase .collage .collage_title {
     margin: 0 auto;
-    font-family: 'Inter', sans-serif;
     font-size: 46px;
     font-weight: 600;
     text-align: center;

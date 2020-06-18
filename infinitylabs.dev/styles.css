@@ -1,3 +1,7 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+
 .landing_container {
     width: 1200px;
     margin: 0 auto;
@@ -11,7 +15,6 @@
 .landing .landing_container h2,
 .landing .landing_container h3,
 .landing .landing_container p {
-    font-family: 'Inter', sans-serif;
     text-align: center;
 }
 .landing .landing_container h2 {
@@ -41,7 +44,6 @@
     margin-right: auto;
 }
 .landing .landing_container .landing_icon_container .card_container h3 {
-    font-family: 'Inter', sans-serif;
     text-align: center;
     margin-bottom: 10px;
     font-weight: 600;
@@ -159,7 +161,6 @@
 .body_left .body_left_paragraph,
 .body_right .body_right_headline,
 .body_right .body_right_paragraph {
-    font-family: 'Inter', sans-serif;
     position: relative;
     z-index: 2;
     left: 0px;
