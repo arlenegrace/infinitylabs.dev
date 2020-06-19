@@ -69,9 +69,11 @@ body {
     max-width: 90vw;
     border-radius: 12px;
     cursor: pointer;
+    transition: filter 0.3s;
 }
 
-/* 
-.image_showcase .collage_wrapper .image_container:hover img {
-    transform: scale(1.1);
-} */
+
+.image_showcase .collage_wrapper img:hover {
+    -webkit-filter: brightness(0.8);
+    filter: brightness(0.8);
+}
