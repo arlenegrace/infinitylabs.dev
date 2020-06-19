@@ -44,13 +44,14 @@
         <!-- HAMBURGER BUTTON -->
         <script>
             function open_nav() {
-                /* MANUALLY CALCULATE DROPDOWN WIDTH, AUTO DOESN'T PLAY CLOSING TRANSITION */
                 let sidenav = document.getElementById('sidenav');
                 let dropdown = document.getElementById('sidenav_container_id');
                 let bg = document.getElementById('sidenav_bg');
                 let header_logo = document.getElementById('center_header');
                 let body = document.getElementsByTagName("body")[0];
                 let main = document.getElementsByTagName("main")[0];
+
+                /* MANUALLY CALCULATE DROPDOWN WIDTH, AUTO DOESN'T PLAY CLOSING TRANSITION */
                 const opened = dropdown.style.width == '230px' ? true : false;
 
                 document.getElementById('hamburger').classList.toggle("change");

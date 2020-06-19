@@ -42,13 +42,14 @@
         <!-- HAMBURGER BUTTON -->
         <script>
             function open_nav() {
-                /* MANUALLY CALCULATE DROPDOWN WIDTH, AUTO DOESN'T PLAY CLOSING TRANSITION */
                 let sidenav = document.getElementById('sidenav');
                 let dropdown = document.getElementById('sidenav_container_id');
                 let bg = document.getElementById('sidenav_bg');
                 let header_logo = document.getElementById('center_header');
                 let body = document.getElementsByTagName("body")[0];
                 let main = document.getElementsByTagName("main")[0];
+
+                /* MANUALLY CALCULATE DROPDOWN WIDTH, AUTO DOESN'T PLAY CLOSING TRANSITION */
                 const opened = dropdown.style.width == '230px' ? true : false;
 
                 document.getElementById('hamburger').classList.toggle("change");
@@ -75,11 +76,13 @@
                     header_logo.style.filter = 'blur(10px)';
                 }
             }
+
             function open_img(img) {
                 let fs = document.getElementById('fullscreen_container');
                 fs.style.display = "block";
                 document.getElementById('fullscreen_img').src=`../images/gallery/${img}.JPG`;
             }
+
             function close_img() {
                 let fs = document.getElementById('fullscreen_container');
                 fs.style.display = "none";
@@ -149,7 +152,7 @@
                     <div class="collage_title">
                         <h1>Gallery</h1>
                     </div>
-                        
+
                     <div class="collage_wrapper">
                         <img src="../images/gallery/macpro.JPG"         alt="Mac Pro"              onclick="open_img('macpro')">
                         <img src="../images/gallery/alienwarem15.JPG"   alt="Alienware M15"        onclick="open_img('alienwarem15')">
