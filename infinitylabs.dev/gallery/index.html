@@ -75,6 +75,15 @@
                     header_logo.style.filter = 'blur(10px)';
                 }
             }
+            function open_img(img) {
+                let fs = document.getElementById('fullscreen_container');
+                fs.style.display = "block";
+                document.getElementById('fullscreen_img').src=`../images/gallery/${img}.JPG`;
+            }
+            function close_img() {
+                let fs = document.getElementById('fullscreen_container');
+                fs.style.display = "none";
+            }
         </script>
     </head>
 
@@ -131,6 +140,10 @@
         </header>
 
         <main style="opacity: 1">
+            <div class="fullscreen_container" id="fullscreen_container" style="display: none;" onclick="close_img()">
+                <img class="fullscreen_img" id="fullscreen_img" src="../images/gallery/macbookpro16.JPG" alt="MacBook Pro" onclick="close_img()">
+            </div>
+
             <section class="image_showcase">
                 <div class="collage">
                     <div class="collage_title">
@@ -138,42 +151,18 @@
                     </div>
                         
                     <div class="collage_wrapper">
-                        <div class="image_container">
-                            <img src="../images/gallery/macpro.JPG" alt="Demo 2">
-                        </div>
-                        <div class="image_container">
-                            <img src="../images/gallery/alienwarem15.JPG" alt="Demo 2">
-                        </div>
-                        <div class="image_container">
-                            <img src="../images/gallery/xps13.JPG" alt="Demo 2">
-                        </div>
-                        <div class="image_container">
-                            <img src="../images/gallery/macbookpro16.JPG" alt="Demo 2">
-                        </div>
-                        <div class="image_container">
-                            <img src="../images/gallery/razerblade13.JPG" alt="Demo 3">
-                        </div>
-                        <div class="image_container">
-                            <img src="../images/gallery/surfacelaptop3.JPG" alt="Demo 3">
-                        </div>
-                        <div class="image_container">
-                            <img src="../images/gallery/zenbookproduo.JPG" alt="Demo 2">
-                        </div>
-                        <div class="image_container">
-                            <img src="../images/gallery/iphone11.JPG" alt="Demo 3">
-                        </div>
-                        <div class="image_container">
-                            <img src="../images/gallery/ipad2019.JPG" alt="Demo 3">
-                        </div>
-                        <div class="image_container">
-                            <img src="../images/gallery/surfacepro6.JPG" alt="Demo 3">
-                        </div>
-                        <div class="image_container">
-                            <img src="../images/gallery/iphone11pro.JPG" alt="Demo 2">
-                        </div>
-                        <div class="image_container">
-                            <img src="../images/gallery/xps157590.JPG" alt="Demo 3">
-                        </div>
+                        <img src="../images/gallery/macpro.JPG"         alt="Mac Pro"              onclick="open_img('macpro')">
+                        <img src="../images/gallery/alienwarem15.JPG"   alt="Alienware M15"        onclick="open_img('alienwarem15')">
+                        <img src="../images/gallery/xps13.JPG"          alt="XPS 13"               onclick="open_img('xps13')">
+                        <img src="../images/gallery/macbookpro16.JPG"   alt="16&quot; MacBook Pro" onclick="open_img('macbookpro16')">
+                        <img src="../images/gallery/razerblade13.JPG"   alt="Razer Blade Stealth"  onclick="open_img('razerblade13')">
+                        <img src="../images/gallery/surfacelaptop3.JPG" alt="Surface Laptop 3"     onclick="open_img('surfacelaptop3')">
+                        <img src="../images/gallery/zenbookproduo.JPG"  alt="Zenbook Pro Duo"      onclick="open_img('zenbookproduo')">
+                        <img src="../images/gallery/iphone11.JPG"       alt="iPhone 11"            onclick="open_img('iphone11')">
+                        <img src="../images/gallery/ipad2019.JPG"       alt="iPad"                 onclick="open_img('ipad2019')">
+                        <img src="../images/gallery/surfacepro6.JPG"    alt="Surface Pro 6"        onclick="open_img('surfacepro6')">
+                        <img src="../images/gallery/iphone11pro.JPG"    alt="iPhone 11 Pro"        onclick="open_img('iphone11pro')">
+                        <img src="../images/gallery/xps157590.JPG"      alt="XPS 15 7590"          onclick="open_img('xps157590')">
                     </div>
                 </div>
             </section>

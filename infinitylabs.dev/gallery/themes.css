@@ -11,6 +11,10 @@ body {
     background-color: rgb(39, 39, 39);
 }
 
+.fullscreen_container {
+    background-color: rgba(12, 12, 12, 0.9);
+}
+
 .image_showcase .collage .collage_title {
     color: #ffeccf;
 }

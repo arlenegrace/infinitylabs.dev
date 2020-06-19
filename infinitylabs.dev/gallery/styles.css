@@ -2,6 +2,32 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
+
+.fullscreen_container {
+    width: 100vw;
+    height: 100vh;
+
+    margin: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.fullscreen_container img {
+    max-width: 90vw;
+    max-height: 90vh;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+
 .image_showcase {
     padding-left: 5vw;
     padding-right: 5vw;
@@ -24,6 +50,7 @@ body {
 }
 .image_showcase .collage .collage_wrapper {
     display: grid;
+    grid-gap: 20px;
     grid-template-columns: repeat( auto-fill, minmax(450px, 1fr));
     width: auto;
 }
@@ -33,13 +60,16 @@ body {
     height: 100%;
     overflow: hidden;
     font-size: 0;
+    border-radius: 12px;
 }
-.image_showcase .image_container img {
+.image_showcase  img {
     width: 100%;
-    object-fit: cover;
-    transition: all 0.5s;
-    box-shadow: 0px 0px 12px rgba(12, 12, 12, 0.2)
+    max-width: 90vw;
+    border-radius: 12px;
+    cursor: pointer;
 }
+
+/* 
 .image_showcase .collage_wrapper .image_container:hover img {
     transform: scale(1.1);
-}
+} */
