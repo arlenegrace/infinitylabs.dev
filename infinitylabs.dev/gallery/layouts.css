@@ -1,14 +1,14 @@
 @media screen and (max-width: 1300px) {
     .image_showcase .collage .collage_title {
         padding-top: 90px;
-        padding-bottom: 80px;
+        padding-bottom: 60px;
     }
 }
 
 @media screen and (max-width: 1000px) {
     .image_showcase .collage .collage_title {
         padding-top: 70px;
-        padding-bottom: 60px;
+        padding-bottom: 50px;
     }
     .image_showcase .collage .collage_wrapper {
         grid-template-columns: repeat( auto-fill, 1fr);
@@ -23,7 +23,7 @@
 @media screen and (max-width: 600px) { /* PHONE LAYOUT*/
     .image_showcase .collage .collage_title {
         font-size: 36px;
-        padding-top: 40px;
-        padding-bottom: 70px;
+        padding-top: 50px;
+        padding-bottom: 30px;
     }
 }
