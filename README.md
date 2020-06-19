@@ -1,6 +1,6 @@
 # [infinitylabs.dev](https://www.infinitylabs.dev)
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/09b35a9a-30bc-4472-8035-76e6397bec85/deploy-status)](https://www.infinitylabs.dev) [![W3C validator](https://img.shields.io/w3c-validation/html?targetUrl=https%3A%2F%2Finfinitylabs.dev)](https://validator.w3.org/nu/?doc=https%3A%2F%2Fwww.infinitylabs.dev%2F) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT) [![Repo size](https://img.shields.io/github/repo-size/arlenegrace/infinitylabs.dev)](https://github.com/arlenegrace/infinitylabs.dev)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/73fd9ee6-96b3-4e11-b456-dd51b582f9d2/deploy-status)](https://www.infinitylabs.dev) [![W3C validator](https://img.shields.io/w3c-validation/html?targetUrl=https%3A%2F%2Finfinitylabs.dev)](https://validator.w3.org/nu/?doc=https%3A%2F%2Fwww.infinitylabs.dev%2F) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT) [![Repo size](https://img.shields.io/github/repo-size/arlenegrace/infinitylabs.dev)](https://github.com/arlenegrace/infinitylabs.dev)
 
 Source code for https://infinitylabs.dev. Free to use for creating responsive static personal portfolio websites. Built entirely using HTML, CSS and just two JavaScript functions, making it fast, lightweight and compatible across nearly all browsers.
 

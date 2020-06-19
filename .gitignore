@@ -11,3 +11,5 @@ infinitylabs.dev/youtube/
 infinitylabs.dev/portfolio_olivia/
 infinitylabs.dev/navi/
 infinitylabs.dev/comet/
+# Local Netlify folder
+.netlify
