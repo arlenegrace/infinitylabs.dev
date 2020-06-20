@@ -4,7 +4,9 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:600,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
         <title>404 — Infinity Labs</title>
 
         <style class="reset">
@@ -58,20 +60,11 @@
 
         <style class="styles">
             body {
+                font-family: 'Inter', sans-serif;
                 background-color: rgb(29, 29, 29);
             }
-
             .text_container {
-                background-color: rgb(34, 34, 34);
-                width: 50%;
-                height: auto;
-                
-                position: fixed;
-                top: 50%;
-                left: 50%;
-                -webkit-transform: translate(-50%, -50%);
-                transform: translate(-50%, -50%);
-
+                height: 100vh;
                 display: -webkit-box;
                 display: -ms-flexbox;
                 display: flex;
@@ -81,42 +74,63 @@
             }
             .text_container .text {
                 margin: auto;
+                padding: 0 15px;
+                text-align: center;
             }
-
             .text_container h1 {
-                color: #f0d5b6;
-                font-size: 22vw;
-                font-family: 'Open Sans', sans-serif;
-                font-weight: 700;
-                text-align: center;
-            }
-            .text_container p {
-                color: #a0a0a0;
-                font-size: 1vw;
-                font-family: 'Open Sans', sans-serif;
+                color: rgb(151, 151, 151);
+                font-size: 34px;
                 font-weight: 600;
-                text-align: center;
                 margin-bottom: 10px;
             }
-            a {
+            .text_container h2 {
+                color: #ffe2c0;
+                font-size: 56px;
+                font-weight: 600;
+                margin-bottom: 20px;
+            }
+            .text_container p {
+                color: rgb(167, 167, 167);
+                font-size: 18px;
+                font-weight: 400;
+                margin-bottom: 10px;
+            }
+            .text_container a {
+                color: #5e9cff;
+                font-size: 17px;
+                font-weight: 500;
+                margin-bottom: 10px;
                 text-decoration: none;
             }
 
-            @media screen and (max-width: 1000px) {
+            @media only screen and (max-width: 750px) {
+                .text_container h1 {
+                    font-size: 28px;
+                }
+                .text_container h2 {
+                    font-size: 48px;
+                    margin-bottom: 15px;
+                }
                 .text_container p {
-                    font-size: 2vw;
+                    font-size: 16px;
+                }
+                .text_container a {
+                    font-size: 15px;
                 }
             }
 
-            @media screen and (max-width: 600px) {
-                .text_container {
-                    width: 90%;
-                }
+            @media only screen and (max-width: 600px) {
                 .text_container h1 {
-                    font-size: 45vmin;
+                    font-size: 24px;
+                }
+                .text_container h2 {
+                    font-size: 37px;
                 }
                 .text_container p {
-                    font-size: 4vmin;
+                    font-size: 15px;
+                }
+                .text_container a {
+                    font-size: 14px;
                 }
             }
         </style>
@@ -126,9 +140,9 @@
         <div class="text_container">
             <div class="text">
                 <h1>404</h1>
-                <a href="../">
-                    <p>File does not exist. Click here to return.</p>
-                </a>
+                <h2>Page Not Found</h2>
+                <p>The page you were looking for does not exist.</p>
+                <a href="https://infinitylabs.dev">Click here to return home.</a>
             </div>
         </div>
     </body>
