@@ -2,12 +2,12 @@
 
 /* MOBILE HAMBURGER BUTTON */
 function open_nav() {
-    let sidenav = document.getElementById('sidenav');
-    let dropdown = document.getElementById('sidenav_container_id');
-    let bg = document.getElementById('sidenav_bg');
-    let header_logo = document.getElementById('center_header');
-    let body = document.getElementsByTagName("body")[0];
-    let main = document.getElementsByTagName("main")[0];
+    const sidenav = document.getElementById('sidenav');
+    const dropdown = document.getElementById('sidenav_container_id');
+    const bg = document.getElementById('sidenav_bg');
+    const header_logo = document.getElementById('center_header');
+    const body = document.getElementsByTagName("body")[0];
+    const main = document.getElementsByTagName("main")[0];
 
     /* MANUALLY CALCULATE DROPDOWN WIDTH, AUTO DOESN'T PLAY CLOSING TRANSITION */
     const opened = dropdown.style.width == '230px';
