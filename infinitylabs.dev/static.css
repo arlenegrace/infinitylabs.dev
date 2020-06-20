@@ -258,8 +258,7 @@ main {
 .twitter:hover,
 .discord:hover,
 .github:hover {
-    -webkit-transform: translateY(-2px);
-    transform: translateY(-2px);
+    filter: brightness(0.8);
 }
 
 
