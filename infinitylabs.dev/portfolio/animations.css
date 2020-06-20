@@ -1,47 +1,42 @@
+/* APPLY KEYFRAME ANIMATIONS TO ELEMENTS HERE */
+
+
+/* animation: name duration timing_function delay direction iteration_count fill_mode play_state */
 
 .project_showcase .showcase_title h1 {
-    animation: blank 0.3s, text_in 0.5s;
+    animation: blank 0.3s 0s, text_in 0.5s 0.3s;
     animation-fill-mode: forwards;
-    animation-delay: 0s, 0.3s;
 }
 .project_showcase .showcase_title h2 {
-    animation: blank 0.4s, text_in 0.5s;
+    animation: blank 0.4s 0s, text_in 0.5s 0.4s;
     animation-fill-mode: forwards;
-    animation-delay: 0s, 0.4s;
 }
 #navi {
-    animation: blank 1s, fade_in 1s;
+    animation: blank 1s 0s, fade_in 1s 1s;
     animation-fill-mode: forwards;
-    animation-delay: 0s, 1s;
 }
 #navi .bg_wrapper {
-    animation: zoom_out_10 2s;
-    animation-delay: 1s;
+    animation: zoom_out_10 2s 1s;
 }
 #infinitylabs {
-    animation: blank 1.4s, fade_in 1s;
+    animation: blank 1.4s 0s, fade_in 1s 1.4s;
     animation-fill-mode: forwards;
-    animation-delay: 0s, 1.4s;
 }
 #infinitylabs .bg_wrapper {
-    animation: zoom_out_10 2s;
-    animation-delay: 1.4s;
+    animation: zoom_out_10 2s 1.4s;
 }
 #comet {
-    animation: blank 1.8s, fade_in 1s;
+    animation: blank 1.8s 0s, fade_in 1s 1.8s;
     animation-fill-mode: forwards;
-    animation-delay: 0s, 1.8s;
 }
 #comet .bg_wrapper {
-    animation: zoom_out_10 2s;
-    animation-delay: 1.8s;
+    animation: zoom_out_10 2s 1.8s;
 }
 #quickarray {
-    animation: blank 2.2s, fade_in 1s;
+    animation: blank 2.2s 0s, fade_in 1s 2.2s;
     animation-fill-mode: forwards;
     animation-delay: 0s, 2.2s;
 }
 #quickarray .bg_wrapper {
-    animation: zoom_out_10 2s;
-    animation-delay: 2.2s;
+    animation: zoom_out_10 2s 2.2s;
 }

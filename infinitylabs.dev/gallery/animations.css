@@ -1,10 +1,13 @@
+/* APPLY KEYFRAME ANIMATIONS TO ELEMENTS HERE */
+
+
+/* animation: name duration timing_function delay direction iteration_count fill_mode play_state */
+
 .image_showcase .collage .collage_title {
-    animation: blank 0.1s, text_in 0.5s;
+    animation: blank 0.1s 0s, text_in 0.5s 0.1s;
     animation-fill-mode: forwards;
-    animation-delay: 0s, 0.1s;
 }
 .image_showcase .collage .collage_wrapper {
-    animation: blank 0.6s, fade_in 0.8s;
+    animation: blank 0.6s 0s, fade_in 0.8s 0.6s;
     animation-fill-mode: forwards;
-    animation-delay: 0s, 0.6s;
 }

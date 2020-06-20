@@ -1,24 +1,24 @@
+/* APPLY KEYFRAME ANIMATIONS TO ELEMENTS HERE */
+
+
+/* animation: name duration timing_function delay direction iteration_count fill_mode play_state */
 
 .enthusiast_wrapper h1 {
-    animation: blank 0.1s, text_in 0.5s;
+    animation: blank 0.1s 0s, text_in 0.5s 0.1s;
     animation-fill-mode: forwards;
-    animation-delay: 0s, 0.1s;
 }
 .enthusiast_wrapper p {
-    animation: blank 0.3s, text_in 0.5s;
+    animation: blank 0.3s 0s, text_in 0.5s 0.3s;
     animation-fill-mode: forwards;
-    animation-delay: 0s, 0.3s;
 }
 
 
 .portrait {
-    animation: blank 0.5s, text_in 0.5s;
+    animation: blank 0.5s 0s, text_in 0.5s 0.5s;
     animation-fill-mode: forwards;
-    animation-delay: 0s, 0.5s;
 }
 .biography h1,
 .biography p {
-    animation: blank 0.6s, fade_in 0.5s;
+    animation: blank 0.6s 0s, fade_in 0.5s 0.6s;
     animation-fill-mode: forwards;
-    animation-delay: 0s, 0.6s;
 }
