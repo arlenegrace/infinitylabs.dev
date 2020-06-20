@@ -10,7 +10,7 @@ function open_nav() {
     let main = document.getElementsByTagName("main")[0];
 
     /* MANUALLY CALCULATE DROPDOWN WIDTH, AUTO DOESN'T PLAY CLOSING TRANSITION */
-    const opened = dropdown.style.width == '230px' ? true : false;
+    const opened = dropdown.style.width == '230px';
 
     document.getElementById('hamburger').classList.toggle("change");
 
