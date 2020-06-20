@@ -3,6 +3,11 @@
     to = "/404/index.html"
     status = 404
 
+[[redirects]]
+    from = "/*"
+    to = "/404/index.html"
+    status = 403
+
 [[headers]]
     for = "/*"
     [headers.values]
