@@ -1,11 +1,11 @@
-@media screen and (max-width: 1300px) {
+@media only screen and (max-width: 1300px) {
     .image_showcase .collage .collage_title {
         padding-top: 90px;
         padding-bottom: 60px;
     }
 }
 
-@media screen and (max-width: 1000px) {
+@media only screen and (max-width: 1000px) {
     .image_showcase .collage .collage_title {
         padding-top: 70px;
         padding-bottom: 50px;
@@ -20,7 +20,7 @@
     }
 }
 
-@media screen and (max-width: 600px) { /* PHONE LAYOUT*/
+@media only screen and (max-width: 600px) { /* PHONE LAYOUT*/
     .image_showcase .collage .collage_title {
         font-size: 36px;
         padding-top: 50px;
