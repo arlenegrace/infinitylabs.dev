@@ -158,7 +158,6 @@ main {
     animation: text_in 0.5s;
 }
 .nav_bar .hamburger {
-    display: none;
     position: relative;
     display: none;
     cursor: pointer;

@@ -18,6 +18,32 @@ body {
     backdrop-filter: blur(30px);
 }
 
+.fullscreen_container .fullscreen_close {
+    position: relative;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    z-index: 10;
+
+    width: 22px;
+    height: 22px;
+    margin: 15px;
+}
+.fs_bar1, .fs_bar2 {
+    width: 25px;
+    height: 3px;
+    margin: 8px 0;
+    background-color: rgb(204, 204, 204);
+}
+.fs_bar1 {
+    -webkit-transform: rotate(-45deg) translate(-7.5px, 6px);
+    transform: rotate(-45deg) translate(-7.5px, 6px);
+}
+.fs_bar2 {
+    -webkit-transform: rotate(45deg) translate(-1.5px, -0.5px);
+    transform: rotate(45deg) translate(-1.5px, -0.5px);
+}
+
 .fullscreen_container img {
     max-width: 90vw;
     max-height: 90vh;

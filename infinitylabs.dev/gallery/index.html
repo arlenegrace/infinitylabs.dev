@@ -95,10 +95,16 @@
             </div>
         </header>
 
-        <main style="opacity: 1">
-            <div class="fullscreen_container" id="fullscreen_container" style="display: none;" onclick="close_img()">
-                <img class="fullscreen_img" id="fullscreen_img" src="../images/gallery/macbookpro16.JPG" alt="MacBook Pro" onclick="close_img()">
+        <div class="fullscreen_container" id="fullscreen_container" style="display: none;" onclick="close_img()">
+            <div class="fullscreen_close" id="fs_close" onclick="close_img()">
+                <div class="fs_bar1"></div>
+                <div class="fs_bar2"></div>
             </div>
+
+            <img class="fullscreen_img" id="fullscreen_img" src="../images/gallery/macbookpro16.JPG" alt="MacBook Pro" onclick="close_img()">
+        </div>
+
+        <main style="opacity: 1">
 
             <section class="image_showcase">
                 <div class="collage">
