@@ -14,7 +14,7 @@
 
 
 .portrait {
-    animation: blank 0.5s 0s, text_in 0.5s 0.5s;
+    animation: blank 0.5s 0s, text_in 0.9s 0.5s;
     animation-fill-mode: forwards;
 }
 .biography h1,
