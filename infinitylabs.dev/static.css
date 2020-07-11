@@ -369,22 +369,6 @@ main {
     }
 }
 
-/* SHRINK HAMBURGER ICON BELOW IPHONE 8/X WIDTH */
-@media screen and (max-width: 374px) {
-    .hamburger {
-        transform: scale(0.9);
-    }
-}
-
-/* ONLY KEEP NAV BAR LOGO BELOW IPHONE SE (320PX) */
-@media screen and (max-width: 319px) {
-    .center_header .header_title {
-        display: none;
-    }
-    .hamburger {
-        transform: scale(1);
-    }
-}
 
 /* 
  * ON SYSTEMS WITHOUT DARK MODE SUPPORT (E.G. PRE-iOS 13), NO THEMING WILL OCCUR
@@ -399,6 +383,10 @@ main {
 }
 .sidenav_links a {
     color: rgb(199, 199, 199);
+    color: rgb(219, 219, 219, 0.5);
+}
+.sidenav_links .current {
+    color: rgb(219, 219, 219);
 }
 .sidenav_links a:hover,
 .sidenav_container a:focus {
@@ -409,6 +397,7 @@ main {
 .bar3 {
     background-color: #f0d5b6;
     background-color: rgb(204, 204, 204);
+    background-color: rgb(240, 240, 240);
 }
 
 
@@ -433,7 +422,6 @@ main {
 }
 .center_header .header_logo figure {
     background-image: url("images/logo_white.png");
-    filter: brightness(0.95);
 }
 
 
@@ -471,6 +459,7 @@ main {
 
 
 @media screen and (prefers-color-scheme: light) {
+    /* 
     .bar1,
     .bar2,
     .bar3 {
@@ -495,7 +484,7 @@ main {
         background-image: url("images/logo_dark.png");
         filter: brightness(2.2);
     }
-
+ */
 
     .footer {
         background-color: rgb(240, 240, 240);
@@ -523,19 +512,5 @@ main {
     }
     .copyright {
         color: rgb(185, 185, 185);
-    }
-}
-
-/* DECREASE MOBILE NAV BAR LOGO'S CONTRAST AGAINST BACKGROUND */
-/* DEFAULT TO DARK THEME (SEE LINE 456) */
-@media (max-width: 650px) {
-    .center_header {
-        filter: brightness(0.8);
-    }
-}
-
-@media screen and (prefers-color-scheme: light) and (max-width: 650px) {
-    .center_header {
-        filter: brightness(2.6);
     }
 }
