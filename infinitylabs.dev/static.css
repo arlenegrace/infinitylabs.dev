@@ -248,19 +248,6 @@ main {
 }
 
 @media screen and (max-width: 1300px) {
-    .header .header_container {
-        width: auto;
-        margin-left: 60px;
-        margin-right: 60px;
-    }
-    .center_header .header_logo figure {
-        width: 125px;
-        height: 88px;
-    }
-    .center_header a {
-        font-size: 13px;
-    }
-
     .footer {
         padding: 20px 30px;
     }
@@ -273,15 +260,6 @@ main {
 @media screen and (min-width: 940px) {
     .sidenav_container {
         height: 0%;
-    }
-}
-
-@media screen and (max-width: 900px) {
-    .left_header div {
-        margin-right: 40px;
-    }
-    .right_header div {
-        margin-left: 40px;
     }
 }
 
@@ -335,15 +313,13 @@ main {
     }
 
     .nav_bar {
-        padding-top: 20px;
-        padding-left: 15px;
-        padding-right: 15px;
+        padding: 20px 15px;
         animation: fade_in 0.5s;
     }
     .nav_bar .hamburger {
         display: block;
         cursor: pointer;
-        right: 0;
+        margin-left: auto;
     }
     .left_header {
         display: none;
@@ -374,8 +350,8 @@ main {
         animation: none;
     }
     .center_header .header_logo figure {
-        width: 59px;
-        height: 41px;
+        width: 45px;
+        height: 25px;
         animation: none;
     }
 
