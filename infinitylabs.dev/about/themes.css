@@ -27,6 +27,7 @@ body {
 .aboutme .container {
     background-color: rgb(37, 37, 37);
     box-shadow: 0 30px 45px rgba(255, 255, 255, .1);
+    box-shadow: 0 30px 45px rgba(0, 0, 0, 0.3);
 }
 .biography h1 {
     color: #f0d5b6;
