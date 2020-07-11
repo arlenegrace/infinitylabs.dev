@@ -317,14 +317,8 @@ main {
         cursor: pointer;
         margin-left: auto;
     }
-    .left_header {
-        display: none;
-    }
     .right_header {
         display: none;
-    }
-    .left_header div {
-        margin-right: 15px;
     }
     .right_header div {
         margin-left: 15px;
@@ -336,7 +330,6 @@ main {
         -webkit-flex-direction: row;
         flex-direction: row;
     }
-    .left_header a,
     .right_header a {
         font-size: 14px;
     }
@@ -404,7 +397,6 @@ main {
 .nav_bar {
     background-color: rgb(30, 30, 30);
 }
-.left_header a,
 .right_header a {
     color: rgb(179, 179, 179);
     color: rgb(219, 219, 219, 0.5);
@@ -413,7 +405,6 @@ main {
     color: #f0d5b6;
     color: rgb(219, 219, 219);
 }
-.left_header a:hover,
 .right_header a:hover {
     color: rgb(219, 219, 219);
 }
@@ -459,33 +450,6 @@ main {
 
 
 @media screen and (prefers-color-scheme: light) {
-    /* 
-    .bar1,
-    .bar2,
-    .bar3 {
-        background-color: rgb(109, 109, 109);
-    }
-
-    .left_header a,
-    .right_header a {
-        color: rgba(0, 0, 0, 0.4);
-    }
-    .nav_bar .current {
-        color: rgb(61, 61, 61);
-    }
-    .left_header a:hover,
-    .right_header a:hover {
-        color: rgb(61, 61, 61);
-    }
-    .center_header a {
-        color: rgb(61, 61, 61);
-    }
-    .center_header .header_logo figure {
-        background-image: url("images/logo_dark.png");
-        filter: brightness(2.2);
-    }
- */
-
     .footer {
         background-color: rgb(240, 240, 240);
     }
