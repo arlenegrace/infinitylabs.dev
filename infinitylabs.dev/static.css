@@ -372,7 +372,7 @@ main {
  * IT IS DECLARED LATER IN THE FILE. HTML PRIORITIZES CSS IN ORDER OF NEWEST TO OLDEST.
  */
 .sidenav_container {
-    background-color: rgb(42, 42, 42);
+    background-color: rgb(36, 36, 36);
 }
 .sidenav_links a {
     color: rgb(199, 199, 199);
