@@ -11,6 +11,15 @@
     animation: blank 0.4s 0s, text_in 0.5s 0.4s;
     animation-fill-mode: forwards;
 }
+
+.project_showcase .showcase_wrapper {
+    animation: blank 0.9s 0s, fade_in 0.9s 0.9s;
+    animation-fill-mode: forwards;
+}
+
+
+/* SUCCESSIVE FADE IN */
+/* 
 #navi {
     animation: blank 1s 0s, fade_in 1s 1s;
     animation-fill-mode: forwards;
@@ -39,4 +48,4 @@
 }
 #quickarray .bg_wrapper {
     animation: zoom_out_10 2s 2.2s;
-}
+} */

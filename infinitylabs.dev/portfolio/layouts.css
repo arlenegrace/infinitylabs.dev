@@ -19,7 +19,7 @@
     }
     .project_showcase .showcase_title {
         padding-top: 50px;
-        padding-bottom: 20px;
+        padding-bottom: 30px;
     }
     .project_showcase .showcase_title h1 {
         font-size: 24px;
@@ -28,9 +28,6 @@
         font-size: 40px;
     }
 
-    .project_showcase .project_card {
-        margin-bottom: 60px;
-    }
     .project_showcase .project_card figure {
         height: 320px;
     }
@@ -38,7 +35,7 @@
         bottom: 30px;
     }
     .project_showcase .card_text_container h1 {
-        font-size: 22px;
+        font-size: 24px;
     }
     .project_showcase .card_text_container p {
         font-size: 15px;
@@ -56,11 +53,14 @@
         font-size: 36px;
     }
 
+    .project_showcase .project_card {
+        margin-bottom: 30px;
+    }
     .project_showcase .project_card figure {
         height: 280px;
     }
     .project_showcase .card_text_container h1 {
-        font-size: 20px;
+        font-size: 22px;
         margin-bottom: 10px;
     }
     .project_showcase .card_text_container p {
