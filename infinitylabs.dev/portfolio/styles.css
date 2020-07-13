@@ -87,3 +87,11 @@ body {
 .project_showcase .card_text_container .card_links .card_preview {
     margin-left: 15px;
 }
+.arrow {
+    border: solid;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
