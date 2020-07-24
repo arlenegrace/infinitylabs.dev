@@ -37,10 +37,10 @@ section .text_container p {
 }
 section .text_container a {
     font-weight: 600;
-    font-size: 19px;
+    font-size: 18px;
     letter-spacing: .01em;
     margin-right: 10px;
-    padding: 8px 14px;
+    padding: 10px 14px;
     text-decoration: none;
 
     display: inline-block;
