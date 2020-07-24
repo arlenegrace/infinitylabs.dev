@@ -211,6 +211,7 @@ main {
     margin-top: auto;
     margin-bottom: auto;
     margin-left: auto;
+    text-transform: uppercase;
 }
 
 .youtube,
