@@ -234,15 +234,6 @@ main {
 
 /* LAYOUTS CSS */
 
-/* SHRINK DROPDOWN MENU TEXT FOR SHORT SCREENS (SUB 450PX HEIGHT) */
-@media screen and (max-height: 450px) {
-    .sidenav_container {
-        overflow-y: auto;
-    }
-    .sidenav_container a {
-        font-size: 20px
-    }
-}
 
 @media screen and (max-width: 1300px) {
     .footer {
@@ -341,6 +332,16 @@ main {
     }
 }
 
+/* SHRINK DROPDOWN MENU TEXT FOR SHORT SCREENS (SUB 450PX HEIGHT) */
+@media screen and (max-height: 450px) {
+    .sidenav_container {
+        overflow-y: auto;
+    }
+    .sidenav_container a {
+        font-size: 20px
+    }
+}
+
 /* SHRINK FOOTER FOR SMALLER PHONES */
 @media screen and (max-width: 400px) {
     .youtube,
@@ -357,7 +358,7 @@ main {
 /* 
  * ON SYSTEMS WITHOUT DARK MODE SUPPORT (E.G. PRE-iOS 13), NO THEMING WILL OCCUR
  * BECAUSE IT WILL NOT DEFAULT TO LIGHT THEME. THE WORKAROUND IS TO REMOVE THE
- * @MEDIA (PREFERS-COLOR-SCHEME) RULE SO IT DEFAULTS TO ONE OF THE THEMES.
+ * @MEDIA (PREFERS-COLOR-SCHEME) QUERY SO IT DEFAULTS TO ONE OF THE THEMES.
  * HERE, WE DEFAULT TO DARK THEME BUT IF A DEVICE THAT SUPPORTS (PREFERS-COLOR-SCHEME)
  * IS USING LIGHT THEME, THE LIGHT THEME CSS WILL OVERRIDE THE DEFAULT BECAUSE
  * IT IS DECLARED LATER IN THE FILE. HTML PRIORITIZES CSS IN ORDER OF NEWEST TO OLDEST.
