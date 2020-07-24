@@ -11,8 +11,24 @@ body {
     background-color: rgb(39, 39, 39);
 }
 
+
+section .text_container h1 {
+    color: rgb(128, 128, 128);
+}
+section .text_container h2 {
+    color: rgb(244, 244, 244);
+}
+section .text_container p {
+    color: rgb(184, 184, 184);
+}
+section .text_container a {
+    color: rgb(36, 36, 36);
+    background-color: rgb(243, 243, 243);
+}
+
+
 .project_showcase .showcase_title h1 {
-    color: rgb(177, 177, 177);
+    color: rgb(128, 128, 128);
 }
 .project_showcase .showcase_title h2 {
     color: rgb(244, 244, 244);
@@ -20,17 +36,9 @@ body {
 
 
 
-
-.features .features_text_container h2 {
-    color: rgb(177, 177, 177);
-}
-.features .features_text_container h3,
-.list_card_container h3 {
+.list_card_container h3,
+.list_card_container svg {
     color: rgb(244, 244, 244);
-}
-.list_card_container .plus:before,
-.list_card_container .plus:after {
-    background: rgb(244, 244, 244);
 }
 
 
