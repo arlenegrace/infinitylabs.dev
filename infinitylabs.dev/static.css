@@ -67,11 +67,6 @@ main {
 
 
 .nav_bar {
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 20px;
-    padding-bottom: 30px;
-
     padding: 30px 30px;
 }
 .nav_bar_container {
@@ -255,16 +250,11 @@ main {
     }
 }
 
-/* 
- * CURRENTLY NOT WORKING. HIDE DROPDOWN MENU WHEN ENLARGING WINDOW WHILE
- * DROPDOWN MENU IS ACTIVE.
- */
-@media screen and (min-width: 940px) {
-    .sidenav_container {
-        height: 0%;
+@media screen and (max-width: 1000px) {
+    .nav_bar {
+        padding: 25px 30px;
     }
 }
-
 
 /* COMPRESS FOOTER INTO VERTICAL STACK */
 @media screen and (max-width: 750px) {
