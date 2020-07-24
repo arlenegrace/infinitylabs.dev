@@ -74,7 +74,7 @@ section .text_container a {
 }
 .features .text_container {
     width: 50%;
-    padding-right: 20px;
+    padding-right: 30px;
     margin-bottom: 20px;
 }
 
@@ -82,7 +82,7 @@ section .text_container a {
     width: 50%;
     display: flex;
     flex-direction: column;
-    padding-left: 20px;
+    padding-left: 30px;
 }
 .list_card_container {
     margin-bottom: 2px;
