@@ -1,0 +1,146 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+
+section {
+    width: auto;
+    max-width: 1260px;
+    margin: 160px auto;
+    padding: 0 30px;
+}
+
+.project_showcase {
+    margin-top: 100px;
+    padding: 0;
+}
+.project_showcase .showcase_title {
+    letter-spacing: 0.06em;
+    margin: 50px;
+}
+.project_showcase .showcase_title h1 {
+    font-size: 32px;
+    font-weight: 300;
+    letter-spacing: 0.06em;
+    margin-bottom: 10px;
+}
+.project_showcase .showcase_title h2 {
+    font-size: 48px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    line-height: 1.3em;
+}
+.project_showcase .hero_image {
+    width: 100%;
+
+    box-shadow: 0px 30px 80px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 40px 80px rgba(0,0,0,.6);
+}
+
+
+section .text_container h1 {
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    margin-bottom: 20px;
+
+    color: rgb(177, 177, 177);
+}
+section .text_container h2 {
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: .016em;
+    line-height: 1.4em;
+    margin-bottom: 20px;
+
+
+    color: rgb(244, 244, 244);
+}
+section .text_container p {
+    font-weight: 400;
+    font-size: 19px;
+    letter-spacing: .01em;
+    line-height: 1.7em;
+    margin-bottom: 20px;
+
+    color: rgb(177, 177, 177);
+}
+section .text_container a {
+    font-weight: 600;
+    font-size: 19px;
+    letter-spacing: .01em;
+    line-height: 1.7em;
+    margin-bottom: 50px;
+    margin-right: 10px;
+    text-decoration: none;
+
+    padding: 8px 14px;
+
+    color: rgb(36, 36, 36);
+    background-color: rgb(243, 243, 243);
+}
+
+
+.features .features_container {
+    display: flex;
+}
+.features .features_text_container {
+    width: 50%;
+    padding-right: 20px;
+}
+.features .features_text_container h2,
+.features .features_text_container h3 {
+    font-family: 'Inter', sans-serif;
+}
+.features .features_text_container h2 {
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: .06em;
+    margin-bottom: 20px;
+}
+.features .features_text_container h3 {
+    font-weight: 600;
+    font-size: 32px;
+    letter-spacing: .016em;
+    line-height: 1.4em;
+    margin-bottom: 35px;
+}
+
+.list_cards {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+.list_card_container {
+    margin-bottom: 2px;
+    display: flex;
+    margin: 20px 20px;
+}
+.list_card_container h3 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    letter-spacing: .03em;
+
+    margin-right: auto;
+}
+.list_card_container svg {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    margin: auto 0;
+    margin-right: 15px;
+    transition: transform 0.3s;
+    color: rgb(244, 244, 244);
+}
+
+
+.arrow {
+    border: solid;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
