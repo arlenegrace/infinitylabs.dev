@@ -9,8 +9,48 @@ section {
     margin: 160px auto;
     padding: 0 30px;
 }
+section .text_container h1 {
+    font-size: 17px;
+    font-weight: 300;
+    letter-spacing: 0.06em;
+    margin-bottom: 20px;
+
+    color: rgb(177, 177, 177);
+}
+section .text_container h2 {
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: .016em;
+    line-height: 1.4em;
+    margin-bottom: 20px;
+
+    color: rgb(244, 244, 244);
+}
+section .text_container p {
+    font-weight: 400;
+    font-size: 19px;
+    letter-spacing: .01em;
+    line-height: 1.7em;
+    margin-bottom: 20px;
+
+    color: rgb(177, 177, 177);
+}
+section .text_container a {
+    font-weight: 600;
+    font-size: 19px;
+    letter-spacing: .01em;
+    margin-right: 10px;
+    padding: 8px 14px;
+    text-decoration: none;
+
+    display: inline-block;
+
+    color: rgb(36, 36, 36);
+    background-color: rgb(243, 243, 243);
+}
 
 .project_showcase {
+    max-width: 1200px;
     margin-top: 100px;
     padding: 0;
 }
@@ -38,72 +78,12 @@ section {
 }
 
 
-section .text_container h1 {
-    font-size: 16px;
-    font-weight: 500;
-    letter-spacing: 0.06em;
-    margin-bottom: 20px;
-
-    color: rgb(177, 177, 177);
-}
-section .text_container h2 {
-    font-size: 32px;
-    font-weight: 600;
-    letter-spacing: .016em;
-    line-height: 1.4em;
-    margin-bottom: 20px;
-
-
-    color: rgb(244, 244, 244);
-}
-section .text_container p {
-    font-weight: 400;
-    font-size: 19px;
-    letter-spacing: .01em;
-    line-height: 1.7em;
-    margin-bottom: 20px;
-
-    color: rgb(177, 177, 177);
-}
-section .text_container a {
-    font-weight: 600;
-    font-size: 19px;
-    letter-spacing: .01em;
-    line-height: 1.7em;
-    margin-bottom: 50px;
-    margin-right: 10px;
-    text-decoration: none;
-
-    padding: 8px 14px;
-
-    color: rgb(36, 36, 36);
-    background-color: rgb(243, 243, 243);
-}
-
-
 .features .features_container {
     display: flex;
 }
-.features .features_text_container {
+.features .text_container {
     width: 50%;
     padding-right: 20px;
-}
-.features .features_text_container h2,
-.features .features_text_container h3 {
-    font-family: 'Inter', sans-serif;
-}
-.features .features_text_container h2 {
-    font-weight: 500;
-    font-size: 16px;
-    letter-spacing: .06em;
-    margin-bottom: 20px;
-}
-.features .features_text_container h3 {
-    font-weight: 600;
-    font-size: 32px;
-    letter-spacing: .016em;
-    line-height: 1.4em;
-    margin-bottom: 35px;
 }
 
 .list_cards {
@@ -119,7 +99,7 @@ section .text_container a {
 }
 .list_card_container h3 {
     font-family: 'Inter', sans-serif;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 28px;
     letter-spacing: .03em;
 

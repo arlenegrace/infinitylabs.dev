@@ -1,3 +1,22 @@
+@media only screen and (max-width: 1200px) {
+    .features .features_text_container h2 {
+        font-size: 15px;
+    }
+    .features .features_text_container h3 {
+        font-size: 38px;
+    }
+    .list_card_container .header_container {
+        padding: 28px 40px;
+    }
+    .list_card_container .header_container h3 {
+        font-size: 24px;
+    }
+    .list_card_container .header_container .plus {
+        width: 18px;
+        height: 18px;
+    }
+}
+
 @media only screen and (max-width: 1000px) {
     .project_showcase {
         margin-top: 80px;
@@ -13,10 +32,10 @@
     }
 
 
-    .services .services_text_container h2 {
+    .features .features_text_container h2 {
         font-size: 15px;
     }
-    .services .services_text_container h3 {
+    .features .features_text_container h3 {
         font-size: 38px;
     }
     .list_card_container .header_container {
