@@ -10,6 +10,9 @@
     }
 
 
+    section .text_container h1 {
+        font-size: 16px;
+    }
     section .text_container h2 {
         font-size: 30px;
     }
@@ -38,6 +41,13 @@
 }
 
 @media only screen and (max-width: 800px) {
+    section .text_container h1 {
+        font-size: 15px;
+    }
+    section .text_container p {
+        font-size: 17px;
+    }
+
     .project_showcase {
         padding-left: 0px;
         padding-right: 0px;
@@ -72,13 +82,13 @@
 
 
     section .text_container h1 {
-        font-size: 16px;
+        font-size: 14px;
     }
     section .text_container h2 {
         font-size: 26px;
     }
     section .text_container p {
-        font-size: 17px;
+        font-size: 16px;
     }
     section .text_container a {
         font-size: 16px;
