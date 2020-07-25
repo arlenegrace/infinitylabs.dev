@@ -18,7 +18,7 @@ body {
     color: rgb(244, 244, 244);
 }
 
-/* CARD TEXT IS ALWAYS AGAINST A DARK BG */
+
 .project_showcase .card_text_container h1 {
     color: rgb(255, 255, 255);
 }
@@ -39,5 +39,14 @@ body {
     }
     .project_showcase .showcase_title h2 {
         color: rgb(61, 61, 61);
+    }
+
+
+    .project_showcase .card_text_container h1 {
+        color: rgb(255, 255, 255);
+        color: rgb(61, 61, 61);
+    }
+    .project_showcase .card_text_container p {
+        color: rgb(141, 141, 141);
     }
 }
