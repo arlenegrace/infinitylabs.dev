@@ -57,24 +57,30 @@ body {
 
 
 .image_showcase {
-    padding-left: 5vw;
-    padding-right: 5vw;
-    margin: 0 auto;
-    padding-bottom: 70px;
+    margin-bottom: 100px;
 }
 .image_showcase .collage {
     display: block;
-    margin: 0 auto;
+    margin: 0 5vw;
 }
-.image_showcase .collage .collage_title {
+.image_showcase .showcase_title {
+    max-width: 1200px;
     margin: 0 auto;
-    font-size: 46px;
-    font-weight: 600;
-    text-align: center;
     letter-spacing: 0.06em;
-    text-transform: uppercase;
-    padding-top: 155px;
-    padding-bottom: 80px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+}
+.image_showcase .showcase_title h1 {
+    font-size: 32px;
+    font-weight: 300;
+    letter-spacing: 0.06em;
+    margin-bottom: 10px;
+}
+.image_showcase .showcase_title h2 {
+    font-size: 54px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
 }
 .image_showcase .collage .collage_wrapper {
     display: grid;
@@ -84,7 +90,6 @@ body {
 }
 .image_showcase .collage_wrapper .image_container {
     width: 100%;
-    max-width: 90vw;
     height: 100%;
     overflow: hidden;
     font-size: 0;
@@ -92,7 +97,6 @@ body {
 }
 .image_showcase  img {
     width: 100%;
-    max-width: 90vw;
     border-radius: 12px;
     cursor: pointer;
     transition: filter 0.3s;

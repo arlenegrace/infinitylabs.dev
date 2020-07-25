@@ -1,29 +1,62 @@
-@media only screen and (max-width: 1300px) {
-    .image_showcase .collage .collage_title {
-        padding-top: 90px;
-        padding-bottom: 60px;
+@media only screen and (max-width: 1440px) {
+    .image_showcase .collage {
+        margin: 0 30px;
     }
 }
 
 @media only screen and (max-width: 1000px) {
-    .image_showcase .collage .collage_title {
-        padding-top: 70px;
-        padding-bottom: 50px;
+    .image_showcase .showcase_title {
+        padding-top: 60px;
+        padding-bottom: 40px;
+        padding-left: 50px;
+    }
+    .image_showcase .showcase_title h1 {
+        font-size: 28px;
+    }
+    .image_showcase .showcase_title h2 {
+        font-size: 46px;
+    }
+    .image_showcase .collage {
+        margin: 0 30px;
     }
     .image_showcase .collage .collage_wrapper {
         grid-template-columns: repeat( auto-fill, 1fr);
-        width: 90vw;
-        margin: 0 auto;
     }
     .image_showcase .image_container img {
         width: 90vw;
     }
 }
 
-@media only screen and (max-width: 600px) { /* PHONE LAYOUT*/
-    .image_showcase .collage .collage_title {
-        font-size: 36px;
+@media only screen and (max-width: 800px) {
+    .image_showcase .showcase_title {
         padding-top: 50px;
         padding-bottom: 30px;
+    }
+    .image_showcase .showcase_title h1 {
+        font-size: 24px;
+    }
+    .image_showcase .showcase_title h2 {
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .image_showcase .collage {
+        margin: 0 15px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .image_showcase .showcase_title {
+        padding-left: 30px;
+    }
+    .image_showcase .showcase_title h1 {
+        font-size: 20px;
+    }
+    .image_showcase .showcase_title h2 {
+        font-size: 36px;
+    }
+    .image_showcase .collage .collage_wrapper {
+        grid-template-columns: repeat( auto-fill, 100%);
     }
 }
