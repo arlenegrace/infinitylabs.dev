@@ -18,8 +18,11 @@ body {
 }
 
 
-.image_showcase .collage .collage_title {
-    color: #1f1f1f;
+.image_showcase .showcase_title h1 {
+    color: rgb(161, 161, 161);
+}
+.image_showcase .showcase_title h2 {
+    color: rgb(61, 61, 61);
 }
 .image_showcase .collage .row .image_right,
 .image_showcase .row .bottom .image_left {
@@ -32,8 +35,11 @@ body {
     }
 
 
-    .image_showcase .collage .collage_title {
-        color: #ffeccf;
+    .image_showcase .showcase_title h1 {
+        color: rgb(177, 177, 177);
+    }
+    .image_showcase .showcase_title h2 {
+        color: rgb(244, 244, 244);
     }
     .image_showcase .collage .row .image_right,
     .image_showcase .row .bottom .image_left {
