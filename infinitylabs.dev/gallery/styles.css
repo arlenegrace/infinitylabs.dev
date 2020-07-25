@@ -28,6 +28,7 @@ body {
     width: 22px;
     height: 22px;
     margin: 15px;
+    margin-left: auto;
 }
 .fs_bar1, .fs_bar2 {
     width: 25px;
