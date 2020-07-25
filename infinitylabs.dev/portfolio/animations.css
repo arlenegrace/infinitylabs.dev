@@ -4,16 +4,16 @@
 /* animation: name duration timing_function delay direction iteration_count fill_mode play_state */
 
 .project_showcase .showcase_title h1 {
-    animation: blank 0.3s 0s, text_in 0.5s 0.3s;
+    animation: text_in 0.5s;
     animation-fill-mode: forwards;
 }
 .project_showcase .showcase_title h2 {
-    animation: blank 0.4s 0s, text_in 0.5s 0.4s;
+    animation: blank 0.1s 0s, text_in 0.5s 0.1s;
     animation-fill-mode: forwards;
 }
 
 .project_showcase .showcase_wrapper {
-    animation: blank 0.9s 0s, fade_in 0.9s 0.9s;
+    animation: blank 0.6s 0s, fade_in 0.8s 0.6s;
     animation-fill-mode: forwards;
 }
 
