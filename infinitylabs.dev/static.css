@@ -393,6 +393,7 @@ code {
 .sidenav_links a:hover,
 .sidenav_container a:focus {
     color: #ffeccf;
+    color: rgb(219, 219, 219);
 }
 .bar1,
 .bar2,
