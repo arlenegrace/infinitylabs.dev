@@ -4,38 +4,38 @@
 /* animation: name duration timing_function delay direction iteration_count fill_mode play_state */
 
 .landing .landing_container h2 {
-    animation: blank 0.1s 0s, text_in 0.5s 0.1s;
+    animation: text_in 0.5s;
     animation-fill-mode: forwards;
 }
 .landing .landing_container p {
-    animation: blank 0.3s 0s, text_in 0.5s 0.3s;
+    animation: blank 0.1s 0s, text_in 0.5s 0.1s;
     animation-fill-mode: forwards;
 }
 
 .landing .landing_container #developer_container,
 .landing .landing_container #designer_container,
 .landing .landing_container #creator_container {
-    animation-name:         blank, fade_in;
+    animation-name: blank, fade_in;
     animation-fill-mode: forwards;
 }
 .landing .landing_container #creator_container {
-    animation-duration: 0.8s, 1.3s;
-    animation-delay: 0s, 0.8s;
+    animation-duration: 0.6s, 1.3s;
+    animation-delay: 0s, 0.6s;
 }
 .landing .landing_container #developer_container {
-    animation-duration: 0.9s, 1.3s;
-    animation-delay: 0s, 0.9s;
+    animation-duration: 0.7s, 1.3s;
+    animation-delay: 0s, 0.7s;
 }
 .landing .landing_container #designer_container {
-    animation-duration: 1s, 1.3s;
-    animation-delay: 0s, 1s;
+    animation-duration: 0.8s, 1.3s;
+    animation-delay: 0s, 0.8s;
 }
 
 
 .work #body_creator,
-.work  #body_developer,
-.work  #body_designer {
-    animation:         blank, slide_up_80px;
+.work #body_developer,
+.work #body_designer {
+    animation: blank, slide_up_80px;
     animation-fill-mode: forwards;
 }
 .work #body_creator {

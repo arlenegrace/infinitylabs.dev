@@ -18,6 +18,7 @@ code {
 /* DESKTOP CSS */
 body {
     font-family: 'Inter', sans-serif;
+    animation-timing-function: ease;
 }
 
 
