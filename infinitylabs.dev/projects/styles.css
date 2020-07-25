@@ -28,6 +28,7 @@ section .text_container p {
     letter-spacing: .04em;
     line-height: 1.7em;
     margin-bottom: 20px;
+    word-break: keep-all;
 }
 section .text_container a {
     font-weight: 600;
