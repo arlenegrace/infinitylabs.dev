@@ -55,7 +55,7 @@ section .text_container a {
     }
     section .text_container p {
         font-weight: 500;
-        color: rgb(146, 146, 146);
+        color: rgb(139, 139, 139);
     }
     section .text_container a {
         color: rgb(36, 36, 36);
