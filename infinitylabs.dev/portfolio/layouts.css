@@ -67,10 +67,4 @@
         font-size: 14px;
         margin-bottom: 10px;
     }
-    .project_showcase .card_text_container .card_links a {
-        font-size: 14px;
-    }
-    .project_showcase .card_text_container .card_links .card_preview {
-        margin-left: 10px;
-    }
 }
