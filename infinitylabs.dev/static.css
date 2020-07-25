@@ -375,10 +375,6 @@ main {
  * IT IS DECLARED LATER IN THE FILE. HTML PRIORITIZES CSS IN ORDER OF NEWEST TO OLDEST.
  */
 
-code {
-    background-color: rgb(54, 54, 54);
-}
-
 
 .sidenav_container {
     background-color: rgb(36, 36, 36);
@@ -426,69 +422,73 @@ code {
 }
 
 
+code {
+    background-color: rgb(245, 245, 245);
+}
+
 .footer {
-    background-color: rgb(34, 34, 34);
+    background-color: rgb(240, 240, 240);
 }
 .footer .logo_wrapper h1 {
-    color: rgb(98, 98, 98);
+    color: rgb(185, 185, 185);
 }
 .footer .logo_wrapper figure {
-    filter: brightness(0.6);
+    filter: brightness(0.5);
 }
-
-
 .youtube {
-    background-image: url("images/footer/youtube_dark.png");
+    background-image: url("images/footer/youtube_light.png");
 }
 .instagram {
-    background-image: url("images/footer/instagram_dark.png");
+    background-image: url("images/footer/instagram_light.png");
 }
 .twitter {
-    background-image: url("images/footer/twitter_dark.png");
+    background-image: url("images/footer/twitter_light.png");
 }
 .discord {
-    background-image: url("images/footer/discord_dark.png");
+    background-image: url("images/footer/discord_light.png");
 }
 .github {
-    background-image: url("images/footer/github_dark.png");
+    background-image: url("images/footer/github_light.png");
 }
-
-
 .copyright {
-    color: rgb(98, 98, 98);
+    color: rgb(185, 185, 185);
 }
 
-
-@media screen and (prefers-color-scheme: light) {
+@media screen and (prefers-color-scheme: dark) {
     code {
-        background-color: rgb(245, 245, 245);
+        background-color: rgb(54, 54, 54);
     }
+
 
     .footer {
-        background-color: rgb(240, 240, 240);
+        background-color: rgb(34, 34, 34);
     }
     .footer .logo_wrapper h1 {
-        color: rgb(185, 185, 185);
+        color: rgb(98, 98, 98);
     }
     .footer .logo_wrapper figure {
-        filter: brightness(0.5);
+        filter: brightness(0.6);
     }
+
+
     .youtube {
-        background-image: url("images/footer/youtube_light.png");
+        background-image: url("images/footer/youtube_dark.png");
     }
     .instagram {
-        background-image: url("images/footer/instagram_light.png");
+        background-image: url("images/footer/instagram_dark.png");
     }
     .twitter {
-        background-image: url("images/footer/twitter_light.png");
+        background-image: url("images/footer/twitter_dark.png");
     }
     .discord {
-        background-image: url("images/footer/discord_light.png");
+        background-image: url("images/footer/discord_dark.png");
     }
     .github {
-        background-image: url("images/footer/github_light.png");
+        background-image: url("images/footer/github_dark.png");
     }
+
+
     .copyright {
-        color: rgb(185, 185, 185);
+        color: rgb(98, 98, 98);
     }
 }
