@@ -2,70 +2,67 @@
  * ON SYSTEMS WITHOUT DARK MODE SUPPORT (E.G. PRE-iOS 13), NO THEMING WILL OCCUR
  * BECAUSE IT WILL NOT DEFAULT TO LIGHT THEME. THE WORKAROUND IS TO REMOVE THE
  * @MEDIA (PREFERS-COLOR-SCHEME) RULE SO IT DEFAULTS TO ONE OF THE THEMES.
- * HERE, WE DEFAULT TO DARK THEME BUT IF A DEVICE THAT SUPPORTS (PREFERS-COLOR-SCHEME)
- * IS USING LIGHT THEME, THE LIGHT THEME CSS WILL OVERRIDE THE DEFAULT BECAUSE
+ * HERE, WE DEFAULT TO LIGHT THEME BUT IF A DEVICE THAT SUPPORTS (PREFERS-COLOR-SCHEME)
+ * IS USING DARK THEME, THE DARK THEME CSS WILL OVERRIDE THE DEFAULT BECAUSE
  * IT IS DECLARED LATER IN THE FILE. HTML PRIORITIZES CSS IN ORDER OF NEWEST TO OLDEST.
  */
 
 body {
-    background-color: rgb(34, 34, 34);
+    background-color: #ffffff;
 }
 
 .enthusiast {
-    background-image: url("../images/dark_hhkb.jpg");
+    background-image: url("../images/THX.jpg");
 }
 .enthusiast_wrapper h1 {
-    color: #f0d5b6;
+    color: #ffe2c2;
 }
 .enthusiast_wrapper p {
-    color: rgb(211, 210, 210);
+    color: rgb(230, 230, 230);
 }
 
 .aboutme {
-    background-color: rgb(39, 39, 39);
+    background-color: #ffffff;
 }
 .aboutme .container {
-    background-color: rgb(37, 37, 37);
-    box-shadow: 0 30px 45px rgba(255, 255, 255, .1);
-    box-shadow: 0 30px 45px rgba(0, 0, 0, 0.3);
+    background-color: #ffffff;
+    box-shadow: 0 30px 45px rgba(12, 12, 12, 0.2);
 }
 .biography h1 {
-    color: #f0d5b6;
+    color: rgb(68, 68, 68);
+    font-weight: 600;
 }
 .biography p {
-    color: rgb(190, 190, 190);
+    color: rgb(129, 129, 129);
 }
 
-@media screen and (prefers-color-scheme: light) {
+@media screen and (prefers-color-scheme: dark) {
     body {
-        background-color: #ffffff;
+        background-color: rgb(34, 34, 34);
     }
 
     .enthusiast {
-        background-image: url("../images/THX.jpg");
+        background-image: url("../images/dark_hhkb.jpg");
     }
     .enthusiast_wrapper h1 {
-        color: #ffe2c2;
+        color: #f0d5b6;
     }
     .enthusiast_wrapper p {
-        color: rgb(230, 230, 230);
+        color: rgb(211, 210, 210);
     }
 
     .aboutme {
-        background-color: #ffffff;
+        background-color: rgb(39, 39, 39);
     }
     .aboutme .container {
-        background-color: #ffffff;
-        box-shadow: 0 30px 45px rgba(12, 12, 12, 0.2);
+        background-color: rgb(37, 37, 37);
+        box-shadow: 0 30px 45px rgba(255, 255, 255, .1);
+        box-shadow: 0 30px 45px rgba(0, 0, 0, 0.3);
     }
     .biography h1 {
-        color: rgb(68, 68, 68);
-        font-weight: 600;
+        color: #f0d5b6;
     }
     .biography p {
-        color: rgb(129, 129, 129);
-    }
-    .footer {
-        background-color: rgb(245, 245, 245);
+        color: rgb(190, 190, 190);
     }
 }

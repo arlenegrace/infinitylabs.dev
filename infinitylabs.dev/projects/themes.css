@@ -2,24 +2,26 @@
  * ON SYSTEMS WITHOUT DARK MODE SUPPORT (E.G. PRE-iOS 13), NO THEMING WILL OCCUR
  * BECAUSE IT WILL NOT DEFAULT TO LIGHT THEME. THE WORKAROUND IS TO REMOVE THE
  * @MEDIA (PREFERS-COLOR-SCHEME) RULE SO IT DEFAULTS TO ONE OF THE THEMES.
- * HERE, WE DEFAULT TO DARK THEME BUT IF A DEVICE THAT SUPPORTS (PREFERS-COLOR-SCHEME)
- * IS USING LIGHT THEME, THE LIGHT THEME CSS WILL OVERRIDE THE DEFAULT BECAUSE
+ * HERE, WE DEFAULT TO LIGHT THEME BUT IF A DEVICE THAT SUPPORTS (PREFERS-COLOR-SCHEME)
+ * IS USING DARK THEME, THE DARK THEME CSS WILL OVERRIDE THE DEFAULT BECAUSE
  * IT IS DECLARED LATER IN THE FILE. HTML PRIORITIZES CSS IN ORDER OF NEWEST TO OLDEST.
  */
 
+
 body {
-    background-color: rgb(39, 39, 39);
+    background-color: white;
 }
 
 
 section .text_container h1 {
-    color: rgb(128, 128, 128);
+    color: rgb(168, 168, 168);
 }
 section .text_container h2 {
-    color: rgb(244, 244, 244);
+    color: rgb(61, 61, 61);
 }
 section .text_container p {
-    color: rgb(184, 184, 184);
+    font-weight: 500;
+    color: rgb(139, 139, 139);
 }
 section .text_container a {
     color: rgb(36, 36, 36);
@@ -28,34 +30,37 @@ section .text_container a {
 
 
 .project_showcase .showcase_title h1 {
-    color: rgb(128, 128, 128);
+    color: rgb(184, 184, 184);
 }
 .project_showcase .showcase_title h2 {
-    color: rgb(244, 244, 244);
+    color: rgb(61, 61, 61);
+}
+.project_showcase .hero_image {
+    box-shadow: 0 30px 50px rgba(0, 0, 0, .22);
 }
 
 
 .list_card_container h3,
 .list_card_container svg {
-    color: rgb(244, 244, 244);
+    font-weight: 600;
+    color: rgb(61, 61, 61);
 }
 
 
- @media screen and (prefers-color-scheme: light) {
+@media screen and (prefers-color-scheme: dark) {
     body {
-        background-color: white;
+        background-color: rgb(39, 39, 39);
     }
 
 
     section .text_container h1 {
-        color: rgb(168, 168, 168);
+        color: rgb(128, 128, 128);
     }
     section .text_container h2 {
-        color: rgb(61, 61, 61);
+        color: rgb(244, 244, 244);
     }
     section .text_container p {
-        font-weight: 500;
-        color: rgb(139, 139, 139);
+        color: rgb(184, 184, 184);
     }
     section .text_container a {
         color: rgb(36, 36, 36);
@@ -64,19 +69,15 @@ section .text_container a {
 
 
     .project_showcase .showcase_title h1 {
-        color: rgb(184, 184, 184);
+        color: rgb(128, 128, 128);
     }
     .project_showcase .showcase_title h2 {
-        color: rgb(61, 61, 61);
-    }
-    .project_showcase .hero_image {
-        box-shadow: 0 30px 50px rgba(0, 0, 0, .22);
+        color: rgb(244, 244, 244);
     }
 
 
     .list_card_container h3,
     .list_card_container svg {
-        font-weight: 600;
-        color: rgb(61, 61, 61);
+        color: rgb(244, 244, 244);
     }
 }
