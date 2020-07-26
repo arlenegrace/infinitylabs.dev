@@ -37,8 +37,8 @@
         <meta property="og:site_name" content="Infinity Labs">
         <meta property="og:title" content="Comet — Infinity Labs">
         <meta property="og:description" content="Minimal single-page personal branding website.">
-        <meta property="og:url" content="https://infinitylabs.dev/projects/comet/">
-        <meta property="og:image" content="https://infinitylabs.dev/images/portfolio_comet.jpg"/>
+        <meta property="og:url" content="https://infinitylabs.dev/projects/quickarray/">
+        <meta property="og:image" content="https://infinitylabs.dev/images/portfolio_quickarray.jpg"/>
         <meta property="og:image:width" content="1160"/>
         <meta property="og:image:height" content="660"/>
         <meta name="twitter:card" content="summary_large_image"/>
@@ -89,22 +89,24 @@
             <section class="project_showcase">
                 <div class="showcase_title">
                     <h1>Project</h1>
-                    <h2>Comet</h2>
+                    <h2>Quick Array</h2>
                 </div>
 
-                <img class="hero_image" src="../../images/portfolio_comet.jpg" alt="Comet">
+                <img class="hero_image" src="../../images/portfolio_quickarray.jpg" alt="Quick Array">
             </section>
 
             <section class="description">
                 <div class="text_container">
                     <h1>Description</h1>
-                    <h2>Minimal single-page personal branding website</h2>
+                    <h2>A fast C++ resizable array library with small object optimization</h2>
                     <p>
-                        Simple personal branding page with your profession, contact information, and up to three relevant links
+                        Built from the ground up with performance in mind, <code>quick array</code> is up to six times faster than GCC and Clang's
+                        <code>std::vector</code> implementation. It employs small object optimization, the copy and swap idiom, and
+                        other techniques to avoid heap allocations as well as saving memory when storing less than 23 bytes of data on the
+                        x86_64 platform.
                     </p>
                     <div class="links_container">
-                        <a href="https://github.com/arlenegrace/comet">GitHub <img src="../../images/right_arrow.svg"></a>
-                        <a href="https://infinitylabs.dev/comet/">Preview <img src="../../images/right_arrow.svg"></a>
+                        <a href="https://github.com/arlenegrace/quickarray">GitHub <img src="../../images/right_arrow.svg"></a>
                     </div>
                 </div>
             </section>
@@ -113,52 +115,52 @@
                 <div class="features_container">
                     <div class="text_container">
                         <h1>Features</h1>
-                        <h2>A digital business card for the modern entrepreneur</h2>
+                        <h2>High performance and memory efficient data structures for the most demanding tasks</h2>
                     </div>
 
                     <div class="list_cards">
 
                         <div class="list_card_container" id="tournament_card">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-code" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mist" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                 <path stroke="none" d="M0 0h24v24H0z"/>
-                                <polyline points="7 8 3 12 7 16" />
-                                <polyline points="17 8 21 12 17 16" />
-                                <line x1="14" y1="4" x2="10" y2="20" />
-                              </svg>
-                            <h3>12KB of Code</h3>
+                                <path d="M5 5h3m4 0h9" />
+                                <path d="M3 10h11m4 0h1" />
+                                <path d="M5 15h5m4 0h7" />
+                                <path d="M3 20h9m4 0h3" />
+                            </svg>
+                            <h3>91 Lines of Code</h3>
                         </div>
                         <div class="list_card_container" id="tournament_card">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-moon" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bolt" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                 <path stroke="none" d="M0 0h24v24H0z"/>
-                                <path d="M16.2 4a9.03 9.03 0 1 0 3.9 12a6.5 6.5 0 1 1 -3.9 -12" />
+                                <polyline points="13 3 13 10 19 10 11 21 11 14 5 14 13 3" />
                             </svg>
-                            <h3>Dark Theme</h3>
+                            <h3>High Performance</h3>
                         </div>
                         <div class="list_card_container" id="tournament_card">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-devices" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-external-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                 <path stroke="none" d="M0 0h24v24H0z"/>
-                                <rect x="13" y="8" width="8" height="12" rx="1" />
-                                <path d="M18 8v-3a1 1 0 0 0 -1 -1h-13a1 1 0 0 0 -1 1v12a1 1 0 0 0 1 1h9" />
-                                <line x1="16" y1="9" x2="18" y2="9" />
+                                <path d="M11 7h-5a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-5" />
+                                <line x1="10" y1="14" x2="20" y2="4" />
+                                <polyline points="15 4 20 4 20 9" />
                             </svg>
-                            <h3>Responsive</h3>
+                            <h3>Simple Integration</h3>
                         </div>
                         <div class="list_card_container" id="tournament_card">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-ban" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-tool" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                 <path stroke="none" d="M0 0h24v24H0z"/>
-                                <circle cx="12" cy="12" r="9" />
-                                <line x1="5.7" y1="5.7" x2="18.3" y2="18.3" />
+                                <path d="M7 10h3v-3l-3.5 -3.5a6 6 0 0 1 8 8l6 6a2 2 0 0 1 -3 3l-6-6a6 6 0 0 1 -8 -8l3.5 3.5" />
                             </svg>
-                            <h3>Zero JavaScript</h3>
+                            <h3>Configurable</h3>
                         </div>
                         <div class="list_card_container" id="tournament_card">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-live-photo" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-stack" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                 <path stroke="none" d="M0 0h24v24H0z"/>
-                                <circle cx="12" cy="12" r="1" />
-                                <circle cx="12" cy="12" r="5" />
-                                <circle cx="12" cy="12" r="9" stroke-dasharray=".001 4.03" />
+                                <polyline points="12 4 4 8 12 12 20 8 12 4" />
+                                <polyline points="4 12 12 16 20 12" />
+                                <polyline points="4 16 12 20 20 16" />
                             </svg>
-                            <h3>Animations</h3>
+                            <h3>Memory Efficient</h3>
                         </div>
 
                     </div>
@@ -170,23 +172,10 @@
                     <h1>Usage</h1>
                     <h2>Setup Guide</h2>
                     <p>
-                        The GitHub repository contains all necessary files except for images which you provide.
-                        It is recommended to create a folder named <code>images</code> and store all your media there to
-                        maintain organization.
-                        <br><br>
-                        The 404 page requires styling to be inlined in the head of the HTML file because accessing an invalid subdirectory
-                        will not fetch external files, only the HTML file.
-                        <br><br>
-                        Different browsers will set different default values to HTML elements. The <code>reset.css</code> file is used to
-                        set all elements to the same styling for consistency across browsers. Be sure to include it in all HTML files as the
-                        first CSS file.
-                        <br><br>
-                        It is recommended that you merge all the external CSS files into one single file before deploying to your web
-                        server to reduce the number of HTTP requests to speed up page load times. Some hosts will do this automatically,
-                        giving you the benefit of modularity and maintainability without any of the performance drawbacks. Additionally,
-                        you may want to run all your CSS files through Autoprefixer to add vendor prefixes to relevant CSS properties and
-                        media queries to support older browsers. They are generally omitted from the code base to maintain readability
-                        as you can automate this process.
+                        To use <code>quick array</code>, simply include <code>quickarray.h</code> in your source file.
+                        You can adjust certain parameters like growth factor with the macros defined at the start of
+                        the header file. Be sure to set the <code>debug</code> macro to false in production builds for
+                        increased performance.
                     </p>
                 </div>
             </section>
