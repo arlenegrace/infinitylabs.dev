@@ -16,9 +16,6 @@
     section .text_container h2 {
         font-size: 30px;
     }
-    section .text_container p {
-        font-size: 18px;
-    }
     section .text_container a {
         font-size: 17px;
     }

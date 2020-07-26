@@ -24,7 +24,7 @@ section .text_container h2 {
 }
 section .text_container p {
     font-weight: 400;
-    font-size: 19px;
+    font-size: 18px;
     letter-spacing: .04em;
     line-height: 1.7em;
     margin-bottom: 20px;
