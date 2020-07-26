@@ -20,8 +20,7 @@ section .text_container h2 {
     color: rgb(61, 61, 61);
 }
 section .text_container p {
-    font-weight: 500;
-    color: rgb(139, 139, 139);
+    color: rgb(117, 117, 117);
 }
 section .text_container a {
     color: rgb(36, 36, 36);
