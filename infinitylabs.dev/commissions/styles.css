@@ -51,6 +51,7 @@ section .text_container h4 {
 section .text_container ol,
 section .text_container ul {
     margin-left: 30px;
+    counter-reset: section; 
 }
 section .text_container li {
     font-weight: 400;
@@ -58,7 +59,12 @@ section .text_container li {
     letter-spacing: .04em;
     line-height: 1.7em;
     margin-bottom: 5px;
-
+}
+li::before {
+    min-width: 26px;
+    display: inline-block;
+    counter-increment: section;
+    content: counters(section,".") ". ";
 }
 
 .project_showcase {
