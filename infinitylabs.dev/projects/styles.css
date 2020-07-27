@@ -88,13 +88,14 @@ section .text_container a {
 .list_card_container {
     margin-bottom: 2px;
     display: flex;
-    margin: 20px 0px;
+    margin: 15px 0px;
 }
 .list_card_container h3 {
     font-family: 'Inter', sans-serif;
     font-weight: 500;
     font-size: 28px;
     letter-spacing: .04em;
+    line-height: 1.4em;
 
     margin-right: auto;
 }
