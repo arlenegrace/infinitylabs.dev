@@ -258,45 +258,7 @@ main {
     }
 }
 
-/* COMPRESS FOOTER INTO VERTICAL STACK */
-@media screen and (max-width: 750px) {
-    .footer {
-        padding: 10px 30px;
-    }
-    .footer .footer_container {
-        display: block;
-    }
-    .footer .logo_wrapper,
-    .social,
-    .copyright {
-        width: auto;
-        margin: 0 auto;
-    }
-    .social {
-        padding: 15px 0px;
-    }
-    .footer .logo_wrapper figure {
-        margin-left: auto;
-    }
-    .footer .logo_wrapper h1 {
-        margin-right: auto;
-    }
-    .copyright h1 {
-        text-align: center;
-        margin: auto;
-    }
-    .youtube,
-    .instagram,
-    .twitter,
-    .discord,
-    .github {
-        margin-left: 15px;
-        margin-right: 15px;
-    }
-}
-
-/* SHOW HAMBURGER MENU WHEN NAV BAR RUNS OUT OF SPACE (MOBILE SUB-650PX WIDTH) */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
     .sidenav_container button {
         font-size: 20px
     }
@@ -336,7 +298,46 @@ main {
         height: 25px;
         animation: none;
     }
+}
 
+/* COMPRESS FOOTER INTO VERTICAL STACK */
+@media screen and (max-width: 750px) {
+    .footer {
+        padding: 10px 30px;
+    }
+    .footer .footer_container {
+        display: block;
+    }
+    .footer .logo_wrapper,
+    .social,
+    .copyright {
+        width: auto;
+        margin: 0 auto;
+    }
+    .social {
+        padding: 15px 0px;
+    }
+    .footer .logo_wrapper figure {
+        margin-left: auto;
+    }
+    .footer .logo_wrapper h1 {
+        margin-right: auto;
+    }
+    .copyright h1 {
+        text-align: center;
+        margin: auto;
+    }
+    .youtube,
+    .instagram,
+    .twitter,
+    .discord,
+    .github {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+
+@media screen and (max-width: 700px) {
     .footer {
         width: auto;
         padding: 20px 15px;

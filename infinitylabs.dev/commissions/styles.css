@@ -1,0 +1,138 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+
+section {
+    width: auto;
+    max-width: 1260px;
+    margin: 160px auto;
+    padding: 0 30px;
+}
+section .text_container h1 {
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: 0.06em;
+    margin-bottom: 20px;
+}
+section .text_container h2 {
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: .04em;
+    line-height: 1.4em;
+    margin-bottom: 20px;
+}
+section .text_container p {
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: .04em;
+    line-height: 1.7em;
+    margin-bottom: 20px;
+    word-break: keep-all;
+}
+section .text_container a {
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: .01em;
+    margin-right: 10px;
+    padding: 10px 14px;
+    text-decoration: none;
+
+    display: inline-block;
+}
+section .text_container h4 {
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: .04em;
+    line-height: 1.4em;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+section .text_container ol,
+section .text_container ul {
+    margin-left: 30px;
+}
+section .text_container li {
+    font-weight: 400;
+    font-size: 17px;
+    letter-spacing: .04em;
+    line-height: 1.7em;
+    margin-bottom: 5px;
+
+}
+
+.project_showcase {
+    max-width: 1200px;
+    margin-top: 100px;
+    padding: 0;
+}
+.project_showcase .showcase_title {
+    letter-spacing: 0.06em;
+    margin: 50px;
+}
+.project_showcase .showcase_title h1 {
+    font-size: 32px;
+    font-weight: 300;
+    letter-spacing: 0.06em;
+    margin-bottom: 10px;
+}
+.project_showcase .showcase_title h2 {
+    font-size: 48px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    line-height: 1.3em;
+}
+.project_showcase .hero_image {
+    width: 100%;
+
+    box-shadow: 0px 30px 80px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 40px 80px rgba(0,0,0,.6);
+}
+
+
+.features .features_container {
+    display: flex;
+}
+.features .text_container {
+    width: 50%;
+    padding-right: 30px;
+    margin-bottom: 20px;
+}
+
+.list_cards {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+}
+.list_card_container {
+    margin-bottom: 2px;
+    display: flex;
+    margin: 20px 0px;
+}
+.list_card_container h3 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 28px;
+    letter-spacing: .04em;
+
+    margin-right: auto;
+}
+.list_card_container svg {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    margin: auto 0;
+    margin-right: 15px;
+    transition: transform 0.3s;
+}
+
+
+.arrow {
+    border: solid;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}

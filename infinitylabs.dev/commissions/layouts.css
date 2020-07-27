@@ -1,0 +1,121 @@
+@media only screen and (max-width: 1200px) {
+    .project_showcase .showcase_title {
+        margin-bottom: 40px;
+    }
+    .project_showcase .showcase_title h1 {
+        font-size: 30px;
+    }
+    .project_showcase .showcase_title h2 {
+        font-size: 46px;
+    }
+
+
+    section .text_container h1 {
+        font-size: 16px;
+    }
+    section .text_container h2 {
+        font-size: 30px;
+    }
+    section .text_container a {
+        font-size: 17px;
+    }
+
+    .list_card_container h3 {
+        font-size: 26px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .project_showcase {
+        margin-top: 80px;
+    }
+    .project_showcase .showcase_title h1 {
+        font-size: 28px;
+    }
+    .project_showcase .showcase_title h2 {
+        font-size: 46px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    section .text_container h1 {
+        font-size: 15px;
+    }
+    section .text_container p {
+        font-size: 17px;
+    }
+
+    .project_showcase {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .project_showcase .showcase_title {
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+
+
+    .features .features_container {
+        flex-direction: column;
+    }
+    .features .text_container {
+        width: auto;
+        padding-right: 0px;
+    }
+    .list_cards {
+        width: auto;
+        padding-left: 0px;
+    }
+    .list_card_container h3 {
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    section {
+        margin: 120px auto;
+        padding: 0 15px;
+    }
+
+
+    section .text_container h1 {
+        font-size: 14px;
+    }
+    section .text_container h2 {
+        font-size: 26px;
+    }
+    section .text_container p {
+        font-size: 16px;
+    }
+    section .text_container a {
+        font-size: 16px;
+    }
+
+
+    .project_showcase {
+        margin-top: 60px;
+    }
+    .project_showcase .showcase_title {
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+    .project_showcase .showcase_title {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .project_showcase .showcase_title h1 {
+        font-size: 20px;
+    }
+    .project_showcase .showcase_title h2 {
+        font-size: 32px;
+    }
+
+
+    .list_card_container h3 {
+        font-size: 22px;
+    }
+    .list_card_container svg {
+        width: 20px;
+        height: 20px;
+    }
+}
