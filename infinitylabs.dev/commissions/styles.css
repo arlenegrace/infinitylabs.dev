@@ -60,7 +60,7 @@ section .text_container li {
     line-height: 1.7em;
     margin-bottom: 5px;
 }
-li::before {
+section .text_container li::before {
     min-width: 26px;
     display: inline-block;
     counter-increment: section;
