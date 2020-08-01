@@ -64,9 +64,6 @@ section .text_container a {
 }
 .project_showcase .hero_image {
     width: 100%;
-
-    box-shadow: 0px 30px 80px rgba(0, 0, 0, 0.35);
-    box-shadow: 0 40px 80px rgba(0,0,0,.6);
 }
 
 
