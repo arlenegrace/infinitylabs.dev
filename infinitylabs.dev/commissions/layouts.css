@@ -16,7 +16,9 @@
     section .text_container h2 {
         font-size: 30px;
     }
-    section .text_container a {
+    section .text_container a,
+    section .text_container h4,
+    section .text_container li {
         font-size: 17px;
     }
 
@@ -87,7 +89,9 @@
     section .text_container p {
         font-size: 16px;
     }
-    section .text_container a {
+    section .text_container a,
+    section .text_container h4,
+    section .text_container li {
         font-size: 16px;
     }
 
