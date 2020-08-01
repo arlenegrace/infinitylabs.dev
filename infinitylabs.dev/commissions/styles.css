@@ -51,6 +51,7 @@ section .text_container h4 {
 section .text_container ol,
 section .text_container ul {
     margin-left: 30px;
+    margin-bottom: 60px;
     counter-reset: section; 
 }
 section .text_container li {
