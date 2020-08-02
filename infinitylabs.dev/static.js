@@ -10,7 +10,7 @@ function open_nav() {
     const main = document.getElementsByTagName("main")[0];
 
     /* MANUALLY CALCULATE DROPDOWN WIDTH, AUTO DOESN'T PLAY CLOSING TRANSITION */
-    const opened = dropdown.style.width == '230px';
+    const opened = dropdown.style.width == '260px';
 
     document.getElementById('hamburger').classList.toggle("change");
 
@@ -25,7 +25,7 @@ function open_nav() {
         header_logo.style.opacity = '1';
         header_logo.style.filter = 'blur(0px)';
     } else {
-        dropdown.style.width = '230px';
+        dropdown.style.width = '260px';
         sidenav.style.width = '100vw';
         bg.style.width = '100vw';
 
