@@ -8,6 +8,27 @@
     to = "/404/index.html"
     status = 403
 
+
+[[headers]]
+  for = "/img/*"
+  [headers.values]
+    Cache-Control = "public, s-max-age=604800"
+
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, s-max-age=1"
+
+[[headers]]
+  for = "/*.css"
+  [headers.values]
+    Cache-Control = "public, s-max-age=1"
+
+[[headers]]
+  for = "/*.js"
+  [headers.values]
+    Cache-Control = "public, s-max-age=1"
+
 [[headers]]
     for = "/*"
     [headers.values]
@@ -17,17 +38,17 @@
         Referrer-Policy = "no-referrer-when-downgrade"
         #Safari has conflicts with content-security-policy. To fix in future commit.
         #Content-Security-Policy = "default-src https:"
-        Feature-Policy = '''\
-            accelerometer ‘none’; \
-            camera ‘none’; \
-            geolocation ‘none’; \
-            gyroscope ‘none’; \
-            magnetometer ‘none’; \
-            microphone ‘none’; \
-            payment ‘none’; \
-            usb ‘none’; \
-            midi ‘none’; \
-            notifications ‘none’; \
+        Feature-Policy = '''
+            accelerometer ‘none’;
+            camera ‘none’;
+            geolocation ‘none’;
+            gyroscope ‘none’;
+            magnetometer ‘none’;
+            microphone ‘none’;
+            payment ‘none’;
+            usb ‘none’;
+            midi ‘none’;
+            notifications ‘none’;
         '''
 
 
