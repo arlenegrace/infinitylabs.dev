@@ -19,6 +19,7 @@ code {
 body {
     font-family: 'Inter', sans-serif;
     animation-timing-function: ease;
+    -webkit-font-smoothing: antialiased;
 }
 
 
@@ -109,21 +110,6 @@ main {
     text-decoration: none;
     transition-duration: 0.3s;
 }
-/* .nav_bar .header_link_1 {
-    animation: fade_in 0.5s;
-}
-.nav_bar .header_link_2 {
-    animation: blank 0.1s 0s, fade_in 0.5s 0.1s;
-    animation-fill-mode: forwards;
-}
-.nav_bar .header_link_3 {
-    animation: blank 0.2s 0s, fade_in 0.5s 0.2s;
-    animation-fill-mode: forwards;
-}
-.nav_bar .header_link_4 {
-    animation: blank 0.3s 0s, fade_in 0.5s 0.3s;
-    animation-fill-mode: forwards;
-} */
 .center_header {
     z-index: 1;
     transition: all 0.5s;
