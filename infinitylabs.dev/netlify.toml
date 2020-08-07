@@ -10,11 +10,6 @@
 
 
 [[headers]]
-  for = "/images/*"
-  [headers.values]
-    Cache-Control = "public, s-max-age=604800"
-
-[[headers]]
   for = "/*.html"
   [headers.values]
     Cache-Control = "public, s-max-age=1"
@@ -28,6 +23,31 @@
   for = "/*.js"
   [headers.values]
     Cache-Control = "public, s-max-age=1"
+
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, s-max-age=604800"
+
+[[headers]]
+  for = "/*.png"
+  [headers.values]
+    Cache-Control = "public, s-max-age=604800"
+
+[[headers]]
+  for = "/*.jpg"
+  [headers.values]
+    Cache-Control = "public, s-max-age=604800"
+
+[[headers]]
+  for = "/*.jpeg"
+  [headers.values]
+    Cache-Control = "public, s-max-age=604800"
+
+[[headers]]
+  for = "/*.svg"
+  [headers.values]
+    Cache-Control = "public, s-max-age=604800"
 
 [[headers]]
     for = "/*"
