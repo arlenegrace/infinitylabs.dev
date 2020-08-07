@@ -10,7 +10,7 @@
 
 
 [[headers]]
-  for = "/img/*"
+  for = "/images/*"
   [headers.values]
     Cache-Control = "public, s-max-age=604800"
 
@@ -55,13 +55,17 @@
 # If skip_processing = true, all other settings are ignored
 [build.processing]
     skip_processing = false
+
 [build.processing.css]
     bundle = true
     minify = true
+
 [build.processing.js]
     bundle = true
     minify = true
+
 [build.processing.html]
     pretty_urls = true
+
 [build.processing.images]
     compress = true
