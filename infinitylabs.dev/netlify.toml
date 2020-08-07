@@ -8,21 +8,14 @@
     to = "/404/index.html"
     status = 403
 
+# CACHE SETTINGS
 
-[[headers]]
-  for = "/*.html"
-  [headers.values]
-    Cache-Control = "public, s-max-age=1"
-
+# Netlify generates random links for CSS (cache busting built in)
+# Therefore, we can cache aggressively
 [[headers]]
   for = "/*.css"
   [headers.values]
-    Cache-Control = "public, s-max-age=1"
-
-[[headers]]
-  for = "/*.js"
-  [headers.values]
-    Cache-Control = "public, s-max-age=1"
+    Cache-Control = "public, s-max-age=604800"
 
 [[headers]]
   for = "/images/*"
