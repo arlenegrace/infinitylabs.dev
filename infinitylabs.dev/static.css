@@ -104,7 +104,7 @@ main {
     margin-left: 50px;
 }
 .right_header a {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 16px;
     letter-spacing: .1em;
     text-decoration: none;
@@ -391,8 +391,8 @@ main {
     background-color: rgb(30, 30, 30);
 }
 .right_header a {
-    color: rgb(179, 179, 179);
     color: rgb(219, 219, 219, 0.5);
+    color: rgb(141, 141, 141);
 }
 .nav_bar .current {
     color: #f0d5b6;
