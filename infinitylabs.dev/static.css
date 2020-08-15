@@ -79,7 +79,7 @@ main {
 
 
 .nav_bar {
-    padding: 30px 30px;
+    padding: 25px 30px;
 }
 .nav_bar_container {
     margin: 0 auto;
@@ -120,8 +120,6 @@ main {
     width: 54px;
     height: 30px;
     vertical-align: middle;
-
-    /* animation: fade_in 0.7s; */
 }
 .nav_bar .hamburger {
     position: relative;
@@ -233,6 +231,11 @@ main {
 
 
 @media screen and (max-width: 1300px) {
+    .right_header a {
+        font-size: 15px;
+    }
+
+
     .footer {
         padding: 20px 30px;
     }
@@ -240,7 +243,10 @@ main {
 
 @media screen and (max-width: 1000px) {
     .nav_bar {
-        padding: 25px 30px;
+        padding: 20px 30px;
+    }
+    .right_header li {
+        margin-left: 40px;
     }
 }
 
@@ -251,25 +257,15 @@ main {
 
     .nav_bar {
         padding: 20px 15px;
-        animation: fade_in 0.5s;
-    }
-    .nav_bar .hamburger {
-        display: block;
-        cursor: pointer;
-        margin-left: auto;
-    }
-    .right_header {
-        display: none;
     }
     .right_header div {
         margin-left: 15px;
     }
     .center_header {
         margin-left: 0;
-        -webkit-box-orient: horizontal;
-        -ms-flex-direction: row;
-        -webkit-flex-direction: row;
-        flex-direction: row;
+    }
+    .right_header li {
+        margin-left: 40px;
     }
     .right_header a {
         font-size: 14px;
@@ -277,12 +273,10 @@ main {
     .center_header a {
         font-size: 18px;
         letter-spacing: .06em;
-        animation: none;
     }
     .center_header .header_logo figure {
         width: 45px;
         height: 25px;
-        animation: none;
     }
 }
 
@@ -327,6 +321,18 @@ main {
     .footer {
         width: auto;
         padding: 25px 15px;
+    }
+}
+
+/* COLLAPSE NAV BAR INTO HAMBURGER MENU */
+@media only screen and (max-width: 670px) {
+    .nav_bar .hamburger {
+        display: block;
+        cursor: pointer;
+        margin-left: auto;
+    }
+    .right_header {
+        display: none;
     }
 }
 
@@ -391,7 +397,6 @@ main {
     background-color: rgb(30, 30, 30);
 }
 .right_header a {
-    color: rgb(219, 219, 219, 0.5);
     color: rgb(141, 141, 141);
 }
 .nav_bar .current {

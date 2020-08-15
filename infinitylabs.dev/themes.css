@@ -40,19 +40,10 @@ body {
 .body_left .body_left_headline,
 .body_right .body_right_headline {
     color: rgb(68, 68, 68);
-    font-weight: 600;
 }
 .body_left .body_left_paragraph,
 .body_right .body_right_paragraph {
-    color: rgb(129, 129, 129);
-}
-
-
-.landing .headline {
-    color: #333333;
-}
-.landing .paragraph {
-    color: rgb(98, 98, 98);
+    color: rgb(110, 110, 110);
 }
 
 
@@ -64,10 +55,12 @@ body {
 
     .landing .landing_title h2 {
         color: #ffeccf;
+        color: #f0d5b6;
     }
     .landing .landing_container p,
     .landing .landing_icon_container  h3 {
         color: rgb(200, 200, 200);
+        color: rgb(165, 165, 165);
     }
 
 
@@ -83,16 +76,12 @@ body {
         background-color: rgb(49, 49, 49);
         box-shadow: 0px 20px 39px rgba(0, 0, 0, 0.3);
     }
-    .body_left:hover .text_container .text,
-    .body_right:hover .text_container .text {
-        margin-top: -20px;
-    }
     .body_left .body_left_headline,
     .body_right .body_right_headline {
         color: #f0d5b6;
     }
     .body_left .body_left_paragraph,
     .body_right .body_right_paragraph {
-        color: rgb(200, 200, 200);
+        color: rgb(165, 165, 165);
     }
 }
