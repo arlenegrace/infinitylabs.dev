@@ -55,6 +55,9 @@ section .text_container li {
     letter-spacing: .04em;
     line-height: 1.7em;
     margin-bottom: 5px;
+
+    /* Prevents new lines from aligning against the numbered list */
+    display: flex;
 }
 section .text_container ol li::before {
     min-width: 26px;
