@@ -128,6 +128,7 @@
 }
 .body_left .text_container .text,
 .body_right .text_container .text {
+    height: 400px;
     padding: 30px;
     z-index: 1;
     -webkit-transition: all .5s;
