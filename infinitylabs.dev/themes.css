@@ -37,12 +37,12 @@ body {
 .body_right:hover .text_container .text {
     box-shadow: 0px 10px 32px rgba(12, 12, 12, 0.356);
 }
-.body_left .body_left_headline,
-.body_right .body_right_headline {
+.body_left .text_container h2,
+.body_right .text_container h2 {
     color: rgb(68, 68, 68);
 }
-.body_left .body_left_paragraph,
-.body_right .body_right_paragraph {
+.body_left .text_container p,
+.body_right .text_container p {
     color: rgb(110, 110, 110);
 }
 
@@ -76,12 +76,12 @@ body {
         background-color: rgb(49, 49, 49);
         box-shadow: 0px 20px 39px rgba(0, 0, 0, 0.3);
     }
-    .body_left .body_left_headline,
-    .body_right .body_right_headline {
+    .body_left .text_container h2,
+    .body_right .text_container h2 {
         color: #f0d5b6;
     }
-    .body_left .body_left_paragraph,
-    .body_right .body_right_paragraph {
+    .body_left .text_container p,
+    .body_right .text_container p {
         color: rgb(165, 165, 165);
     }
 }

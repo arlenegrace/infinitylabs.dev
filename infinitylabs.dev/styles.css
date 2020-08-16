@@ -4,13 +4,14 @@
     padding: 120px 0;
 }
 .landing_title {
-    width: 800px;
+    max-width: 800px;
     margin: 0 auto;
     margin-bottom: 60px;
 }
 .landing .landing_container h2,
 .landing .landing_container h3,
-.landing .landing_container p {
+.landing .landing_container p,
+.landing .landing_container a {
     text-align: center;
 }
 .landing .landing_container h2 {
@@ -25,6 +26,26 @@
     font-weight: 400;
     line-height: 1.45em;
     letter-spacing: 0.04em;
+}
+.landing .landing_container .landing_cta {
+    margin-top: 35px;
+}
+.landing .landing_container a {
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+
+    display: inline-block;
+    margin: 0 auto;
+    padding: 10px 16px;
+    transition: background-color 0.3s, color 0.3s;
+    background-color: rgb(245, 245, 245);
+    color: rgb(61, 61, 61);
+}
+.landing .landing_container a:hover {
+    background-color: #5b616e;
+    color: rgb(245, 245, 245);
+    background-color: rgb(61, 61, 61);
 }
 .landing .landing_container .landing_icon_container {
     display: flex;
@@ -65,7 +86,7 @@
 /* 
  * To maintain code reusability, all groups are named either .body_left or
  * .body_right. The only thing that changes is the image used. To distinguish
- * between different bodies, refer to the "id" with a hash instead of a period.
+ * between different bodies, refer to the "id" with a hash prefix.
  */
 #body_creator .image {
     background-image: url("images/helium_8K.jpg"); /* https://sobschack.artstation.com/projects/5rD61 */
@@ -86,7 +107,6 @@
     margin: 100px auto;
     text-align: center;
     display: flex;
-    flex-direction: row-reverse;
 }
 .body_left {
     flex-direction: row-reverse;
@@ -143,16 +163,16 @@
 .body_right:hover .image_container .image {
     transform: scale(1.1);
 }
-.body_left .body_left_headline,
-.body_left .body_left_paragraph,
-.body_right .body_right_headline,
-.body_right .body_right_paragraph {
+.body_left .text_container h2,
+.body_left .text_container p,
+.body_right .text_container h2,
+.body_right .text_container p {
     position: relative;
     z-index: 2;
     left: 0px;
 }
-.body_left .body_left_headline,
-.body_right .body_right_headline {
+.body_left .text_container h2,
+.body_right .text_container h2 {
     font-size: 36px;
     font-weight: 500;
     text-align: left;
@@ -163,8 +183,8 @@
     -o-transition: all .5s;
     transition: all .5s;
 }
-.body_left .body_left_paragraph,
-.body_right .body_right_paragraph {
+.body_left .text_container p,
+.body_right .text_container p {
     font-size: 17px;
     font-weight: 400;
     line-height: 1.85em;

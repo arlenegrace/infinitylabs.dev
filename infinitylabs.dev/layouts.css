@@ -29,12 +29,12 @@
     .body_right {
         margin: 75px auto;
     }
-    .body_left .body_left_headline,
-    .body_right .body_right_headline {
+    .body_left .text_container h2,
+    .body_right .text_container h2 {
         font-size: 32px;
     }
-    .body_left .body_left_paragraph,
-    .body_right .body_right_paragraph {
+    .body_left .text_container p,
+    .body_right .text_container p {
         margin-top: 15px;
         font-size: 16px;
     }
@@ -48,11 +48,7 @@
     .landing_container {
         padding: 80px 30px;
     }
-    .landing_title {
-        width: auto;
-    }
     .landing .landing_container .landing_icon_container {
-        width: auto;
         max-width: 800px;
         margin: 0 auto;
     }
@@ -119,21 +115,21 @@
         padding: 30px;
         height: auto;
     }
-    .body_left .body_left_headline,
-    .body_right .body_right_headline,
-    .body_left .body_left_paragraph,
-    .body_right .body_right_paragraph {
+    .body_left .text_container h2,
+    .body_right .text_container h2,
+    .body_left .text_container p,
+    .body_right .text_container p {
         -webkit-font-smoothing: antialiased;
         max-width: none;
         position: center;
     }
-    .body_left .body_left_headline,
-    .body_right .body_right_headline {
+    .body_left .text_container h2,
+    .body_right .text_container h2 {
         display: inline;
         font-size: 28px;
     }
-    .body_left .body_left_paragraph,
-    .body_right .body_right_paragraph {
+    .body_left .text_container p,
+    .body_right .text_container p {
         font-size: 16px;
     }
 }
@@ -208,13 +204,13 @@
     .body_right .image_container {
         height: 250px;
     }
-    .body_left .body_left_headline,
-    .body_right .body_right_headline {
-        font-size: 24px;
+    .body_left .text_container h2,
+    .body_right .text_container h2 {
+        font-size: 26px;
     }
-    .body_left .body_left_paragraph,
-    .body_right .body_right_paragraph {
-        font-size: 14.5px;
+    .body_left .text_container p,
+    .body_right .text_container p {
+        font-size: 15px;
         line-height: 1.7em;
         margin-top: 10px;
     }
