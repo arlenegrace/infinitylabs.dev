@@ -6,7 +6,6 @@
 .landing_title {
     max-width: 800px;
     margin: 0 auto;
-    margin-bottom: 60px;
 }
 .landing .landing_container h2,
 .landing .landing_container h3,
@@ -49,6 +48,7 @@
 }
 .landing .landing_container .landing_icon_container {
     display: flex;
+    margin-top: 60px;
 }
 .landing .landing_container .landing_icon_container .card_container {
     width: 100px;

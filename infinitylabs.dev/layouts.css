@@ -2,15 +2,21 @@
     .landing_container {
         padding: 100px 30px;
     }
-    .landing_title {
-        margin-bottom: 50px;
-    }
     .landing .landing_container h2 {
         font-size: 50px;
         margin-bottom: 20px;
     }
     .landing .landing_container p {
         font-size: 19px;
+    }
+    .landing .landing_container .landing_cta {
+        margin-top: 30px;
+    }
+    .landing .landing_container a {
+        font-size: 17px;
+    }
+    .landing .landing_container .landing_icon_container {
+        margin-top: 50px;
     }
     .landing .landing_container .landing_icon_container .card_container h3 {
         font-size: 14px;
@@ -68,10 +74,12 @@
     }
     .landing .landing_container h2 {
         font-size: 46px;
-        margin-bottom: 20px;
     }
     .landing .landing_container p {
         font-size: 18px;
+    }
+    .landing .landing_container a {
+        font-size: 16px;
     }
 
     .work {
@@ -139,20 +147,22 @@
     .landing_container {
         padding: 60px 15px;
     }
-    .landing_title {
-        margin-bottom: 40px;
-    }
     .landing .landing_container h2 {
         font-size: 36px;
         text-transform: uppercase;
     }
     .landing .landing_container p {
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 300;
-        line-height: 1.7;
+        line-height: 1.5em;
+    }
+    .landing .landing_container a {
+        font-size: 16px;
+        padding: 8px 14px;
     }
     .landing .landing_container .landing_icon_container {
         max-width: 400px;
+        margin-top: 40px;
     }
     .landing .landing_container .landing_icon_container .card_container {
         width: auto;
