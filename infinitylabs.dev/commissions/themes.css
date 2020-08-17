@@ -77,6 +77,9 @@ section .text_container li {
     section .text_container li {
         color: rgb(184, 184, 184);
     }
+    section .text_container .faq_question {
+        color: rgb(230, 230, 230);
+    }
 
 
     .project_showcase .showcase_title h1 {

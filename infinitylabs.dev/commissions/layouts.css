@@ -94,6 +94,10 @@
     section .text_container li {
         font-size: 16px;
     }
+    section .text_container ol,
+    section .text_container ul {
+        margin-left: 15px;
+    }
 
 
     .project_showcase {
@@ -121,5 +125,10 @@
     .list_card_container svg {
         width: 20px;
         height: 20px;
+    }
+
+
+    .faq_answer {
+        margin-left: 15px;
     }
 }

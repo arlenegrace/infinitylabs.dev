@@ -95,8 +95,16 @@ section .text_container ol li::before {
 }
 
 
+.features {
+    background-color: rgb(32, 32, 32);
+    max-width: none;
+    margin: 0;
+    padding: 1px 30px;
+}
 .features .features_container {
     display: flex;
+    max-width: 1200px;
+    margin: 120px auto;
 }
 .features .text_container {
     width: 50%;
@@ -141,4 +149,8 @@ section .text_container ol li::before {
     padding: 3px;
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
+}
+
+.faq_answer {
+    margin-left: 30px;
 }
