@@ -1,5 +1,8 @@
 /* ALL JAVASCRIPT USED ACROSS MULTIPLE SITES TO BE PLACED HERE */
 
+console.log('Sneaking around are we? (͠≖ ͜ʖ͠≖)');
+console.log('View the full source code at https://github.com/arlenegrace/infinitylabs.dev');
+
 /* MOBILE HAMBURGER BUTTON */
 function open_nav() {
     const sidenav = document.getElementById('sidenav');
