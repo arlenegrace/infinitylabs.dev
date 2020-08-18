@@ -19,12 +19,17 @@ section .text_container h1 {
 section .text_container h2 {
     color: rgb(61, 61, 61);
 }
+section .text_container .inline_link,
 section .text_container p {
     color: rgb(117, 117, 117);
 }
-section .text_container a {
+.description .text_container a {
     color: rgb(36, 36, 36);
     background-color: rgb(243, 243, 243);
+}
+.description .text_container a:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(61, 69, 82);
 }
 section .text_container h4 {
     color: rgb(61, 61, 61);
@@ -44,11 +49,20 @@ section .text_container li {
     box-shadow: 0 30px 50px rgba(0, 0, 0, .22);
 }
 
+.features {
+    background-color: rgb(246, 246, 246);
+}
+
 
 .list_card_container h3,
 .list_card_container svg {
     font-weight: 600;
     color: rgb(61, 61, 61);
+}
+
+
+.separator .separator_inner {
+    background-color: rgb(235, 235, 235);
 }
 
 
@@ -64,10 +78,11 @@ section .text_container li {
     section .text_container h2 {
         color: rgb(244, 244, 244);
     }
+    section .text_container .inline_link,
     section .text_container p {
         color: rgb(184, 184, 184);
     }
-    section .text_container a {
+    .description .text_container a {
         color: rgb(36, 36, 36);
         background-color: rgb(243, 243, 243);
     }
@@ -79,6 +94,10 @@ section .text_container li {
     }
     section .text_container .faq_question {
         color: rgb(230, 230, 230);
+    }
+
+    .features {
+        background-color: rgb(33, 33, 33);
     }
 
 
@@ -94,5 +113,10 @@ section .text_container li {
     .list_card_container svg {
         font-weight: 500;
         color: rgb(244, 244, 244);
+    }
+
+
+    .separator .separator_inner {
+        background-color: rgb(95, 95, 95);
     }
 }

@@ -25,13 +25,17 @@ section .text_container p {
     margin-bottom: 20px;
     word-break: keep-all;
 }
-section .text_container a {
+section .text_container .inline_link {
+    text-decoration: none;
+}
+.description .text_container a {
     font-weight: 600;
     font-size: 18px;
     letter-spacing: .01em;
     margin-right: 10px;
     padding: 10px 14px;
     text-decoration: none;
+    transition: color 0.3s, background-color 0.3s;
 
     display: inline-block;
 }
@@ -96,7 +100,6 @@ section .text_container ol li::before {
 
 
 .features {
-    background-color: rgb(32, 32, 32);
     max-width: none;
     margin: 0;
     padding: 1px 30px;
@@ -119,7 +122,6 @@ section .text_container ol li::before {
     padding-left: 30px;
 }
 .list_card_container {
-    margin-bottom: 2px;
     display: flex;
     margin: 15px 0px;
 }
@@ -151,6 +153,17 @@ section .text_container ol li::before {
     transform: rotate(-45deg);
 }
 
-.faq_answer {
+.faq .text_container .faq_answer {
     margin-left: 30px;
+    font-size: 16.5px;
+}
+
+.separator {
+    margin: 0 auto;
+    padding: 0 30px;
+}
+.separator .separator_inner {
+    max-width: 1200px;
+    height: 2px;
+    margin: 0 auto;
 }

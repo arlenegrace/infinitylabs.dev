@@ -16,14 +16,20 @@
     section .text_container h2 {
         font-size: 30px;
     }
-    section .text_container a,
+    .description .text_container a,
     section .text_container h4,
     section .text_container li {
         font-size: 17px;
     }
 
+
     .list_card_container h3 {
         font-size: 26px;
+    }
+
+
+    .faq .text_container .faq_answer {
+        font-size: 16px;
     }
 }
 
@@ -32,10 +38,10 @@
         margin-top: 80px;
     }
     .project_showcase .showcase_title h1 {
-        font-size: 28px;
+        font-size: 27px;
     }
     .project_showcase .showcase_title h2 {
-        font-size: 46px;
+        font-size: 42px;
     }
 }
 
@@ -55,6 +61,12 @@
         margin-top: 50px;
         margin-bottom: 30px;
     }
+    .project_showcase .showcase_title h1 {
+        font-size: 25px;
+    }
+    .project_showcase .showcase_title h2 {
+        font-size: 38px;
+    }
 
 
     .features .features_container {
@@ -70,6 +82,11 @@
     }
     .list_card_container h3 {
         font-size: 24px;
+    }
+
+
+    .faq .text_container .faq_answer {
+        font-size: 15px;
     }
 }
 
@@ -89,7 +106,7 @@
     section .text_container p {
         font-size: 16px;
     }
-    section .text_container a,
+    .description .text_container a,
     section .text_container h4,
     section .text_container li {
         font-size: 16px;
@@ -119,6 +136,9 @@
     }
 
 
+    .list_card_container {
+        margin: 10px 0px;
+    }
     .list_card_container h3 {
         font-size: 22px;
     }
@@ -128,7 +148,13 @@
     }
 
 
-    .faq_answer {
+    .faq .text_container .faq_answer {
         margin-left: 15px;
+        font-size: 14px;
+    }
+
+
+    .separator {
+        padding: 0 15px;
     }
 }
