@@ -32,6 +32,7 @@ section .text_container a {
     margin-right: 10px;
     padding: 10px 14px;
     text-decoration: none;
+    transition: color 0.3s, background-color 0.3s;
 
     display: inline-block;
 }

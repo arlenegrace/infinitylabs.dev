@@ -26,6 +26,10 @@ section .text_container a {
     color: rgb(36, 36, 36);
     background-color: rgb(243, 243, 243);
 }
+section .text_container a:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(61, 69, 82);
+}
 
 
 .project_showcase .showcase_title h1 {
@@ -60,10 +64,6 @@ section .text_container a {
     }
     section .text_container p {
         color: rgb(184, 184, 184);
-    }
-    section .text_container a {
-        color: rgb(36, 36, 36);
-        background-color: rgb(243, 243, 243);
     }
 
 
