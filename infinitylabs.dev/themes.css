@@ -21,6 +21,21 @@ body {
 }
 
 
+.app_preview {
+    background-color: rgb(245, 245, 245);
+}
+.app_preview .render_header_container h1 {
+    color: rgb(146, 146, 146);
+}
+.app_preview .render_header_container h2 {
+    color: rgb(68, 68, 68);
+}
+.app_preview .render_header_container p {
+    color: rgb(110, 110, 110);
+    color: rgb(110, 110, 110);
+}
+
+
 .work {
     background-color: #ffffff;
 }
@@ -49,10 +64,13 @@ body {
 
 @media screen and (prefers-color-scheme: dark) {
     body {
-        background-color: rgb(34, 34, 34);
+        background-color: rgb(36, 36, 36);
     }
 
 
+    .landing {
+        background-color: rgb(42, 42, 42);
+    }
     .landing .landing_title h2 {
         color: #ffeccf;
         color: #f0d5b6;
@@ -61,6 +79,20 @@ body {
     .landing .landing_icon_container  h3 {
         color: rgb(200, 200, 200);
         color: rgb(165, 165, 165);
+    }
+
+    .app_preview {
+        background-color: rgb(36, 36, 36);
+    }
+    .app_preview .render_header_container h1 {
+        color: rgb(146, 146, 146);
+    }
+    .app_preview .render_header_container h2 {
+        color: rgb(245, 245, 245);
+    }
+    .app_preview .render_header_container p {
+        color: rgb(180, 180, 180);
+        color: rgb(149, 149, 149);
     }
 
 

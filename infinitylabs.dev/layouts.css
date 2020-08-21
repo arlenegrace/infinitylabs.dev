@@ -1,6 +1,6 @@
 @media only screen and (max-width: 1300px) {
     .landing_container {
-        padding: 100px 30px;
+        padding: 120px 30px;
     }
     .landing .landing_container h2 {
         font-size: 50px;
@@ -27,6 +27,15 @@
         height: 75px;
     }
 
+
+    .app_preview .render_header_container h2 {
+        font-size: 34px;
+    }
+    .app_preview .render_header_container p {
+        font-size: 16px;
+    }
+
+
     .work {
         padding-left: 30px;
         padding-right: 30px;
@@ -50,9 +59,15 @@
     }
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1200px) {
+    .app_preview .render_header_container {
+        margin: 0 70px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
     .landing_container {
-        padding: 80px 30px;
+        padding: 100px 30px;
     }
     .landing .landing_container .landing_icon_container {
         max-width: 800px;
@@ -81,6 +96,18 @@
     .landing .landing_container a {
         font-size: 16px;
     }
+
+
+    .app_preview {
+        padding: 120px 0px;
+    }
+    .app_preview .render_header_container h2 {
+        font-size: 32px;
+    }
+    .app_preview .render_header_container p {
+        font-size: 15px;
+    }
+
 
     .work {
         padding-left: 15px;
@@ -142,10 +169,25 @@
     }
 }
 
+@media only screen and (max-width: 800px) {
+    .app_preview .render_header_container {
+        margin: 0 50px;
+    }
+    .app_preview .render_header_container h1 {
+        font-size: 13px;
+    }
+    .app_preview .render_header_container h2 {
+        font-size: 30px;
+    }
+    .app_preview .render_header_container p {
+        font-size: 15px;
+    }
+}
+
 /* PHONE LAYOUT */
 @media only screen and (max-width: 600px) {
     .landing_container {
-        padding: 60px 15px;
+        padding: 70px 15px;
     }
     .landing .landing_container h2 {
         font-size: 36px;
@@ -187,6 +229,21 @@
         margin: 0 auto;
         display: block;
     }
+
+
+    .app_preview {
+        padding: 80px 0vw;
+    }
+    .app_preview .render_header_container {
+        margin: 0 15px;
+    }
+    .app_preview .render_header_container h2 {
+        font-size: 28px;
+    }
+    .app_preview .render_header_container p {
+        font-size: 15px;
+    }
+
 
     .work {
         padding: 30px 0px;

@@ -1,7 +1,7 @@
 .landing_container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 120px 0;
+    padding: 150px 0;
 }
 .landing_title {
     max-width: 800px;
@@ -79,9 +79,63 @@
 }
 
 
+
+
+.app_preview {
+    padding: 100px 0px;
+}
+.app_preview .app_preview_wrapper {
+    width: auto;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.app_preview .app_preview_wrapper .image_container {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    line-height: 0;
+    box-shadow: 0px 30px 40px rgba(0, 0, 0, 0.35);
+}
+.app_preview .app_preview_wrapper img {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.app_preview .render_header_container {
+    margin: 0 70px;
+}
+.app_preview .render_header_container h1,
+.app_preview .render_header_container h2,
+.app_preview .render_header_container p {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.05em;
+}
+.app_preview .render_header_container h1 {
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: .06em;
+    line-height: 1.4em;
+    margin-bottom: 10px;
+}
+.app_preview .render_header_container h2 {
+    font-weight: 500;
+    font-size: 38px;
+    letter-spacing: .016em;
+    line-height: 1.4em;
+    margin-bottom: 15px;
+}
+.app_preview .render_header_container p {
+    font-weight: 400;
+    font-size: 17px;
+    letter-spacing: .06em;
+    line-height: 1.7em;
+    margin-bottom: 40px;
+}
+
+
 .work {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 1px;
+    padding-bottom: 1px;
 }
 /* 
  * To maintain code reusability, all groups are named either .body_left or
