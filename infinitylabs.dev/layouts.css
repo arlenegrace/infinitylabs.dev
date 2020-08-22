@@ -32,7 +32,7 @@
         font-size: 34px;
     }
     .app_preview .render_header_container p {
-        font-size: 16px;
+        font-size: 17px;
     }
 
 
@@ -105,7 +105,7 @@
         font-size: 32px;
     }
     .app_preview .render_header_container p {
-        font-size: 15px;
+        font-size: 16px;
     }
 
 
@@ -239,9 +239,6 @@
     }
     .app_preview .render_header_container h2 {
         font-size: 28px;
-    }
-    .app_preview .render_header_container p {
-        font-size: 15px;
     }
 
 
