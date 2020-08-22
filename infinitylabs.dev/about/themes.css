@@ -57,14 +57,14 @@ body {
         background-color: rgb(42, 42, 42);
     }
     .aboutme .container {
-        background-color: rgb(34, 34, 34);
+        background-color: rgb(41, 41, 41);
         box-shadow: 0 30px 45px rgba(255, 255, 255, .1);
         box-shadow: 0 30px 45px rgba(0, 0, 0, 0.3);
     }
     .biography h1 {
         color: #f0d5b6;
-        color: rgb(245, 245, 245);
         color: rgb(235, 235, 235);
+        color: rgb(245, 245, 245);
     }
     .biography p {
         color: rgb(170, 170, 170);
