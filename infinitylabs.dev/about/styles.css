@@ -29,45 +29,34 @@
     text-align: center;
     margin-top: 30px;
 }
-.aboutme .card {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-}
 .aboutme .container {
     width: 1200px;
     margin: 0 auto;
-
-    padding: 150px 30px;
+    padding: 50px;
     margin-top: -100px;
-
-
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-}
-.portrait {
-    width: 500px;
 }
 .biography {
-    padding-left: 50px;
+    margin-bottom: 60px;
+}
+.biography:last-child {
+    margin-bottom: 0px;
 }
 .biography h1 {
-    font-size: 52px;
+    font-size: 32px;
     font-weight: 500;
-    text-align: center;
-    line-height: 1.1;
-    letter-spacing: 0.02em;
+    letter-spacing: .04em;
+    line-height: 1.4em;
+    margin-bottom: 15px;
 }
 .biography p {
-    font-size: 20px;
     font-weight: 400;
-    line-height: 1.7;
-    letter-spacing: 0.03em;
-    text-align: left;
-    margin-top: 30px;
+    font-size: 18px;
+    letter-spacing: .04em;
+    line-height: 1.7em;
+    margin-bottom: 20px;
+}
+.biography img {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 70px;
 }

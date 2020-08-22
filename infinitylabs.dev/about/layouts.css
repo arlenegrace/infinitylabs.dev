@@ -13,23 +13,20 @@
         font-size: 18px;
     }
     .aboutme .container {
-        width: 85%;
-        padding: 100px 30px;
-    }
-    .portrait {
-        width: 35vw;
+        width: 90%;
+        padding: 40px;
     }
     .biography {
         width: auto;
     }
     .biography h1 {
-        font-size: 40px;
+        font-size: 30px;
     }
     .biography p {
         font-size: 18px;
     }
 }
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 1024px) {
     .enthusiast_wrapper {
         padding-top: 125px;
         padding-bottom: 190px;
@@ -42,23 +39,12 @@
         margin-top: 30px;
         padding-bottom: 40px;
     }
-    .aboutme .container {
-        padding: 20px 20px;
-        display: inline-block;
-    }
-    .portrait_wrapper .portrait {
-        width: 100%;
-        padding-bottom: 40px;
-    }
-    .biography {
-        padding-left: 0px;
-    }
     .biography h1 {
-        font-size: 36px;
+        font-size: 28px;
         text-align: left;
     }
     .biography p {
-        font-size: 18px;
+        font-size: 17px;
         margin-top: 10px;
     }
 }
@@ -67,16 +53,14 @@
     .aboutme {
         padding-bottom: 70px;
     }
+    .aboutme .container {
+        padding: 30px;
+    }
     .enthusiast_wrapper p {
         padding-left: 4vw;
         padding-right: 4vw;
     }
-    .portrait {
-        padding-bottom: 50px;
-    }
-    .biography h1 {
-        font-size: 46px;
-    }
+
 
     .footer {
         padding-top: 30px;
@@ -100,26 +84,20 @@
     }
     .aboutme .container {
         width: auto;
-        padding: 15px 15px;
+        padding: 15px;
 
         margin-top: -50px;
         margin-right: 15px;
         margin-left: 15px;
     }
-    .portrait_wrapper .portrait {
-        width: 100%;
-        padding-bottom: 40px;
-    }
-    .biography {
-        padding-left: 0px;
-    }
     .biography h1 {
-        font-size: 28px;
+        font-size: 26px;
     }
     .biography p {
         font-size: 16px;
         margin-top: 10px;
     }
+
 
     .footer {
         padding-top: 30px;

@@ -13,6 +13,7 @@ body {
 
 .enthusiast {
     background-image: url("../images/THX.jpg");
+    background-color: rgb(42, 42, 42);
 }
 .enthusiast_wrapper h1 {
     color: #ffe2c2;
@@ -26,14 +27,14 @@ body {
 }
 .aboutme .container {
     background-color: #ffffff;
-    box-shadow: 0 30px 45px rgba(12, 12, 12, 0.2);
+    box-shadow: 0 30px 45px rgba(12, 12, 12, 0.1);
 }
 .biography h1 {
     color: rgb(68, 68, 68);
-    font-weight: 600;
 }
 .biography p {
     color: rgb(129, 129, 129);
+    color: rgb(115, 115, 115);
 }
 
 @media screen and (prefers-color-scheme: dark) {
@@ -43,6 +44,7 @@ body {
 
     .enthusiast {
         background-image: url("../images/dark_hhkb.jpg");
+        background-color: rgb(36, 36, 36);
     }
     .enthusiast_wrapper h1 {
         color: #f0d5b6;
@@ -52,17 +54,19 @@ body {
     }
 
     .aboutme {
-        background-color: rgb(39, 39, 39);
+        background-color: rgb(42, 42, 42);
     }
     .aboutme .container {
-        background-color: rgb(37, 37, 37);
+        background-color: rgb(34, 34, 34);
         box-shadow: 0 30px 45px rgba(255, 255, 255, .1);
         box-shadow: 0 30px 45px rgba(0, 0, 0, 0.3);
     }
     .biography h1 {
         color: #f0d5b6;
+        color: rgb(245, 245, 245);
     }
     .biography p {
-        color: rgb(190, 190, 190);
+        color: rgb(170, 170, 170);
+        color: rgb(160, 160, 160);
     }
 }
