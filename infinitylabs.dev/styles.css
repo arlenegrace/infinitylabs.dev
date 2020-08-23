@@ -4,10 +4,10 @@
     background-image: url("https://images.unsplash.com/photo-1447703693928-9cd89c8d3ac5");
     background-image: url("https://images.unsplash.com/photo-1509023464722-18d996393ca8");
     background-image: url("https://images.unsplash.com/photo-1502239608882-93b729c6af43"); /* dark leaves */
-    background-image: url("images/hero2_bw.jpg"); /* grayscale blue leaf */
     background-image: url("images/hero2.jpg"); /* desaturated blue leaf */
     background-image: url("https://images.unsplash.com/photo-1516557070061-c3d1653fa646"); /* blue leaf */
     background-image: url("images/hero.jpg"); /* full color blue leaf */
+    background-image: url("images/hero2_bw.jpg"); /* grayscale blue leaf */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

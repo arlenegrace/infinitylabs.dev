@@ -12,15 +12,17 @@ body {
 }
 
 .enthusiast {
-    background-image: url("../images/THX.jpg");
     background-color: rgb(42, 42, 42);
 }
 .enthusiast_wrapper h1 {
     color: #ffe2c2;
+    color: #f0d5b6;
 }
 .enthusiast_wrapper p {
     color: rgb(230, 230, 230);
+    color: rgb(211, 210, 210);
 }
+
 
 .aboutme {
     background-color: #ffffff;
@@ -37,21 +39,17 @@ body {
     color: rgb(115, 115, 115);
 }
 
+
 @media screen and (prefers-color-scheme: dark) {
     body {
         background-color: rgb(34, 34, 34);
     }
 
+
     .enthusiast {
-        background-image: url("../images/dark_hhkb.jpg");
         background-color: rgb(36, 36, 36);
     }
-    .enthusiast_wrapper h1 {
-        color: #f0d5b6;
-    }
-    .enthusiast_wrapper p {
-        color: rgb(211, 210, 210);
-    }
+
 
     .aboutme {
         background-color: rgb(42, 42, 42);

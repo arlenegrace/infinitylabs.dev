@@ -2,6 +2,13 @@
     padding-bottom: 100px;
 }
 .enthusiast {
+    background-image: url("https://images.unsplash.com/photo-1502239608882-93b729c6af43"); /* dark leaves */
+    background-image: url("https://images.unsplash.com/photo-1447703693928-9cd89c8d3ac5"); /* steps */
+    background-image: url("https://images.unsplash.com/photo-1509023464722-18d996393ca8"); /* mountain */
+    background-image: url("https://images.unsplash.com/photo-1526289034009-0240ddb68ce3"); /* glass */
+    background-image: url("https://images.unsplash.com/photo-1591541924200-d1217b346bf6"); /* building side */
+    background-image: url("https://images.pexels.com/photos/3815759/pexels-photo-3815759.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"); /* top-down desk */
+    background-image: url("https://images.pexels.com/photos/3815760/pexels-photo-3815760.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=600&w=1920"); /* top-down desk */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
