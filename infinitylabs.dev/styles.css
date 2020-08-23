@@ -51,14 +51,13 @@
     display: inline-block;
     margin: 0 auto;
     padding: 10px 16px;
-    -webkit-backdrop-filter: blur(20px);
-    backdrop-filter: blur(20px);
     transition: background-color 0.3s, color 0.3s;
 }
-.landing .landing_container a:hover {
-    background-color: #5b616e;
-    color: rgb(245, 245, 245);
-    background-color: rgb(61, 61, 61);
+@supports ((-webkit-backdrop-filter: initial) or (backdrop-filter: initial)) {
+    .landing .landing_container a {
+        -webkit-backdrop-filter: blur(20px);
+        backdrop-filter: blur(20px);
+    }
 }
 .landing .landing_container .landing_icon_container {
     display: flex;
