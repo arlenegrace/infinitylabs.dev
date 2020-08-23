@@ -157,12 +157,20 @@
  */
 #body_creator .image {
     background-image: url("images/helium_8K.jpg"); /* https://sobschack.artstation.com/projects/5rD61 */
+    background-image: url("https://images.unsplash.com/photo-1502982720700-bfff97f2ecac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3150&q=80");
+    background-image: url("https://images.unsplash.com/photo-1576420231698-a2223913d98d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80");
 }
 #body_developer .image {
     background-image: url("images/one_dark.jpg");
+    background-image: url("https://i.imgur.com/cV2K8Fll.jpg");
 }
 #body_designer .image {
     background-image: url("images/designer.jpg");
+    background-image: url("https://images.unsplash.com/photo-1553325975-7d48090fc14c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80"); /* apple pencil */
+    background-image: url("https://images.unsplash.com/photo-1515117136347-78c558558c73?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80"); /* products */
+    background-image: url("https://images.unsplash.com/photo-1548874468-f1d5c7578a63?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1600&q=80"); /* apple pencil */
+    background-image: url("https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2803&q=80"); /* ipad pro */
+    background-image: url("https://images.unsplash.com/photo-1510007003972-ee92e9845bb7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3150&q=80"); /* books */
 }
 .body_left:hover .text_container .text,
 .body_right:hover .text_container .text {
