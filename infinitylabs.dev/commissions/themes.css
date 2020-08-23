@@ -45,9 +45,6 @@ section .text_container li {
 .project_showcase .showcase_title h2 {
     color: rgb(61, 61, 61);
 }
-.project_showcase .hero_image {
-    box-shadow: 0 30px 50px rgba(0, 0, 0, .22);
-}
 
 .features {
     background-color: rgb(246, 246, 246);
