@@ -1,3 +1,17 @@
+
+.landing {
+    background-image: url("https://nisar.surge.sh/header.ce90f224.jpg"); /* github leaves */
+    background-image: url("https://images.unsplash.com/photo-1447703693928-9cd89c8d3ac5");
+    background-image: url("https://images.unsplash.com/photo-1509023464722-18d996393ca8");
+    background-image: url("https://images.unsplash.com/photo-1502239608882-93b729c6af43"); /* dark leaves */
+    background-image: url("images/hero.jpg");
+    background-image: url("https://images.unsplash.com/photo-1516557070061-c3d1653fa646"); /* blue leaf */
+    background-image: url("images/hero2_bw.jpg");
+    background-image: url("images/hero2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 .landing_container {
     max-width: 1200px;
     margin: 0 auto;
@@ -37,9 +51,9 @@
     display: inline-block;
     margin: 0 auto;
     padding: 10px 16px;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
     transition: background-color 0.3s, color 0.3s;
-    background-color: rgb(245, 245, 245);
-    color: rgb(61, 61, 61);
 }
 .landing .landing_container a:hover {
     background-color: #5b616e;

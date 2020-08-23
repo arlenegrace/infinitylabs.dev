@@ -14,10 +14,22 @@ body {
 
 .landing .landing_title h2 {
     color: #ffeccf;
+    color: #f0d5b6;
 }
 .landing .landing_container p,
 .landing .landing_icon_container  h3 {
-    color: rgb(195, 195, 195);
+    color: rgb(200, 200, 200);
+}
+.landing .landing_container a {
+    border: 1px solid rgb(200, 200, 200);
+    color: #bdbdbd;
+    color: rgb(200, 200, 200);
+}
+.landing .landing_container a:hover {
+    background-color: #5b616e;
+    color: rgb(245, 245, 245);
+    background-color: rgb(61, 61, 61);
+    background-color: rgba(255, 255, 255, 0.05);
 }
 
 
@@ -67,19 +79,6 @@ body {
         background-color: rgb(36, 36, 36);
     }
 
-
-    .landing {
-        background-color: rgb(42, 42, 42);
-    }
-    .landing .landing_title h2 {
-        color: #ffeccf;
-        color: #f0d5b6;
-    }
-    .landing .landing_container p,
-    .landing .landing_icon_container  h3 {
-        color: rgb(200, 200, 200);
-        color: rgb(165, 165, 165);
-    }
 
     .app_preview {
         background-color: rgb(36, 36, 36);
