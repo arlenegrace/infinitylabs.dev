@@ -6,19 +6,53 @@
         <lastmod>2020-07-12T03:47:45+00:00</lastmod>
         <priority>1.00</priority>
     </url>
+
     <url>
         <loc>https://infinitylabs.dev/about/</loc>
         <lastmod>2020-07-12T03:47:45+00:00</lastmod>
         <priority>1.00</priority>
     </url>
+
     <url>
         <loc>https://infinitylabs.dev/gallery/</loc>
         <lastmod>2020-07-12T03:47:45+00:00</lastmod>
         <priority>1.00</priority>
     </url>
+
     <url>
         <loc>https://infinitylabs.dev/portfolio/</loc>
         <lastmod>2020-07-12T03:47:45+00:00</lastmod>
         <priority>1.00</priority>
+    </url>
+
+    <url>
+        <loc>https://infinitylabs.dev/commissions/</loc>
+        <lastmod>2020-07-12T03:47:45+00:00</lastmod>
+        <priority>1.00</priority>
+    </url>
+
+    <!-- PROJECTS -->
+    <url>
+        <loc>https://infinitylabs.dev/projects/comet/</loc>
+        <lastmod>2020-07-12T03:47:45+00:00</lastmod>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://infinitylabs.dev/projects/infinitylabs/</loc>
+        <lastmod>2020-07-12T03:47:45+00:00</lastmod>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://infinitylabs.dev/projects/navi/</loc>
+        <lastmod>2020-07-12T03:47:45+00:00</lastmod>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://infinitylabs.dev/projects/raven/</loc>
+        <lastmod>2020-07-12T03:47:45+00:00</lastmod>
+        <priority>0.8</priority>
     </url>
 </urlset>
