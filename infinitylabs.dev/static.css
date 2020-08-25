@@ -436,9 +436,9 @@ code {
 .twitter {
     background-image: url("images/footer/twitter_light.png");
 }
-.discord {
+/* .discord {
     background-image: url("images/footer/discord_light.png");
-}
+} */
 .github {
     background-image: url("images/footer/github_light.png");
 }
@@ -472,9 +472,9 @@ code {
     .twitter {
         background-image: url("images/footer/twitter_dark.png");
     }
-    .discord {
+    /* .discord {
         background-image: url("images/footer/discord_dark.png");
-    }
+    } */
     .github {
         background-image: url("images/footer/github_dark.png");
     }
